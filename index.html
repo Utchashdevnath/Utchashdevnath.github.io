@@ -1,147 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utchash Dev Nath | Research Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO & META -->
+  <meta name="description" content="Professional engineering, research, teaching and robotics mentorship portfolio of Utchash Dev Nath.">
+  <meta name="author" content="Utchash Dev Nath">
+  <meta name="keywords" content="engineering portfolio, research, robotics, IoT, embedded systems, Bangladesh, Chattogram, PhD applicant">
+  <meta name="theme-color" content="#1a3b29">
+
+  <!-- Open Graph (LinkedIn/Facebook preview) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Utchash Dev Nath | Engineering & Research Portfolio">
+  <meta property="og:description" content="Engineering • Education • Research portfolio from Chattogram, Bangladesh.">
+  <meta property="og:url" content="https://utchashdevnath.github.io/">
+  <meta property="og:image" content="https://utchashdevnath.github.io/images/profile/profile.jpg">
+
+  <title>Utchash Dev Nath | Engineering & Research Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/profile/profile.jpg" type="image/jpeg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>UTCHASH DEV NATH</h1>
-            <p class="subtitle">Humanitarian Technology Researcher | Electrical Engineer</p>
-            <p class="tagline">Developing Sustainable Solutions for SDGs through Modular Systems & Sensor Networks</p>
-        </div>
-    </header>
 
-    <nav>
-        <div class="container">
-            <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
-            <a href="#publications">Publications</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="site-header">
+    <div class="container nav-container">
 
-    <section id="research" class="section">
-        <div class="container">
-            <h2><i class="fas fa-microscope"></i> Research Focus</h2>
-            <div class="research-grid">
-                <div class="research-card">
-                    <h3>Humanitarian Engineering</h3>
-                    <p>Gender-inclusive technology solutions for resource-constrained environments</p>
-                </div>
-                <div class="research-card">
-                    <h3>Climate-Resilient Systems</h3>
-                    <p>Modular, adaptive designs for agricultural and energy applications</p>
-                </div>
-                <div class="research-card">
-                    <h3>Low-Cost Sensor Networks</h3>
-                    <p>IoT solutions for precision agriculture and smart infrastructure</p>
-                </div>
+      <a href="#home" class="brand">
+        <span class="brand-mark">UDN</span>
+        <span class="brand-name">Utchash Dev Nath</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#mentorship">Mentorship</a>
+        <a href="#competitions">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#workshops">Workshops</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact" class="nav-contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <p class="eyebrow">ENGINEERING • EDUCATION • RESEARCH</p>
+
+          <h1 id="heroName">Utchash Dev Nath</h1>
+
+          <h2 id="heroTitle">
+            Electrical Engineer | Technical Educator | Robotics Mentor
+          </h2>
+
+          <p id="heroIntro" class="hero-description"></p>
+
+          <div class="hero-tags" id="heroTags"></div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore My Work</a>
+            <a href="documents/academic-cv.pdf"
+               class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              Download Academic CV
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-frame">
+            <img id="profileImage"
+              src="images/profile/profile.jpg"
+              alt="Portrait of Utchash Dev Nath"
+              onerror="this.style.display='none'; document.getElementById('profileFallback').style.display='flex';">
+
+            <div id="profileFallback" class="profile-fallback">
+              UDN
             </div>
+          </div>
+
+          <div class="location-label">
+            <span class="location-dot"></span>
+            <span id="heroLocation">Chattogram, Bangladesh</span>
+          </div>
         </div>
+
+      </div>
     </section>
 
-    <section id="projects" class="section bg-light">
-        <div class="container">
-            <h2><i class="fas fa-project-diagram"></i> Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Menstrual Hygiene Ecosystem</h3>
-                    <p class="project-desc">Solar-powered vending & disposal system for low-infrastructure environments</p>
-                    <div class="tech-tags">
-                        <span>Solar Power</span>
-                        <span>Circular Economy</span>
-                        <span>Gender Tech</span>
-                    </div>
-                    <a href="projects/menstrual-hygiene-ecosystem.md" class="btn">View Details</a>
-                </div>
-                
-                <div class="project-card">
-                    <h3>Modular Agricultural Robot</h3>
-                    <p class="project-desc">Adaptive robotics system for smallholder farming in variable climates</p>
-                    <div class="tech-tags">
-                        <span>Robotics</span>
-                        <span>Modular Design</span>
-                        <span>Precision Ag</span>
-                    </div>
-                    <a href="projects/modular-agri-robot.md" class="btn">View Details</a>
-                </div>
-                
-                <div class="project-card">
-                    <h3>IoT Street Lighting System</h3>
-                    <p class="project-desc">Smart, energy-efficient street lighting with remote monitoring</p>
-                    <div class="tech-tags">
-                        <span>IoT</span>
-                        <span>Energy Efficiency</span>
-                        <span>Smart City</span>
-                    </div>
-                    <a href="projects/iot-street-light.md" class="btn">View Details</a>
-                </div>
-                
-                <div class="project-card">
-                    <h3>Smart Agriculture Sensor Node</h3>
-                    <p class="project-desc">NPK, pH & moisture sensing for precision resource management</p>
-                    <div class="tech-tags">
-                        <span>Sensor Networks</span>
-                        <span>IoT</span>
-                        <span>Sustainable Ag</span>
-                    </div>
-                    <a href="projects/smart-agriculture-sensor.md" class="btn">View Details</a>
-                </div>
-            </div>
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">INTRODUCTION</p>
+          <h2>About Me</h2>
         </div>
+
+        <div class="about-layout">
+          <div class="about-text" id="aboutText"></div>
+
+          <div class="info-card">
+            <h3>Academic Background</h3>
+            <div id="educationList"></div>
+          </div>
+        </div>
+
+        <div class="skills-area">
+          <h3>Areas of Interest</h3>
+          <div id="interestList" class="tag-list"></div>
+        </div>
+
+      </div>
     </section>
 
-    <section id="publications" class="section">
-        <div class="container">
-            <h2><i class="fas fa-file-alt"></i> Research Output</h2>
-            <div class="publication-list">
-                <div class="publication-item">
-                    <h3>Manuscript in Preparation</h3>
-                    <p>"The Menstrual Hygiene Ecosystem: A Resilient, Solar-Powered Solution for Low-Infrastructure Environments"</p>
-                    <span class="status">Target Journal: IEEE Transactions on Humanitarian Technology</span>
-                </div>
-                <!-- Add more as you have -->
-            </div>
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section section-light" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">CAREER</p>
+          <h2>Professional Experience</h2>
         </div>
+        <div id="experienceList" class="timeline"></div>
+      </div>
     </section>
 
-    <section id="about" class="section bg-light">
-        <div class="container">
-            <h2><i class="fas fa-user"></i> About</h2>
-            <div class="about-content">
-                <p>Electrical Engineering professional transitioning to academic research, with focus on technology solutions for Sustainable Development Goals. Currently preparing journal manuscripts while seeking PhD opportunities in humanitarian engineering and sustainable technology.</p>
-                <div class="education">
-                    <h4>Education</h4>
-                    <p><strong>Post Graduate Diploma in Project Management</strong> (Level 7) - Edupro, UK</p>
-                    <p><strong>B.Sc. in Electrical & Electronic Engineering</strong> - Premier University, CGPA: 3.68/4.00</p>
-                </div>
-            </div>
+    <!-- ===================== MENTORSHIP ===================== -->
+    <section class="section" id="mentorship">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">STUDENT DEVELOPMENT</p>
+          <h2>Robotics & Technical Mentorship</h2>
         </div>
+        <div id="mentorshipContent" class="feature-card"></div>
+      </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2><i class="fas fa-envelope"></i> Contact & Links</h2>
-            <div class="contact-links">
-                <a href="mailto:utehashdebnath@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://linkedin.com/in/utehash-dev-nath-9706831b2"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a>
-                <a href="docs/cv.pdf"><i class="fas fa-file-pdf"></i> Download CV</a>
-            </div>
+    <!-- ===================== COMPETITIONS ===================== -->
+    <section class="section section-light" id="competitions">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">STUDENT ACHIEVEMENTS</p>
+          <h2>Competition Archive</h2>
+          <p class="section-description">
+            Selected achievements of student teams mentored through
+            the AKKUPI Robotics & Code Club.
+          </p>
         </div>
+        <div class="filter-buttons" id="competitionFilters"></div>
+        <div id="competitionList" class="card-grid"></div>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2024 Utchash Dev Nath | Research Portfolio</p>
-            <p>Last updated: [Current Month Year]</p>
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">ENGINEERING PRACTICE</p>
+          <h2>Projects & Prototypes</h2>
         </div>
-    </footer>
+        <div id="projectList" class="card-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== RESEARCH ===================== -->
+    <section class="section section-light" id="research">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">RESEARCH DIRECTION</p>
+          <h2>Research Interests & Development</h2>
+        </div>
+        <div id="researchList" class="card-grid"></div>
+        <div class="publication-area">
+          <h3>Publications</h3>
+          <div id="publicationList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WORKSHOPS ===================== -->
+    <section class="section" id="workshops">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">KNOWLEDGE SHARING</p>
+          <h2>Workshops & Training</h2>
+        </div>
+        <div id="workshopList" class="card-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATES ===================== -->
+    <section class="section section-light" id="certificates">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">DOCUMENTATION</p>
+          <h2>Certificates & Evidence</h2>
+        </div>
+        <div id="certificateList" class="card-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">GET IN TOUCH</p>
+          <h2>Contact & Professional Links</h2>
+          <p class="section-description">
+            For academic collaboration, research opportunities,
+            technical discussions and professional enquiries.
+          </p>
+        </div>
+        <div id="contactList" class="contact-grid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="currentYear"></span> Utchash Dev Nath. All rights reserved.</p>
+      <p>Engineering • Education • Research</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+
 </body>
 </html>
