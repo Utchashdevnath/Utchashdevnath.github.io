@@ -38,7 +38,7 @@ window.portfolioData = {
 
   /* ---------------- ABOUT ---------------- */
   about: [
-    "I am an Electrical and Electronic Engineering graduate from Premier University, Bangladesh. I completed my undergraduate degree in 2022 and secured second position in my batch.",
+    "I am an Electrical and Electronic Engineering graduate from Premier University, Bangladesh. I completed my undergraduate degree in 2022.",
 
     "My professional work combines technical education, departmental leadership and student mentorship. I am particularly interested in connecting engineering fundamentals with practical, affordable and research-oriented projects.",
 
@@ -98,6 +98,49 @@ window.portfolioData = {
         "Support student progress, practical learning and technical skill development.",
         "Contribute to institutional planning and student admission activities."
       ]
+    },
+      {
+      role: "Research & Development Engineer",
+      organisation: "Robotry Bangladesh",
+      period: "July 2023 – December 2025",
+     /* description:
+        "",*/
+      responsibilities: [
+        "Developed main control board of robotics kit for beginners.",
+        "Create 3D part designs and operate 3D printers for efficient prototyping."
+      ]
+    },
+        {
+      role: "Executive Engineer(Part-Time)",
+      organisation: "Insights Automata",
+      period: "December 2022 – March 2023",
+     /* description:
+        "",*/
+      responsibilities: [
+        "Designed and assembled the PCB for IoT base Energy saving System.",
+        "Develop and test various IoT base products PCB."
+      ]
+    },
+       {
+      role: "Guest Instructor- Department of Electrical Technology",
+      organisation: "A K Khan UCEP Private Polytechnic Institute",
+      period: "October 2022 – March 2023",
+     /* description:
+        "",*/
+      responsibilities: [
+        "Delivered lectures & workshops on assigned topics."
+      ]
+    },
+         {
+      role: "Trainee Engineer - Automation Department",
+      organisation: "Ulterior Engineering",
+      period: "July 2021 – September 2021",
+     /* description:
+        "",*/
+      responsibilities: [
+        "Provided administrative staff support in Industrial Controlling and Automation.",
+        "Worked with S7-1200 PLC, VFD, and HMI."
+      ]
     }
   ],
 
@@ -105,7 +148,7 @@ window.portfolioData = {
   mentorship: {
     title: "Mentor & Technical Lead — AKKUPI Robotics & Code Club (ARCC)",
     period: "2023 – Present",
-    organisation: "A. K. Khan UCEP Polytechnic Institute",
+    organisation: "A K Khan UCEP Polytechnic Institute",
     description:
       "ARCC is a student-led robotics and coding club established in 2022 under faculty mentorship. I have been involved in guiding and developing its technical activities since joining AKKUPI in April 2023.",
     contributions: [
