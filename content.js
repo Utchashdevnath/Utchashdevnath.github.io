@@ -32,23 +32,23 @@ window.portfolioData = {
   },
 
   /* ---------------- ABOUT ---------------- */
-  about: [
-    "I am an Electrical and Electronic Engineering graduate from Premier University, Bangladesh. I completed my undergraduate degree in 2022 and secured second position in my batch.",
+about: [
+  "I am an Electrical and Electronic Engineering graduate from Premier University, Bangladesh. I completed my undergraduate degree in 2022 and secured second position in my batch.",
 
-    "My professional work combines technical education, departmental leadership and student mentorship. I am particularly interested in connecting engineering fundamentals with practical, affordable and research-oriented projects.",
+  "My professional work combines technical education, departmental leadership and student mentorship. I am particularly interested in connecting engineering fundamentals with practical, affordable and research-oriented projects.",
 
-    "Core Technical Competencies — ",
-    
-    "Hardware Design: Expert in Altium Designer for multi-layer PCB architecture; proficient in 3D prototyping and mechanical chassis design.", 
-    
-    "Systems Architecture: Advanced implementation of dual-processor systems (STM32 + Raspberry Pi); experience with LoRa, MQTT and cloud telemetry.", 
-    
-    "Industrial Automation: specialist in PLC programming and industrial-grade project implementation. ",
-    
-    "Embedded Programming: proficient in C++, Python and control algorithms for autonomous navigation. ",
-    
-    "Project Management: PGD-certified with a focus on R&D lifecycles and laboratory optimization."
-  ],
+  "Core Technical Competencies:",
+
+  "• Hardware Design: Expert in Altium Designer for multi-layer PCB architecture; proficient in 3D prototyping and mechanical chassis design.",
+
+  "• Systems Architecture: Advanced implementation of dual-processor systems (STM32 + Raspberry Pi); experience with LoRa, MQTT and cloud telemetry.",
+
+  "• Industrial Automation: Specialist in PLC programming and industrial-grade project implementation.",
+
+  "• Embedded Programming: Proficient in C++, Python and control algorithms for autonomous navigation.",
+
+  "• Project Management: PGD-certified with a focus on R&D lifecycles and laboratory optimization."
+]
 
   /* ---------------- EDUCATION ---------------- */
   education: [
