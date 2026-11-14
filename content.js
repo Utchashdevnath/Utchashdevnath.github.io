@@ -17,19 +17,19 @@ window.portfolioData = {
   /* ---------------- HERO ---------------- */
   hero: {
     name: "Utchash Dev Nath",
-    title: "Electrical Engineer | Technical Educator | Robotics Mentor",
+    title: "Embedded Systems Architect & Robotics Researcher | Electrical Engineer | IoT & Robotics Mentor | PGD in Project Management",
     intro:
-      "Electrical and Electronic Engineering graduate, technical educator and robotics mentor with an interest in embedded systems, IoT, robotics, intelligent control and renewable energy. Currently serving as Instructor and Head of the Electrical Technology Department at A. K. Khan UCEP Polytechnic Institute, Chattogram.",
+      "A multi-disciplinary Engineer and Academic Leader with 4+ years of experience in Embedded Systems, Robotics, and IoT. Currently serving as the Head of Department (Electrical) at a leading polytechnic institute, combining high-level administrative leadership with hands-on R&D. Proven track record in "Frugal Innovation"—designing high-tech, low-cost solutions for agricultural and social infrastructure in developing-world contexts. Associate Member of the Institution of Engineers, Bangladesh (IEB) and holder of a Postgraduate Diploma in Project Management.",
     location: "Chattogram, Bangladesh",
     tags: [
       "Embedded Systems",
       "Robotics",
       "IoT",
-      "Electronics",
-      "Renewable Energy",
+      "Edge-AI",
+      "Frugal Innovation",
       "Applied Research"
     ]
-  },
+},
 
   /* ---------------- ABOUT ---------------- */
   about: [
@@ -37,7 +37,12 @@ window.portfolioData = {
 
     "My professional work combines technical education, departmental leadership and student mentorship. I am particularly interested in connecting engineering fundamentals with practical, affordable and research-oriented projects.",
 
-    "My long-term academic goal is to develop as a researcher and pursue advanced studies in areas related to embedded systems, IoT and intelligent engineering applications."
+    "Core Technical Competencies",
+    "Hardware Design: Expert in Altium Designer for multi-layer PCB architecture; Proficient in 3D Prototyping and mechanical chassis design.",
+    "Systems Architecture: Advanced implementation of Dual-Processor systems (STM32 + Raspberry Pi); Experience with LoRa, MQTT, and Cloud Telemetry.",
+    "Industrial Automation: Specialist in PLC programming and industrial-grade project implementation.",
+    "Embedded Programming: Proficient in C++, Python, and Control Algorithms for autonomous navigation.",
+    "Project Management: PGD-certified in Project Management with a focus on R&D lifecycles and laboratory optimization."
   ],
 
   /* ---------------- EDUCATION ---------------- */
@@ -49,10 +54,10 @@ window.portfolioData = {
       detail: "Second position in batch"
     },
     {
-      degree: "Postgraduate Diploma in Project Management",
+      degree: "Post Graduate Diploma in Project Management (EP Level 7)",
       institution: "ABP / EduPro UK",
       year: "Batch 62",
-      detail: "Completion status to be updated"
+      detail: "Post-Graduate Core Modules: Project Management Fundamentals | Project Planning, Scheduling & Execution | Resource & Stakeholder Management | Project Feasibility, Financing & Business Case Analysis | Risk Identification, Assessment & Mitigation | Agile Methodologies | Performance Measurement & Control."
     }
   ],
 
@@ -66,7 +71,6 @@ window.portfolioData = {
     "LoRa Communication",
     "Edge AI & TinyML",
     "Intelligent Control",
-    "Power Electronics",
     "Renewable Energy"
   ],
 
@@ -74,7 +78,7 @@ window.portfolioData = {
   experience: [
     {
       role: "Instructor & Head, Electrical Technology Department",
-      organisation: "A. K. Khan UCEP Polytechnic Institute, UCEP Bangladesh",
+      organisation: "A K Khan UCEP Polytechnic Institute, UCEP Bangladesh",
       period: "April 2023 – Present",
       description:
         "Responsible for technical education, departmental coordination and student development within the Electrical Technology Department.",
@@ -82,8 +86,7 @@ window.portfolioData = {
         "Deliver technical instruction and prepare learning materials for Electrical Technology students.",
         "Coordinate departmental academic activities, assessments and examinations.",
         "Support student progress, practical learning and technical skill development.",
-        "Contribute to institutional planning and student admission activities.",
-        "Mentor students in robotics, electronics, programming and applied engineering."
+        "Contribute to institutional planning and student admission activities."
       ]
     }
   ],
@@ -220,7 +223,49 @@ window.portfolioData = {
        link: ""
      }
   ---------------------------------------------- */
-  projects: [],
+  projects: [
+       {
+       title: "Smart Agriculture Sensor Node",
+       contribution: "Lead Researcher",
+       status: "Prototype Complete",
+       description: "NPK, pH and moisture sensing for precision farming.",
+       technologies: ["ESP32", "LoRa", "Sensors"],
+       image: "images/projects/agri-sensor.jpg",
+       link: ""
+     },
+       {
+       title: "EMAR (Edge-Enabled Modular Agricultural Robot)",
+       contribution: "Lead Researcher",
+       status: "Prototype Complete",
+       description: "Developed a dual-processor autonomous platform for soil mapping and boundary detection tailored for smallholder farmers.",
+       technologies: ["Raspberry Pi", "LoRa", "Sensors"],
+       image: "images/projects/agri-sensor.jpg",
+       link: ""
+     },
+       {
+       title: "Smart Menstrual Hygiene Ecosystem",
+       contribution: "Lead Inventor",
+       status: "Prototype Complete",
+       description: "Engineered a solar-powered, multi-network vending machine with biometric authentication (RFID/Fingerprint) for low-infrastructure environments.",
+       technologies: ["ESP32", "Sensors"],
+       image: "images/projects/agri-sensor.jpg",
+       link: ""
+     },
+       {
+       title: "IoT-Enabled Smart Car Parking System",
+       contribution: "Co-author & PCB Designer",
+       status: "Prototype Complete",
+       description: "Our system uses ESP32, Wi-Fi, and IR sensors to provide real-time parking availability and seamless in-app payments. By integrating technology and user-centric design, we aim to reduce congestion and improve urban mobility.",
+      "This solution offers:",
+      "Real-time parking updates ",
+      "Fast, convenient payments ",
+      "Smarter resource use to ease traffic ",
+      "Proud to contribute to more sustainable, efficient cities!",
+       technologies: ["ESP32", " IR Sensors", "Servo Motor"],
+       image: "images/projects/agri-sensor.jpg",
+       link: ""
+     },
+  ],
 
   /* ---------------- RESEARCH ---------------- */
   research: [
@@ -249,7 +294,20 @@ window.portfolioData = {
        link: "https://doi.org/..."
      }
   ------------------------------------------------- */
-  publications: [],
+  publications: [
+    {
+       title: "Degradation-Aware Rule-Based Industrial EMS for PV-Battery Microgrids with Stateflow",
+       authors: "Utchash Dev Nath, Swarup Paul, Jubaer Hasan Abdullah",
+       venue: "iCONEECT 2026",
+       link: "https://iconeect2026.puc.ac.bd/"
+     },
+    {
+       title: "IoT-Enabled Smart Car Parking Management: Revolutionizing Urban Traffic Flow",
+       authors: "Mohammed Saifuddin Munna, Adri Roy, MD. Mehedi Hasan, Utchash Dev Nath",
+       venue: "International Journal of Research Publication and Reviews",
+       link: "DOI:https://doi.org/10.55248/gengpi.5.0624.1447"
+     }
+  ],
 
   /* ---------------- WORKSHOPS ---------------- */
   workshops: [
