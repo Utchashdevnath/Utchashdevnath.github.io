@@ -19,7 +19,7 @@ window.portfolioData = {
     name: "Utchash Dev Nath",
     title: "Embedded Systems Architect & Robotics Researcher | Electrical Engineer | IoT & Robotics Mentor | PGD in Project Management",
     intro:
-      "A multi-disciplinary Engineer and Academic Leader with 4+ years of experience in Embedded Systems, Robotics, and IoT. Currently serving as the Head of Department (Electrical) at a leading polytechnic institute, combining high-level administrative leadership with hands-on R&D. Proven track record in "Frugal Innovation"—designing high-tech, low-cost solutions for agricultural and social infrastructure in developing-world contexts. Associate Member of the Institution of Engineers, Bangladesh (IEB) and holder of a Postgraduate Diploma in Project Management.",
+      "A multi-disciplinary Engineer and Academic Leader with 4+ years of experience in Embedded Systems, Robotics, and IoT. Currently serving as the Head of Department (Electrical) at a leading polytechnic institute, combining high-level administrative leadership with hands-on R&D. Proven track record in Frugal Innovation —designing high-tech, low-cost solutions for agricultural and social infrastructure in developing-world contexts. Associate Member of the Institution of Engineers, Bangladesh (IEB) and holder of a Postgraduate Diploma in Project Management.",
     location: "Chattogram, Bangladesh",
     tags: [
       "Embedded Systems",
