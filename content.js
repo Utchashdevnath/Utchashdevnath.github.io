@@ -19,7 +19,7 @@ window.portfolioData = {
     name: "Utchash Dev Nath",
     title: "Embedded Systems Architect & Robotics Researcher | Electrical Engineer | IoT & Robotics Mentor | PGD in Project Management",
     intro:
-      "A multi-disciplinary Engineer and Academic Leader with 4+ years of experience in Embedded Systems, Robotics, and IoT. Currently serving as the Head of Department (Electrical) at a leading polytechnic institute, combining high-level administrative leadership with hands-on R&D. Proven track record in Frugal Innovation —designing high-tech, low-cost solutions for agricultural and social infrastructure in developing-world contexts. Associate Member of the Institution of Engineers, Bangladesh (IEB) and holder of a Postgraduate Diploma in Project Management.",
+      "A multidisciplinary engineer and academic leader with 4+ years of experience in Embedded Systems, Robotics and IoT. Currently serving as the Head of Department (Electrical) at a leading polytechnic institute, combining high-level administrative leadership with hands-on R&D. Proven track record in Frugal Innovation — designing high-tech, low-cost solutions for agricultural and social infrastructure in developing-world contexts. Associate Member of the Institution of Engineers, Bangladesh (IEB) and holder of a Postgraduate Diploma in Project Management.",
     location: "Chattogram, Bangladesh",
     tags: [
       "Embedded Systems",
@@ -29,7 +29,7 @@ window.portfolioData = {
       "Frugal Innovation",
       "Applied Research"
     ]
-},
+  },
 
   /* ---------------- ABOUT ---------------- */
   about: [
@@ -37,12 +37,7 @@ window.portfolioData = {
 
     "My professional work combines technical education, departmental leadership and student mentorship. I am particularly interested in connecting engineering fundamentals with practical, affordable and research-oriented projects.",
 
-    "Core Technical Competencies",
-    "Hardware Design: Expert in Altium Designer for multi-layer PCB architecture; Proficient in 3D Prototyping and mechanical chassis design.",
-    "Systems Architecture: Advanced implementation of Dual-Processor systems (STM32 + Raspberry Pi); Experience with LoRa, MQTT, and Cloud Telemetry.",
-    "Industrial Automation: Specialist in PLC programming and industrial-grade project implementation.",
-    "Embedded Programming: Proficient in C++, Python, and Control Algorithms for autonomous navigation.",
-    "Project Management: PGD-certified in Project Management with a focus on R&D lifecycles and laboratory optimization."
+    "Core Technical Competencies — Hardware Design: Expert in Altium Designer for multi-layer PCB architecture; proficient in 3D prototyping and mechanical chassis design. Systems Architecture: Advanced implementation of dual-processor systems (STM32 + Raspberry Pi); experience with LoRa, MQTT and cloud telemetry. Industrial Automation: specialist in PLC programming and industrial-grade project implementation. Embedded Programming: proficient in C++, Python and control algorithms for autonomous navigation. Project Management: PGD-certified with a focus on R&D lifecycles and laboratory optimization."
   ],
 
   /* ---------------- EDUCATION ---------------- */
@@ -57,7 +52,7 @@ window.portfolioData = {
       degree: "Post Graduate Diploma in Project Management (EP Level 7)",
       institution: "ABP / EduPro UK",
       year: "Batch 62",
-      detail: "Post-Graduate Core Modules: Project Management Fundamentals | Project Planning, Scheduling & Execution | Resource & Stakeholder Management | Project Feasibility, Financing & Business Case Analysis | Risk Identification, Assessment & Mitigation | Agile Methodologies | Performance Measurement & Control."
+      detail: "Core modules: Project Management Fundamentals, Planning & Execution, Resource & Stakeholder Management, Project Feasibility & Financing, Risk Management, Agile Methodologies, Performance Measurement & Control."
     }
   ],
 
@@ -210,61 +205,48 @@ window.portfolioData = {
     }
   ],
 
-  /* ---------------- PROJECTS ----------------
-     Add verified projects here.
-     Example:
-     {
-       title: "Smart Agriculture Sensor Node",
-       category: "IoT",
-       status: "Prototype Complete",
-       description: "NPK, pH and moisture sensing for precision farming.",
-       technologies: ["ESP32", "LoRa", "Sensors"],
-       image: "images/projects/agri-sensor.jpg",
-       link: ""
-     }
-  ---------------------------------------------- */
+  /* ---------------- PROJECTS ---------------- */
   projects: [
-       {
-       title: "Smart Agriculture Sensor Node",
-       contribution: "Lead Researcher",
-       status: "Prototype Complete",
-       description: "NPK, pH and moisture sensing for precision farming.",
-       technologies: ["ESP32", "LoRa", "Sensors"],
-       image: "images/projects/agri-sensor.jpg",
-       link: ""
-     },
-       {
-       title: "EMAR (Edge-Enabled Modular Agricultural Robot)",
-       contribution: "Lead Researcher",
-       status: "Prototype Complete",
-       description: "Developed a dual-processor autonomous platform for soil mapping and boundary detection tailored for smallholder farmers.",
-       technologies: ["Raspberry Pi", "LoRa", "Sensors"],
-       image: "images/projects/agri-sensor.jpg",
-       link: ""
-     },
-       {
-       title: "Smart Menstrual Hygiene Ecosystem",
-       contribution: "Lead Inventor",
-       status: "Prototype Complete",
-       description: "Engineered a solar-powered, multi-network vending machine with biometric authentication (RFID/Fingerprint) for low-infrastructure environments.",
-       technologies: ["ESP32", "Sensors"],
-       image: "images/projects/agri-sensor.jpg",
-       link: ""
-     },
-       {
-       title: "IoT-Enabled Smart Car Parking System",
-       contribution: "Co-author & PCB Designer",
-       status: "Prototype Complete",
-       description: "Our system uses ESP32, Wi-Fi, and IR sensors to provide real-time parking availability and seamless in-app payments. By integrating technology and user-centric design, we aim to reduce congestion and improve urban mobility.",
-      "This solution offers:",
-      "Real-time parking updates ",
-      "Fast, convenient payments ",
-      "Smarter resource use to ease traffic ",
-      "Proud to contribute to more sustainable, efficient cities!",
-       technologies: ["ESP32", " IR Sensors", "Servo Motor"],
-       image: "images/projects/agri-sensor.jpg",
-       link: ""
-     },
+    {
+      title: "Smart Agriculture Sensor Node",
+      category: "IoT",
+      contribution: "Lead Researcher",
+      status: "Prototype Complete",
+      description: "NPK, pH and moisture sensing for precision farming, with LoRa backhaul and low-power operation.",
+      technologies: ["ESP32", "LoRa", "NPK Sensor", "pH Sensor"],
+      image: "images/projects/agri-sensor.jpg",
+      link: ""
+    },
+    {
+      title: "EMAR — Edge-Enabled Modular Agricultural Robot",
+      category: "Robotics",
+      contribution: "Lead Researcher",
+      status: "Prototype Complete",
+      description: "Developed a dual-processor autonomous platform for soil mapping and boundary detection tailored for smallholder farmers.",
+      technologies: ["Raspberry Pi", "STM32", "LoRa", "Sensors"],
+      image: "images/projects/emar.jpg",
+      link: ""
+    },
+    {
+      title: "Smart Menstrual Hygiene Ecosystem",
+      category: "Humanitarian Tech",
+      contribution: "Lead Inventor",
+      status: "Prototype Complete",
+      description: "Engineered a solar-powered, multi-network vending machine with biometric authentication (RFID/Fingerprint) for low-infrastructure environments.",
+      technologies: ["ESP32", "Solar", "RFID", "Biometrics"],
+      image: "images/projects/menstrual-hygiene.jpg",
+      link: ""
+    },
+    {
+      title: "IoT-Enabled Smart Car Parking System",
+      category: "Smart City",
+      contribution: "Co-author & PCB Designer",
+      status: "Prototype Complete",
+      description: "Our system uses ESP32, Wi-Fi and IR sensors to provide real-time parking availability and seamless in-app payments. By integrating technology and user-centric design, we aim to reduce congestion and improve urban mobility — enabling real-time updates, fast payments and smarter resource use toward more sustainable cities.",
+      technologies: ["ESP32", "IR Sensors", "Servo Motor"],
+      image: "images/projects/smart-parking.jpg",
+      link: ""
+    }
   ],
 
   /* ---------------- RESEARCH ---------------- */
@@ -283,30 +265,22 @@ window.portfolioData = {
     }
   ],
 
-  /* ---------------- PUBLICATIONS ----------------
-     Add only published or formally accepted work.
-     Example:
-     {
-       title: "Paper Title",
-       authors: "Utchash Dev Nath",
-       venue: "Journal or Conference",
-       year: "2026",
-       link: "https://doi.org/..."
-     }
-  ------------------------------------------------- */
+  /* ---------------- PUBLICATIONS ---------------- */
   publications: [
     {
-       title: "Degradation-Aware Rule-Based Industrial EMS for PV-Battery Microgrids with Stateflow",
-       authors: "Utchash Dev Nath, Swarup Paul, Jubaer Hasan Abdullah",
-       venue: "iCONEECT 2026",
-       link: "https://iconeect2026.puc.ac.bd/"
-     },
+      title: "Degradation-Aware Rule-Based Industrial EMS for PV-Battery Microgrids with Stateflow",
+      authors: "Utchash Dev Nath, Swarup Paul, Jubaer Hasan Abdullah",
+      venue: "iCONEECT 2026",
+      year: "2026",
+      link: "https://iconeect2026.puc.ac.bd/"
+    },
     {
-       title: "IoT-Enabled Smart Car Parking Management: Revolutionizing Urban Traffic Flow",
-       authors: "Mohammed Saifuddin Munna, Adri Roy, MD. Mehedi Hasan, Utchash Dev Nath",
-       venue: "International Journal of Research Publication and Reviews",
-       link: "DOI:https://doi.org/10.55248/gengpi.5.0624.1447"
-     }
+      title: "IoT-Enabled Smart Car Parking Management: Revolutionizing Urban Traffic Flow",
+      authors: "Mohammed Saifuddin Munna, Adri Roy, MD. Mehedi Hasan, Utchash Dev Nath",
+      venue: "International Journal of Research Publication and Reviews",
+      year: "2024",
+      link: "https://doi.org/10.55248/gengpi.5.0624.1447"
+    }
   ],
 
   /* ---------------- WORKSHOPS ---------------- */
@@ -321,15 +295,7 @@ window.portfolioData = {
     }
   ],
 
-  /* ---------------- CERTIFICATES ----------------
-     Example:
-     {
-       title: "Certificate Name",
-       issuer: "Issuing Organisation",
-       year: "2026",
-       file: "documents/certificates/certificate.pdf"
-     }
-  ------------------------------------------------- */
+  /* ---------------- CERTIFICATES ---------------- */
   certificates: [],
 
   /* ---------------- CONTACTS ---------------- */
