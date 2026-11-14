@@ -293,8 +293,8 @@ window.portfolioData = {
     },
     {
       label: "ORCID",
-      value: "Add your ORCID iD",
-      url: ""
+      value: "orcid.org/0009-0007-7617-5690",
+      url: "https://orcid.org/0009-0007-7617-5690"
     }
   ]
 
