@@ -1,5 +1,5 @@
 /* ============================================================
-   PORTFOLIO ENGINE — reads content.js and renders the page
+   PORTFOLIO ENGINE — reads content.js and renders the page.
    DO NOT EDIT unless you know what you are doing.
    ============================================================ */
 
@@ -212,34 +212,23 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ---------- WORKSHOPS ---------- */
   document.getElementById("workshopList").innerHTML =
     (data.workshops || []).length
-      ? data.workshops.map(item => `
-          <article class="content-card">
-            <div class="card-meta">${escapeHTML(item.date)}</div>
-            <h3>${escapeHTML(item.title)}</h3>
-            <p><strong>${escapeHTML(item.organiser)}</strong></p>
-            <p>${escapeHTML(item.description)}</p>
-            <span class="status">${escapeHTML(item.role)}</span>
-          </article>
-        `).join("")
-      : renderEmpty("Workshop entries will be added here.");
-
-  /* ---------- CERTIFICATES ---------- */
-  document.getElementById("certificateList").innerHTML =
-    (data.certificates || []).length
-      ? data.certificates.map(item => {
-          const file = safeURL(item.file);
+      ? data.workshops.map(item => {
+          const evidence = safeURL(item.evidence);
           return `
             <article class="content-card">
+              <div class="card-meta">${escapeHTML(item.date)}</div>
               <h3>${escapeHTML(item.title)}</h3>
-              <p>${escapeHTML(item.issuer)} | ${escapeHTML(item.year)}</p>
-              ${file
-                ? `<a class="card-link" href="${escapeHTML(file)}"
+              <p><strong>${escapeHTML(item.organiser)}</strong></p>
+              <p>${escapeHTML(item.description)}</p>
+              <span class="status">${escapeHTML(item.role)}</span>
+              ${evidence
+                ? `<br><a class="card-link" href="${escapeHTML(evidence)}"
                      target="_blank" rel="noopener noreferrer">View certificate</a>`
                 : ""}
             </article>
           `;
         }).join("")
-      : renderEmpty("Certificates and supporting documents will be added here.");
+      : renderEmpty("Workshop entries will be added here.");
 
   /* ---------- CONTACT ---------- */
   document.getElementById("contactList").innerHTML =
