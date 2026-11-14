@@ -77,13 +77,12 @@ img { max-width: 100%; display: block; }
 .brand-mark {
   width: 42px;
   height: 42px;
-  display: grid;
-  place-items: center;
-  background: var(--green);
-  color: var(--gold);
-  border-radius: 8px;
-  font-size: 13px;
-  letter-spacing: 1px;
+  border-radius: 50%;           /* circular */
+  object-fit: cover;            /* fill circle */
+  object-position: center top;  /* keeps hair visible */
+  border: 2px solid var(--gold);
+  background: var(--gold-light);
+  flex-shrink: 0;
 }
 
 .brand-name { font-size: 15px; }
