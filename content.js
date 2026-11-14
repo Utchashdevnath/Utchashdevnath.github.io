@@ -48,7 +48,7 @@ about: [
   "• Embedded Programming: Proficient in C++, Python and control algorithms for autonomous navigation.",
 
   "• Project Management: PGD-certified with a focus on R&D lifecycles and laboratory optimization."
-]
+],
 
   /* ---------------- EDUCATION ---------------- */
   education: [
