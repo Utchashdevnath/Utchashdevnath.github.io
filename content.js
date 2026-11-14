@@ -5,10 +5,15 @@
   EDIT THIS FILE TO UPDATE YOUR WEBSITE.
 
   Rules:
-  - Keep property names (title, description, etc.) unchanged.
-  - Use straight quotes " and ' (not smart quotes).
+  - Keep property names unchanged.
+  - Use straight quotes " and '.
   - End each entry with a comma.
   - Save as UTF-8.
+
+  CERTIFICATES / EVIDENCE:
+  Every competition and workshop supports an optional "evidence"
+  field. Paste a PDF/image path here (e.g. "documents/...").
+  Leave "" if no evidence is uploaded yet.
   ============================================================
 */
 
@@ -32,23 +37,23 @@ window.portfolioData = {
   },
 
   /* ---------------- ABOUT ---------------- */
-about: [
-  "I am an Electrical and Electronic Engineering graduate from Premier University, Bangladesh. I completed my undergraduate degree in 2022 and secured second position in my batch.",
+  about: [
+    "I am an Electrical and Electronic Engineering graduate from Premier University, Bangladesh. I completed my undergraduate degree in 2022 and secured second position in my batch.",
 
-  "My professional work combines technical education, departmental leadership and student mentorship. I am particularly interested in connecting engineering fundamentals with practical, affordable and research-oriented projects.",
+    "My professional work combines technical education, departmental leadership and student mentorship. I am particularly interested in connecting engineering fundamentals with practical, affordable and research-oriented projects.",
 
-  "Core Technical Competencies:",
+    "Core Technical Competencies:",
 
-  "• Hardware Design: Expert in Altium Designer for multi-layer PCB architecture; proficient in 3D prototyping and mechanical chassis design.",
+    "• Hardware Design: Expert in Altium Designer for multi-layer PCB architecture; proficient in 3D prototyping and mechanical chassis design.",
 
-  "• Systems Architecture: Advanced implementation of dual-processor systems (STM32 + Raspberry Pi); experience with LoRa, MQTT and cloud telemetry.",
+    "• Systems Architecture: Advanced implementation of dual-processor systems (STM32 + Raspberry Pi); experience with LoRa, MQTT and cloud telemetry.",
 
-  "• Industrial Automation: Specialist in PLC programming and industrial-grade project implementation.",
+    "• Industrial Automation: Specialist in PLC programming and industrial-grade project implementation.",
 
-  "• Embedded Programming: Proficient in C++, Python and control algorithms for autonomous navigation.",
+    "• Embedded Programming: Proficient in C++, Python and control algorithms for autonomous navigation.",
 
-  "• Project Management: PGD-certified with a focus on R&D lifecycles and laboratory optimization."
-],
+    "• Project Management: PGD-certified with a focus on R&D lifecycles and laboratory optimization."
+  ],
 
   /* ---------------- EDUCATION ---------------- */
   education: [
@@ -121,7 +126,11 @@ about: [
     ]
   },
 
-  /* ---------------- COMPETITIONS ---------------- */
+  /* ---------------- COMPETITIONS ----------------
+     Each entry supports an optional "evidence" field.
+     Paste PDF or image path (e.g. "documents/certificates/...pdf").
+     Leave "" if no evidence uploaded.
+  ------------------------------------------------- */
   competitions: [
     {
       title: "Robo Soccer — Champion",
@@ -215,7 +224,9 @@ about: [
     }
   ],
 
-  /* ---------------- PROJECTS ---------------- */
+  /* ---------------- PROJECTS ----------------
+     Add verified projects here.
+  ---------------------------------------------- */
   projects: [
     {
       title: "Smart Agriculture Sensor Node",
@@ -293,7 +304,10 @@ about: [
     }
   ],
 
-  /* ---------------- WORKSHOPS ---------------- */
+  /* ---------------- WORKSHOPS ----------------
+     Each entry supports an optional "evidence" field
+     for a certificate or attendance proof.
+  ---------------------------------------------- */
   workshops: [
     {
       title: "Fundamentals & Core Concepts of Electronics",
@@ -301,12 +315,10 @@ about: [
       role: "Workshop Instructor",
       date: "29 August 2026",
       description:
-        "Delivered the second workshop in the Premier University Robotics Club Series 2026 at the Hazari Lane Campus."
+        "Delivered the second workshop in the Premier University Robotics Club Series 2026 at the Hazari Lane Campus.",
+      evidence: ""
     }
   ],
-
-  /* ---------------- CERTIFICATES ---------------- */
-  certificates: [],
 
   /* ---------------- CONTACTS ---------------- */
   contacts: [
