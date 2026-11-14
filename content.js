@@ -278,8 +278,8 @@ window.portfolioData = {
   contacts: [
     {
       label: "Email",
-      value: "utehashdebnath@gmail.com",
-      url: "mailto:utehashdebnath@gmail.com"
+      value: "utchashdebnath@gmail.com",
+      url: "mailto:utchashdebnath@gmail.com"
     },
     {
       label: "LinkedIn",
