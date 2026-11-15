@@ -60,14 +60,14 @@ window.portfolioData = {
     {
       degree: "BSc in Electrical & Electronic Engineering",
       institution: "Premier University, Bangladesh",
-      year: "2022",
+      /*year: "2022",*/
       detail: "Second position in batch"
     },
     {
       degree: "Post Graduate Diploma in Project Management (EP Level 7)",
       institution: "ABP / EduPro UK",
-      year: "Batch 62",
-      detail: "Core modules: Project Management Fundamentals, Planning & Execution, Resource & Stakeholder Management, Project Feasibility & Financing, Risk Management, Agile Methodologies, Performance Measurement & Control."
+     /* year: "Batch 62", */
+     /* detail: "Core modules: Project Management Fundamentals, Planning & Execution, Resource & Stakeholder Management, Project Feasibility & Financing, Risk Management, Agile Methodologies, Performance Measurement & Control." */
     }
   ],
 
@@ -90,57 +90,57 @@ window.portfolioData = {
       role: "Instructor & Head, Electrical Technology Department",
       organisation: "A K Khan UCEP Polytechnic Institute, UCEP Bangladesh",
       period: "April 2023 – Present",
-      description:
+      /*description:
         "Responsible for technical education, departmental coordination and student development within the Electrical Technology Department.",
       responsibilities: [
         "Deliver technical instruction and prepare learning materials for Electrical Technology students.",
         "Coordinate departmental academic activities, assessments and examinations.",
         "Support student progress, practical learning and technical skill development.",
         "Contribute to institutional planning and student admission activities."
-      ]
+      ]*/
     },
       {
       role: "Research & Development Engineer",
       organisation: "Robotry Bangladesh",
       period: "July 2023 – December 2025",
      /* description:
-        "",*/
+        "",
       responsibilities: [
         "Developed main control board of robotics kit for beginners.",
         "Create 3D part designs and operate 3D printers for efficient prototyping."
-      ]
+      ] */
     },
         {
       role: "Executive Engineer(Part-Time)",
       organisation: "Insights Automata",
       period: "December 2022 – March 2023",
      /* description:
-        "",*/
+        "",
       responsibilities: [
         "Designed and assembled the PCB for IoT base Energy saving System.",
         "Develop and test various IoT base products PCB."
-      ]
+      ] */
     },
        {
       role: "Guest Instructor- Department of Electrical Technology",
       organisation: "A K Khan UCEP Private Polytechnic Institute",
       period: "October 2022 – March 2023",
      /* description:
-        "",*/
+        "",
       responsibilities: [
         "Delivered lectures & workshops on assigned topics."
-      ]
+      ] */
     },
          {
       role: "Trainee Engineer - Automation Department",
       organisation: "Ulterior Engineering",
       period: "July 2021 – September 2021",
      /* description:
-        "",*/
+        "",
       responsibilities: [
         "Provided administrative staff support in Industrial Controlling and Automation.",
         "Worked with S7-1200 PLC, VFD, and HMI."
-      ]
+      ] */
     }
   ],
 
