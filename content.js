@@ -67,7 +67,7 @@ window.portfolioData = {
       degree: "Post Graduate Diploma in Project Management (EP Level 7)",
       institution: "ABP / EduPro UK",
      /* year: "Batch 62", */
-     /* detail: "Core modules: Project Management Fundamentals, Planning & Execution, Resource & Stakeholder Management, Project Feasibility & Financing, Risk Management, Agile Methodologies, Performance Measurement & Control." */
+     detail: "Core modules: Project Management Fundamentals, Planning & Execution, Resource & Stakeholder Management, Project Feasibility & Financing, Risk Management, Agile Methodologies, Performance Measurement & Control."
     }
   ],
 
@@ -150,7 +150,7 @@ window.portfolioData = {
     period: "2023 – Present",
     organisation: "A K Khan UCEP Polytechnic Institute",
     description:
-      "ARCC is a student-led robotics and coding club established in 2022 under faculty mentorship. I have been involved in guiding and developing its technical activities since joining AKKUPI in April 2023.",
+      "ARCC is a student-led robotics and coding club established in 2022, but the AKKUPI Robotics & Code Club (ARCC) experienced a period of inactivity before I joined AKKUPI in April 2023. Since then, I have contributed to reactivating the club, rebuilding its technical activities and creating opportunities for students to explore robotics, coding and practical engineering.",
     contributions: [
       "Provide technical guidance for student-led robotics and electronics projects.",
       "Mentor students in robotics, programming, embedded systems and automation.",
