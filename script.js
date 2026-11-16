@@ -76,22 +76,22 @@ document.addEventListener("DOMContentLoaded", () => {
         </ul>
       </article>
     `).join("");
-
   /* ---------- MENTORSHIP ---------- */
-  const mentor = data.mentorship;
-  document.getElementById("mentorshipContent").innerHTML = `
-    <h3>${escapeHTML(mentor.title)}</h3>
-    <div class="card-meta">
-      ${escapeHTML(mentor.organisation)} | ${escapeHTML(mentor.period)}
-    </div>
-    <p>${escapeHTML(mentor.description)}</p>
-    <h3>Mentorship Contributions</h3>
-    <ul>
-      ${(mentor.contributions || []).map(i =>
-        `<li>${escapeHTML(i)}</li>`).join("")}
-    </ul>
-    <div class="tag-list">${renderTags(mentor.focus)}</div>
-  `;
+  const mentorships = data.mentorship || [];
+  document.getElementById("mentorshipContent").innerHTML = mentorships.map(mentor => `
+    <article class="timeline-item">
+      <h3>${escapeHTML(mentor.title)}</h3>
+      <div class="timeline-meta">
+        ${escapeHTML(mentor.organisation)} | ${escapeHTML(mentor.period)}
+      </div>
+      <p>${escapeHTML(mentor.description)}</p>
+      <ul>
+        ${(mentor.contributions || []).map(i =>
+          `<li>${escapeHTML(i)}</li>`).join("")}
+      </ul>
+      <div class="tag-list" style="margin-top: 12px;">${renderTags(mentor.focus)}</div>
+    </article>
+  `).join("");
 
   /* ---------- COMPETITIONS ---------- */
   const competitionList = document.getElementById("competitionList");
