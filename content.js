@@ -145,29 +145,66 @@ window.portfolioData = {
   ],
 
   /* ---------------- MENTORSHIP ---------------- */
-  mentorship: {
-    title: "Mentor & Technical Lead — AKKUPI Robotics & Code Club (ARCC)",
-    period: "2023 – Present",
-    organisation: "A K Khan UCEP Polytechnic Institute",
-    description:
-      "ARCC is a student-led robotics and coding club established in 2022, but the AKKUPI Robotics & Code Club (ARCC) experienced a period of inactivity before I joined AKKUPI in April 2023. Since then, I have contributed to reactivating the club, rebuilding its technical activities and creating opportunities for students to explore robotics, coding and practical engineering.",
-    contributions: [
-      "Provide technical guidance for student-led robotics and electronics projects.",
-      "Mentor students in robotics, programming, embedded systems and automation.",
-      "Support competition preparation, troubleshooting and prototype development.",
-      "Encourage interdisciplinary collaboration and practical problem-solving.",
-      "Support technical workshops and student learning activities."
-    ],
-    focus: [
-      "Robo Soccer",
-      "Mini Battle Bot",
-      "Robotics",
-      "Electronics",
-      "Programming",
-      "Embedded Systems",
-      "Automation"
-    ]
-  },
+ mentorship: {
+  title: "Robotics Leadership, Mentorship & Technical Governance",
+  description: 
+    "A dedicated robotics enthusiast with a proven track record of leading university clubs, reactivating dormant organizations, and mentoring the next generation of engineers. My journey began at Premier University Robotics Club (PURC), which instilled in me the confidence to lead and the technical foundation for my career. Today, I apply that experience to foster a culture of innovation and practical engineering at AKKUPI.",
+  roles: [
+    {
+      title: "Mentor & Technical Lead",
+      organisation: "AKKUPI Robotics & Code Club (ARCC)",
+      period: "April 2023 – Present",
+      location: "A K Khan UCEP Polytechnic Institute",
+      description:
+        "The AKKUPI Robotics & Code Club (ARCC) experienced a period of inactivity before I joined AKKUPI. Since April 2023, I have spearheaded the reactivation of the club, rebuilding its technical framework and creating opportunities for students to explore robotics, coding, and practical engineering.",
+      contributions: [
+        "Reactivated a dormant club and established a sustainable technical roadmap for student activities.",
+        "Provide technical guidance and mentorship for student-led robotics and electronics projects.",
+        "Mentor students in robotics, programming, embedded systems, and automation.",
+        "Support competition preparation, troubleshooting, and prototype development.",
+        "Encourage interdisciplinary collaboration and practical problem-solving.",
+        "Facilitate technical workshops to bridge the gap between theoretical knowledge and practical application."
+      ]
+    },
+    {
+      title: "President",
+      organisation: "Premier University Robotics Club (PURC)",
+      period: "October 2021 – November 2022",
+      description:
+        "Led the club's executive committee, overseeing strategic planning, event management, and the technical development of members. This role was pivotal in shaping my leadership style and technical vision.",
+      contributions: [
+        "Directed the club's vision and managed the executive team to achieve organizational goals.",
+        "Organized large-scale robotics events, workshops, and competitions.",
+        "Mentored junior members in robot design and programming fundamentals."
+      ]
+    },
+    {
+      title: "Organizing Secretary",
+      organisation: "Premier University Robotics Club (PURC)",
+      period: "2020 – 2021",
+      description:
+        "Focused on logistics, event coordination, and member engagement to ensure the smooth operation of club activities.",
+      contributions: [
+        "Successfully coordinated logistics for club events and technical workshops.",
+        "Managed communication between members and the executive body.",
+        "Played a key role in expanding club membership and participation."
+      ]
+    }
+  ],
+  reflection: 
+    "PURC gave me the confidence and courage to believe in myself. Most of my achievements to date are a direct result of the foundation built within this organization. I am eternally grateful to PURC for shaping my path, and I strive to pass that same empowerment on to the students I mentor at ARCC.",
+  focus: [
+    "Robo Soccer",
+    "Mini Battle Bot",
+    "Robotics",
+    "Electronics",
+    "Programming",
+    "Embedded Systems",
+    "Automation",
+    "Event Management",
+    "Student Leadership"
+  ]
+},
 
   /* ---------------- COMPETITIONS ----------------
      Each entry supports an optional "evidence" field.
