@@ -234,7 +234,12 @@ window.portfolioData = {
       year: "2025",
       category: "Runner-up",
       description: "AKKUPI student team secured the runner-up position in Robo Soccer.",
-      evidence: ""
+      evidence: 
+        [
+        "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/CUSC4.0 2.jpg",
+          "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/Innovation Fair runner up.jpeg",
+          "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/c8527af9-a639-456c-856e-acbbad829999.jpg"
+          ]
     },
     {
       title: "Mini Soccer — 2nd Runner-up",
@@ -243,7 +248,12 @@ window.portfolioData = {
       year: "2025",
       category: "Runner-up",
       description: "AKKUPI student team achieved 2nd Runner-up in the Mini Soccer category.",
-      evidence: ""
+      evidence: 
+         [
+        "images/Students Achievement/National Robotics Championship-Mini Soccer — 2nd Runner-up/20250207_185342.jpg",
+          "images/Students Achievement/National Robotics Championship-Mini Soccer — 2nd Runner-up/NRC 2.jpg",
+          "images/Students Achievement/National Robotics Championship-Mini Soccer — 2nd Runner-up/NRC-2nd-Runner-Up-Mini-Soccer-Bot.jpg"
+          ]
     },
     {
       title: "Mini Battle Bot & Robo Race — Champion",
@@ -261,7 +271,12 @@ window.portfolioData = {
       year: "2024",
       category: "Champion",
       description: "AKKUPI student teams achieved Champion and 2nd Runner-up positions.",
-      evidence: ""
+      evidence:  [
+        "images/Students Achievement/Bangabandhu Innovation Fair-Robo Soccer — Champion & 2nd Runner-up/1793980866670.jpg",
+        "images/Students Achievement/Bangabandhu Innovation Fair-Robo Soccer — Champion & 2nd Runner-up/1793980865749.jpg",
+          "images/Students Achievement/Bangabandhu Innovation Fair-Robo Soccer — Champion & 2nd Runner-up/Innovation Fair runner up.jpeg",
+          "images/Students Achievement/Bangabandhu Innovation Fair-Robo Soccer — Champion & 2nd Runner-up/PUC-Innovation-Fair-Champion.jpg"
+          ]
     },
     {
       title: "Robo Soccer — Runner-up",
@@ -270,16 +285,25 @@ window.portfolioData = {
       year: "2024",
       category: "Runner-up",
       description: "ARCC student Sadekul Islam achieved the Robo Soccer Runner-up position.",
-      evidence: ""
+      evidence: [
+        "images/Students Achievement/Cumilla University IT Fest-Robo Soccer — Runner-up/Comilla-University-IT-Fest-2024-1st-Runner-Up.jpg",
+        "images/Students Achievement/Cumilla University IT Fest-Robo Soccer — Runner-up/IMG-20241115-WA0004.jpg",
+        "images/Students Achievement/Cumilla University IT Fest-Robo Soccer — Runner-up/IMG_20241115_192941.jpg"
+        ]
     },
     {
-      title: "Robo Soccer — Quarter-finalist",
-      event: "CUSS Science Carnival 3.0",
-      organiser: "University of Chittagong",
-      year: "2023",
-      category: "Finalist",
-      description: "Four AKKUPI teams participated in Robo Soccer and reached the quarter-final stage.",
-      evidence: ""
+      title: "Robo Soccer — Champion & 2nd Runner-up",
+      event: "EEE Day 3.0",
+      organiser: "Southern University",
+      year: "2026",
+      category: "Champion & 2nd Runner-up",
+      description: "Three AKKUPI teams participated in Robo Soccer and achieved the Champion & 2nd Runner-up positions.",
+      evidence: [
+        "images/Students Achievement/EEE DAY 3.0-Robo Soccer-Champion & 2nd Runner up/686252265_1658729162923075_7596060501957200067_n.jpg"'
+        "images/Students Achievement/EEE DAY 3.0-Robo Soccer-Champion & 2nd Runner up/EEE DAY 3.0 Champion.jpeg",
+        "images/Students Achievement/EEE DAY 3.0-Robo Soccer-Champion & 2nd Runner up/eee day 3.0 SUB 3rd position.jpg",
+        "images/Students Achievement/EEE DAY 3.0-Robo Soccer-Champion & 2nd Runner up/eeeday3.0.jpg"
+        ]
     },
     {
       title: "Robo Soccer — Runner-up",
@@ -288,25 +312,23 @@ window.portfolioData = {
       year: "2026",
       category: "Runner-up",
       description: "AKKUPI student team secured the Robo Soccer Runner-up position.",
-      evidence: ""
+      evidence: [
+        "images/Students Achievement/Innovesta 2026-Robo Soccer — Runner-up/IMG_0554.JPG.jpeg",
+        "images/Students Achievement/Innovesta 2026-Robo Soccer — Runner-up/IMG_0572.JPEG",
+        "images/Students Achievement/Innovesta 2026-Robo Soccer — Runner-up/IMG_0573.JPEG"
+        ]
     },
     {
-      title: "GoalBot — Champion",
+      title: "GoalBot — Champion & 2nd Runner-up",
       event: "iCONCLAVE 2026",
-      organiser: "Event details to be updated",
+      organiser: "Premier University",
       year: "2026",
-      category: "Champion",
-      description: "AKKUPI Ghost4x secured the championship.",
-      evidence: ""
-    },
-    {
-      title: "GoalBot — 2nd Runner-up",
-      event: "iCONCLAVE 2026",
-      organiser: "Event details to be updated",
-      year: "2026",
-      category: "Runner-up",
-      description: "AKKUPI Robo Rangers secured 2nd Runner-up.",
-      evidence: ""
+      category: "Champion & 2nd Runner-up",
+      description: "AKKUPI Ghost4x secured the championship & AKKUPI Robo Rangers secured 2nd Runner-up.",
+      evidence: [
+        "images/Students Achievement/iCONCLAVE 2026-GoalBot — Champion & 2nd Runner-up/825267123_1808473271281996_3136177983571731614_n.jpg",
+        "images/Students Achievement/iCONCLAVE 2026-GoalBot — Champion & 2nd Runner-up/825267710_1808473294615327_6493307651401466220_n.jpg"
+        ]
     }
   ],
 
