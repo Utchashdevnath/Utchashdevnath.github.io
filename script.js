@@ -131,7 +131,7 @@ document.getElementById("experienceList").innerHTML =
     <div class="tag-list">${renderTags(mentor.focus || [])}</div>
   `).join("");
 
-   /* ---------- COMPETITIONS ---------- */
+    /* ---------- COMPETITIONS ---------- */
   const competitionList = document.getElementById("competitionList");
   const competitions = data.competitions || [];
 
@@ -147,6 +147,30 @@ document.getElementById("experienceList").innerHTML =
         <p><strong>${escapeHTML(item.event)}</strong></p>
         <p>${escapeHTML(item.description)}</p>
         <span class="status">${escapeHTML(item.category)}</span>
+        ${renderEvidence(item.evidence)}
+      </article>
+    `).join("");
+  }
+
+  /* ---------- EVENTS ORGANISED ---------- */
+  const eventList = document.getElementById("eventList");
+  const eventsOrganised = data.eventsOrganised || [];
+
+  if (!eventsOrganised.length) {
+    eventList.innerHTML = renderEmpty("Event entries will be added here.");
+  } else {
+    eventList.innerHTML = eventsOrganised.map(item => `
+      <article class="content-card">
+        <div class="card-meta">
+          ${escapeHTML(item.year)} | ${escapeHTML(item.role || "")}
+        </div>
+        <h3>${escapeHTML(item.title)}</h3>
+        ${item.event ? `<p><strong>${escapeHTML(item.event)}</strong></p>` : ""}
+        <p>${escapeHTML(item.description || "")}</p>
+        ${item.venue ? `<p style="color:var(--muted);font-size:12px;">📍 ${escapeHTML(item.venue)}</p>` : ""}
+        ${(item.partners || []).length
+          ? `<div class="tag-list">${renderTags(item.partners)}</div>`
+          : ""}
         ${renderEvidence(item.evidence)}
       </article>
     `).join("");
