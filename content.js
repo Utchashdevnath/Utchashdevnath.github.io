@@ -299,7 +299,7 @@ window.portfolioData = {
       category: "Champion & 2nd Runner-up",
       description: "Three AKKUPI teams participated in Robo Soccer and achieved the Champion & 2nd Runner-up positions.",
       evidence: [
-        "images/Students Achievement/EEE DAY 3.0-Robo Soccer-Champion & 2nd Runner up/686252265_1658729162923075_7596060501957200067_n.jpg"'
+        "images/Students Achievement/EEE DAY 3.0-Robo Soccer-Champion & 2nd Runner up/686252265_1658729162923075_7596060501957200067_n.jpg",
         "images/Students Achievement/EEE DAY 3.0-Robo Soccer-Champion & 2nd Runner up/EEE DAY 3.0 Champion.jpeg",
         "images/Students Achievement/EEE DAY 3.0-Robo Soccer-Champion & 2nd Runner up/eee day 3.0 SUB 3rd position.jpg",
         "images/Students Achievement/EEE DAY 3.0-Robo Soccer-Champion & 2nd Runner up/eeeday3.0.jpg"
