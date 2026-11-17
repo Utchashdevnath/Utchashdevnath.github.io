@@ -220,7 +220,7 @@ window.portfolioData = {
       year: "2025",
       category: "Champion",
       description: "AKKUPI student team secured the Robo Soccer championship.",
-      evidence: "images/Students Achievement/EEE Fest 2.0- Robo Soccer — Champion/Robo-Soccer-Competition-2025-Southern-University.jpg"
+      evidence: "images/Students Achievement/EEE Fest 2.0- Robo Soccer — Champion/Robo-Soccer-Competition-2025-Southern-University.jpg, images/Students Achievement/EEE Fest 2.0- Robo Soccer — Champion/eee-fest-1.jpg"
     },
     {
       title: "Robo Soccer — Runner-up",
