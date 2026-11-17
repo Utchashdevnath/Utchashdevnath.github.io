@@ -481,33 +481,7 @@ h3 { color: var(--green); }
 
 .feature-card li { margin: 5px 0; }
 
-/* ============================================================
-   FILTERS
-   ============================================================ */
-.filter-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-bottom: 25px;
-}
 
-.filter-btn {
-  padding: 8px 15px;
-  border: 1px solid var(--border);
-  background: var(--white);
-  color: var(--green);
-  border-radius: 25px;
-  font-size: 12px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.filter-btn.active,
-.filter-btn:hover {
-  background: var(--green);
-  color: var(--white);
-  border-color: var(--green);
-}
 
 /* ============================================================
    PUBLICATIONS
