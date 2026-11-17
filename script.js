@@ -34,6 +34,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const renderEmpty = msg =>
     `<p class="empty-message">${escapeHTML(msg)}</p>`;
+     /* ---------- Evidence helpers (single string OR array) ---------- */
+  const normalizeEvidence = (e) => {
+    if (!e) return [];
+    if (Array.isArray(e)) return e.map(x => String(x || "").trim()).filter(Boolean);
+    if (typeof e === "string" && e.trim()) return [e.trim()];
+    return [];
+  };
+
+  const isImageFile = (url) => /\.(jpe?g|png|webp|gif|avif|bmp)$/i.test(url);
+
+  const renderEvidence = (evidence) => {
+    const items = normalizeEvidence(evidence).map(safeURL).filter(Boolean);
+    if (!items.length) return "";
+
+    const tiles = items.map((url, i) => {
+      if (isImageFile(url)) {
+        return `<a href="${escapeHTML(url)}" target="_blank"
+                   rel="noopener noreferrer" class="evidence-thumb"
+                   title="Open evidence ${i + 1}">
+                  <img src="${escapeHTML(url)}" alt="Evidence ${i + 1}" loading="lazy">
+                </a>`;
+      }
+      return `<a href="${escapeHTML(url)}" target="_blank"
+                 rel="noopener noreferrer" class="evidence-link">📄 Evidence ${i + 1}</a>`;
+    }).join("");
+
+    return `<div class="evidence-gallery">${tiles}</div>`;
+  };
 
   /* ---------- HERO ---------- */
   document.getElementById("heroName").textContent = data.hero.name;
@@ -119,7 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     competitionList.innerHTML = filtered.map(item => {
-      const evidence = safeURL(item.evidence);
       return `
         <article class="content-card">
           <div class="card-meta">
@@ -128,11 +155,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <h3>${escapeHTML(item.title)}</h3>
           <p><strong>${escapeHTML(item.event)}</strong></p>
           <p>${escapeHTML(item.description)}</p>
-          <span class="status">${escapeHTML(item.category)}</span>
-          ${evidence
-            ? `<br><a class="card-link" href="${escapeHTML(evidence)}"
-                 target="_blank" rel="noopener noreferrer">View evidence</a>`
-            : ""}
+                 <span class="status">${escapeHTML(item.category)}</span>
+          ${renderEvidence(item.evidence)}
         </article>
       `;
     }).join("");
@@ -213,18 +237,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("workshopList").innerHTML =
     (data.workshops || []).length
       ? data.workshops.map(item => {
-          const evidence = safeURL(item.evidence);
           return `
             <article class="content-card">
               <div class="card-meta">${escapeHTML(item.date)}</div>
               <h3>${escapeHTML(item.title)}</h3>
               <p><strong>${escapeHTML(item.organiser)}</strong></p>
               <p>${escapeHTML(item.description)}</p>
-              <span class="status">${escapeHTML(item.role)}</span>
-              ${evidence
-                ? `<br><a class="card-link" href="${escapeHTML(evidence)}"
-                     target="_blank" rel="noopener noreferrer">View certificate</a>`
-                : ""}
+                            <span class="status">${escapeHTML(item.role)}</span>
+              ${renderEvidence(item.evidence)}
             </article>
           `;
         }).join("")
