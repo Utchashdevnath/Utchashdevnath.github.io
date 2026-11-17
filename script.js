@@ -131,57 +131,26 @@ document.getElementById("experienceList").innerHTML =
     <div class="tag-list">${renderTags(mentor.focus || [])}</div>
   `).join("");
 
-  /* ---------- COMPETITIONS ---------- */
+   /* ---------- COMPETITIONS ---------- */
   const competitionList = document.getElementById("competitionList");
-  const competitionFilters = document.getElementById("competitionFilters");
   const competitions = data.competitions || [];
 
-  const categories = [
-    "All",
-    ...new Set(competitions.map(c => c.category).filter(Boolean))
-  ];
-
-  competitionFilters.innerHTML = categories.map(c => `
-    <button class="filter-btn ${c === "All" ? "active" : ""}"
-      data-category="${escapeHTML(c)}">${escapeHTML(c)}</button>
-  `).join("");
-
-  function renderCompetitions(category = "All") {
-    const filtered = category === "All"
-      ? competitions
-      : competitions.filter(c => c.category === category);
-
-    if (!filtered.length) {
-      competitionList.innerHTML = renderEmpty("No entries available.");
-      return;
-    }
-
-    competitionList.innerHTML = filtered.map(item => {
-      return `
-        <article class="content-card">
-          <div class="card-meta">
-            ${escapeHTML(item.year)} | ${escapeHTML(item.organiser)}
-          </div>
-          <h3>${escapeHTML(item.title)}</h3>
-          <p><strong>${escapeHTML(item.event)}</strong></p>
-          <p>${escapeHTML(item.description)}</p>
-                 <span class="status">${escapeHTML(item.category)}</span>
-          ${renderEvidence(item.evidence)}
-        </article>
-      `;
-    }).join("");
+  if (!competitions.length) {
+    competitionList.innerHTML = renderEmpty("No entries available.");
+  } else {
+    competitionList.innerHTML = competitions.map(item => `
+      <article class="content-card">
+        <div class="card-meta">
+          ${escapeHTML(item.year)} | ${escapeHTML(item.organiser)}
+        </div>
+        <h3>${escapeHTML(item.title)}</h3>
+        <p><strong>${escapeHTML(item.event)}</strong></p>
+        <p>${escapeHTML(item.description)}</p>
+        <span class="status">${escapeHTML(item.category)}</span>
+        ${renderEvidence(item.evidence)}
+      </article>
+    `).join("");
   }
-
-  renderCompetitions();
-
-  competitionFilters.addEventListener("click", e => {
-    const btn = e.target.closest(".filter-btn");
-    if (!btn) return;
-    competitionFilters.querySelectorAll(".filter-btn")
-      .forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    renderCompetitions(btn.dataset.category);
-  });
 
   /* ---------- PROJECTS ---------- */
   const projects = data.projects || [];
