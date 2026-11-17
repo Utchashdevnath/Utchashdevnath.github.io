@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="education-item">
         <strong>${escapeHTML(item.degree)}</strong>
         <span>${escapeHTML(item.institution)}</span>
-        <p>${escapeHTML(item.year)} • ${escapeHTML(item.detail)}</p>
+       <p>${item.year ? escapeHTML(item.year) + " • " : ""}${escapeHTML(item.detail)}</p>
       </div>
     `).join("");
 
@@ -90,35 +90,45 @@ document.addEventListener("DOMContentLoaded", () => {
     renderTags(data.interests);
 
   /* ---------- EXPERIENCE ---------- */
-  document.getElementById("experienceList").innerHTML =
-    (data.experience || []).map(item => `
-      <article class="timeline-item">
-        <h3>${escapeHTML(item.role)}</h3>
-        <div class="timeline-meta">
-          ${escapeHTML(item.organisation)} | ${escapeHTML(item.period)}
-        </div>
-        <p>${escapeHTML(item.description)}</p>
+document.getElementById("experienceList").innerHTML =
+  (data.experience || []).map(item => `
+    <article class="timeline-item">
+      <h3>${escapeHTML(item.role)}</h3>
+      <div class="timeline-meta">
+        ${escapeHTML(item.organisation)} | ${escapeHTML(item.period)}
+      </div>
+      ${item.description ? `<p>${escapeHTML(item.description)}</p>` : ""}
+      ${(item.responsibilities || []).length ? `
         <ul>
           ${(item.responsibilities || []).map(t =>
             `<li>${escapeHTML(t)}</li>`).join("")}
         </ul>
-      </article>
-    `).join("");
-  /* ---------- MENTORSHIP ---------- */
-  const mentorships = data.mentorship || [];
-  document.getElementById("mentorshipContent").innerHTML = mentorships.map(mentor => `
-    <article class="timeline-item">
-      <h3>${escapeHTML(mentor.title)}</h3>
-      <div class="timeline-meta">
-        ${escapeHTML(mentor.organisation)} | ${escapeHTML(mentor.period)}
-      </div>
-      <p>${escapeHTML(mentor.description)}</p>
+      ` : ""}
+    </article>
+  `).join("");
+  /* ---------- MENTORSHIP (supports single object OR array) ---------- */
+  const mentorshipContainer = document.getElementById("mentorshipContent");
+  const mentorItems = Array.isArray(data.mentorship)
+    ? data.mentorship
+    : (data.mentorship ? [data.mentorship] : []);
+
+  mentorshipContainer.innerHTML = mentorItems.map((mentor, idx) => `
+    ${idx > 0
+      ? '<hr style="border:0;border-top:1px solid var(--border);margin:28px 0;">'
+      : ""}
+    <h3>${escapeHTML(mentor.title)}</h3>
+    <div class="card-meta">
+      ${escapeHTML(mentor.organisation)} | ${escapeHTML(mentor.period)}
+    </div>
+    <p>${escapeHTML(mentor.description || "")}</p>
+    ${(mentor.contributions || []).length ? `
+      <h3 style="margin-top:14px;">Contributions</h3>
       <ul>
         ${(mentor.contributions || []).map(i =>
           `<li>${escapeHTML(i)}</li>`).join("")}
       </ul>
-      <div class="tag-list" style="margin-top: 12px;">${renderTags(mentor.focus)}</div>
-    </article>
+    ` : ""}
+    <div class="tag-list">${renderTags(mentor.focus || [])}</div>
   `).join("");
 
   /* ---------- COMPETITIONS ---------- */
