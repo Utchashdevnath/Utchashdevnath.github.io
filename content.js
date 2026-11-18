@@ -244,7 +244,7 @@ window.portfolioData = {
     {
       title: "Mini Soccer — 2nd Runner-up",
       event: "National Robotics Championship",
-      organiser: "BUBT",
+      organiser: "Bangladesh University of Business and Technology (BUBT)",
       year: "2025",
       category: "Runner-up",
       description: "AKKUPI student team achieved 2nd Runner-up in the Mini Soccer category.",
@@ -266,8 +266,8 @@ window.portfolioData = {
     },
     {
       title: "Robo Soccer — Champion & 2nd Runner-up",
-      event: "Bangabandhu Innovation Fair",
-      organiser: "Event details to be updated",
+      event: "Bangabandhu Innovation Fair 2024",
+      organiser: "Premier University",
       year: "2024",
       category: "Champion",
       description: "AKKUPI student teams achieved Champion and 2nd Runner-up positions.",
