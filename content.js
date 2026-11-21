@@ -490,6 +490,7 @@ window.portfolioData = {
       evidence: []
     }
   ],
+  
   /* ---------------- RESEARCH ---------------- */
   research: [
     {
@@ -505,7 +506,95 @@ window.portfolioData = {
       ]
     }
   ],
+  /* ---------------- PERSONAL ACHIEVEMENTS ----------------
+     Awards and milestones earned by you personally,
+     distinct from student team results.
+  -------------------------------------------------------- */
+  personalAchievements: [
+    {
+      title: "Champion — Line Following Robot Competition",
+      event: "1st Chittagong Science Carnival (CUSC)",
+      organiser: "Chittagong University Scientific Society",
+      year: "2022",
+      category: "Champion",
+      description: "First place in the line following robot competition — designed and built an autonomous robot using IR sensor arrays, differential drive, and embedded control logic. Achieved fastest completion time across heats.",
+      evidence: []
+    },
+    {
+      title: "Elected President — Premier University Robotics Club",
+      event: "PURC 2021–2022 Session",
+      organiser: "Premier University, Chattogram",
+      year: "2021",
+      category: "Leadership",
+      description: "Elected by peers to lead the executive committee — oversaw club strategy, event management, and technical development of members.",
+      evidence: []
+    }
+  ],
 
+  /* ---------------- TRAINING & CERTIFICATIONS ----------------
+     Curated list: only courses directly supporting embedded
+     systems, IoT, PCB design, industrial automation, or research.
+     Order matters — most valuable first.
+     Full list lives in the academic CV.
+  ------------------------------------------------------------ */
+  certifications: [
+    {
+      title: "Building Arduino Robots and Devices",
+      provider: "Coursera · Moscow Institute of Physics and Technology",
+      year: "2020",
+      detail: "Project-based course on embedded robotics and sensor integration",
+      link: ""
+    },
+    {
+      title: "AI Expert Certification (18 hours)",
+      provider: "Udemy",
+      year: "2020",
+      detail: "Machine learning fundamentals and applied AI, graded",
+      link: ""
+    },
+    {
+      title: "Professional Industrial Automation Design",
+      provider: "Ulterior Engineering",
+      year: "2021",
+      detail: "PLC programming, industrial control, HMI integration",
+      link: ""
+    },
+    {
+      title: "Electrical Industrial Automation & Instrumentation",
+      provider: "Chattogram Trust PLC Training Center",
+      year: "2021",
+      detail: "Hands-on PLC, VFD and instrumentation training",
+      link: ""
+    },
+    {
+      title: "Industrial Technology on Electrical Engineering & Instrumentation",
+      provider: "Training Institute for Chemical Industries (TICI), Narsingdi",
+      year: "2021",
+      detail: "Industrial automation and instrumentation fundamentals",
+      link: ""
+    },
+    {
+      title: "Professional Solar PV Design (PVsyst & SketchUp)",
+      provider: "Ulterior Engineering",
+      year: "2021",
+      detail: "Solar PV system modelling and design",
+      link: ""
+    },
+    {
+      title: "AutoCAD Professional Master Course",
+      provider: "CADD Corner",
+      year: "2021",
+      detail: "2D/3D CAD drafting for engineering design",
+      link: ""
+    },
+    {
+      title: "Post Graduate Diploma in Project Management (EP Level 7)",
+      provider: "ABP / EduPro UK",
+      year: "2024",
+      detail: "Strategic project management, risk management, resource planning",
+      link: ""
+    }
+  ],
   /* ---------------- PUBLICATIONS ---------------- */
   publications: [
     {
