@@ -203,7 +203,42 @@ document.getElementById("experienceList").innerHTML =
         `;
       }).join("")
     : renderEmpty("Project entries will be added after verification.");
+  /* ---------- HARDWARE & DESIGN ---------- */
+  const designList = document.getElementById("designList");
+  const designs = data.hardwareDesign || [];
 
+  if (!designs.length) {
+    designList.innerHTML = renderEmpty("Design entries will be added here.");
+  } else {
+    designList.innerHTML = designs.map(item => {
+      const image = safeURL(item.image);
+      const link = safeURL(item.link);
+
+      return `
+        <article class="content-card">
+          ${image
+            ? `<img class="card-image" src="${escapeHTML(image)}"
+                 alt="${escapeHTML(item.title)}" loading="lazy">`
+            : ""}
+          <div class="card-meta">${escapeHTML(item.type || "")}</div>
+          <h3>${escapeHTML(item.title)}</h3>
+          <p>${escapeHTML(item.description || "")}</p>
+          ${item.role
+            ? `<p><strong>Role:</strong> ${escapeHTML(item.role)}</p>` : ""}
+          ${(item.tools || []).length
+            ? `<p><strong>Tools:</strong> ${escapeHTML((item.tools || []).join(", "))}</p>`
+            : ""}
+          ${item.outcome
+            ? `<span class="status">${escapeHTML(item.outcome)}</span>` : ""}
+          ${link
+            ? `<br><a class="card-link" href="${escapeHTML(link)}"
+                 target="_blank" rel="noopener noreferrer">View files</a>`
+            : ""}
+          ${renderEvidence(item.evidence)}
+        </article>
+      `;
+    }).join("");
+  }
   /* ---------- RESEARCH ---------- */
   document.getElementById("researchList").innerHTML =
     (data.research || []).length
