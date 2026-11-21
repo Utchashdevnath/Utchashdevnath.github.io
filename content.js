@@ -11,9 +11,12 @@
   - Save as UTF-8.
 
   CERTIFICATES / EVIDENCE:
-  Every competition and workshop supports an optional "evidence"
-  field. Paste a PDF/image path here (e.g. "documents/...").
-  Leave "" if no evidence is uploaded yet.
+  Every competition, workshop and design entry supports an
+  optional "evidence" field — string or array.
+  Leave empty if not uploaded.
+
+  HARDWARE & DESIGN:
+  Add PCB / CAD work under hardwareDesign[].
   ============================================================
 */
 
@@ -428,7 +431,48 @@ window.portfolioData = {
       link: ""
     }
   ],
+  /* ---------------- HARDWARE & DESIGN ----------------
+     PCB layouts, mechanical designs and 3D printed work.
 
+     Fields:
+       title       (required)
+       type        (required: "PCB Design", "3D CAD Design", "Enclosure", etc.)
+       role        (optional: what you did)
+       description (required: 1–2 sentences)
+       tools       (optional: array of tool names)
+       outcome     (optional: short result — shows as a pill)
+       image       (optional: card thumbnail)
+       link        (optional: repo, datasheet, gallery)
+       evidence    (optional: array of PDF/image paths)
+  ------------------------------------------------- */
+  hardwareDesign: [
+    {
+      title: "Main Control Board — Beginner Robotics Kit",
+      type: "PCB Design",
+      role: "Schematic design and PCB layout",
+      description:
+        "Designed the primary control board that powers an entry-level robotics kit — integrating motor drivers, sensor headers, and a microcontroller with an onboard regulator for stable power delivery.",
+      tools: ["Altium Designer", "3D printing"],
+      outcome: "Fabricated and tested; deployed in beginner robotics kits.",
+      image: "images/design/control-board.jpg",
+      link: "",
+      evidence: [
+        "documents/design/control-board-schematic.pdf"
+      ]
+    },
+    {
+      title: "Robotics Kit Chassis / Enclosure",
+      type: "3D CAD Design",
+      role: "Designed and 3D printed",
+      description:
+        "Modelled a modular chassis for the beginner kit — designed to protect the control board while keeping sensor and motor mounts accessible for student assembly.",
+      tools: ["Fusion 360", "3D printer"],
+      outcome: "Prototype iteration complete.",
+      image: "images/design/chassis.jpg",
+      link: "",
+      evidence: []
+    }
+  ],
   /* ---------------- RESEARCH ---------------- */
   research: [
     {
