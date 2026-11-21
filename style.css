@@ -52,11 +52,13 @@ img { max-width: 100%; display: block; }
 }
 
 .nav-container {
+  width: min(1360px, 96%);   /* ← wider than the default 1120px */
+  margin: auto;              /* ← keep it centered */
   min-height: 76px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 25px;
+  gap: 16px;                 /* ← tighter brand↔nav gap */
 }
 
 .brand {
@@ -84,15 +86,16 @@ img { max-width: 100%; display: block; }
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
+  gap: 12px;              /* ← tighter */
+  flex-wrap: nowrap;      /* ← never wrap */
 }
 
 .main-nav a {
-  font-size: 13px;
+  font-size: 12px;         /* ← nav-only; body stays at 14px */
   font-weight: 600;
   color: var(--muted);
   transition: color 0.2s;
+  white-space: nowrap;     /* ← each link stays on one line */
 }
 
 .main-nav a:hover,
@@ -660,14 +663,10 @@ h3 { color: var(--green); }
 /* ============================================================
    RESPONSIVE
    ============================================================ */
-@media (max-width: 950px) {
-  .main-nav { gap: 11px; }
-  .main-nav a { font-size: 11px; }
-  .card-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 760px) {
+@media (max-width: 1200px) {
+  /* Switch to hamburger before the 10-item nav can overflow */
   .nav-container { min-height: 68px; }
+
   .menu-toggle { display: block; }
 
   .main-nav {
@@ -683,19 +682,25 @@ h3 { color: var(--green); }
     background: var(--white);
     border-bottom: 1px solid var(--border);
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    flex-wrap: wrap;
   }
 
   .main-nav.open { display: flex; }
 
   .main-nav a {
     padding: 11px 0;
-    font-size: 13px;
+    font-size: 14px;
+    white-space: normal;
   }
 
   .main-nav .nav-contact {
     text-align: center;
     margin-top: 8px;
   }
+
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
 
   .hero { padding: 65px 0; }
 
