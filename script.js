@@ -236,22 +236,60 @@ document.getElementById("experienceList").innerHTML =
         }).join("")
       : renderEmpty("No publications have been added yet.");
 
-  /* ---------- WORKSHOPS ---------- */
-  document.getElementById("workshopList").innerHTML =
-    (data.workshops || []).length
-      ? data.workshops.map(item => {
-          return `
-            <article class="content-card">
-              <div class="card-meta">${escapeHTML(item.date)}</div>
-              <h3>${escapeHTML(item.title)}</h3>
-              <p><strong>${escapeHTML(item.organiser)}</strong></p>
-              <p>${escapeHTML(item.description)}</p>
-                            <span class="status">${escapeHTML(item.role)}</span>
-              ${renderEvidence(item.evidence)}
-            </article>
-          `;
-        }).join("")
-      : renderEmpty("Workshop entries will be added here.");
+    /* ---------- WORKSHOPS (grouped by type) ---------- */
+  const workshops = data.workshops || [];
+
+  const organiserWorkshops = workshops.filter(
+    w => (w.type || "").toLowerCase() === "organiser"
+  );
+
+  const instructorWorkshops = workshops.filter(
+    w => (w.type || "").toLowerCase() !== "organiser"
+  );
+
+  /* Shared card builder */
+  const buildWorkshopCard = (item) => {
+    const isOrganiser = (item.type || "").toLowerCase() === "organiser";
+    const badgeClass = isOrganiser ? "badge-organiser" : "badge-instructor";
+    const badgeLabel = isOrganiser ? "Organiser" : (item.role || "Instructor");
+
+    return `
+      <article class="content-card">
+        <div class="card-meta">
+          <span class="badge-type ${badgeClass}">${escapeHTML(badgeLabel)}</span>
+          &nbsp;·&nbsp; ${escapeHTML(item.date || "")}
+        </div>
+        <h3>${escapeHTML(item.title)}</h3>
+        <p><strong>${escapeHTML(item.organiser || "")}</strong></p>
+        <p>${escapeHTML(item.description || "")}</p>
+        ${item.venue
+          ? `<p class="card-fact">📍 ${escapeHTML(item.venue)}</p>` : ""}
+        ${item.audience
+          ? `<p class="card-fact">👥 ${escapeHTML(item.audience)}</p>` : ""}
+        ${renderEvidence(item.evidence)}
+      </article>
+    `;
+  };
+
+  /* Render Organiser group */
+  const organiserContainer = document.getElementById("workshopOrganiserList");
+  if (!organiserWorkshops.length) {
+    organiserContainer.innerHTML = renderEmpty(
+      "Workshop organiser entries will be added here."
+    );
+  } else {
+    organiserContainer.innerHTML = organiserWorkshops.map(buildWorkshopCard).join("");
+  }
+
+  /* Render Instructor group */
+  const instructorContainer = document.getElementById("workshopInstructorList");
+  if (!instructorWorkshops.length) {
+    instructorContainer.innerHTML = renderEmpty(
+      "Workshop instructor entries will be added here."
+    );
+  } else {
+    instructorContainer.innerHTML = instructorWorkshops.map(buildWorkshopCard).join("");
+  }
 
   /* ---------- CONTACT ---------- */
   document.getElementById("contactList").innerHTML =
