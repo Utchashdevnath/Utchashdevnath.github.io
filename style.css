@@ -912,3 +912,230 @@ h3 { color: var(--green); }
   }
   .stat:last-child { border-bottom: 0; }
 }
+/* ============================================================
+   EVIDENCE GALLERY — 3 visible + See more
+   ============================================================ */
+.evidence-gallery { margin-top: 14px; }
+
+.evidence-row,
+.evidence-more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.evidence-more {
+  margin-top: 8px;
+}
+
+.evidence-more.collapsed { display: none; }
+
+.evidence-thumb {
+  width: 68px;
+  height: 68px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid var(--border);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.evidence-thumb:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.evidence-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.evidence-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--gold-light);
+  color: var(--green);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.evidence-link:hover { background: var(--gold); }
+
+.evidence-toggle {
+  margin-top: 10px;
+  background: var(--gold-light);
+  color: var(--green);
+  border: 0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.evidence-toggle:hover { background: var(--gold); }
+
+/* ============================================================
+   TRAINING & CERTIFICATIONS — compact list
+   ============================================================ */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.cert-item {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 20px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  transition: box-shadow 0.2s;
+}
+
+.cert-item:hover {
+  box-shadow: var(--shadow);
+}
+
+.cert-year {
+  font-weight: 800;
+  color: var(--gold-text);
+  font-size: 14px;
+}
+
+.cert-body h4 {
+  color: var(--green);
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.cert-provider {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.cert-link {
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--gold);
+  white-space: nowrap;
+}
+
+.cert-link:hover {
+  color: var(--gold-text);
+}
+
+@media (max-width: 520px) {
+  .cert-item {
+    grid-template-columns: 60px 1fr;
+    gap: 10px;
+  }
+  .cert-link {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+}
+
+/* ============================================================
+   LEADERSHIP SUMMARY BAND
+   ============================================================ */
+.leadership-summary {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+  margin-bottom: 40px;
+}
+
+.leadership-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  text-align: center;
+}
+
+.stat {
+  padding: 12px 8px;
+  border-right: 1px solid var(--border);
+}
+
+.stat:last-child { border-right: 0; }
+
+.stat strong {
+  display: block;
+  font-size: 30px;
+  color: var(--green);
+  font-family: "Playfair Display", serif;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.stat span {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.leadership-period {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+  color: var(--gold-text);
+  font-weight: 600;
+}
+
+@media (max-width: 520px) {
+  .stat {
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 14px;
+  }
+  .stat:last-child { border-bottom: 0; }
+}
+
+/* ============================================================
+   WORKSHOP GROUPS (organiser / instructor)
+   ============================================================ */
+.workshop-group { margin-bottom: 55px; }
+.workshop-group:last-child { margin-bottom: 0; }
+
+.workshop-group-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  font-size: 20px;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.badge-type {
+  display: inline-block;
+  padding: 4px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.badge-organiser  { background: var(--gold); color: var(--green); }
+.badge-instructor { background: var(--green); color: var(--gold); }
+
+.card-fact {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 6px 0 !important;
+  line-height: 1.5;
+}
