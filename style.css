@@ -6,7 +6,8 @@
 :root {
   --green: #1a3b29;
   --green-light: #2a5b49;
-  --gold: #d5a51e;
+  --gold: #d5a51e;              /* ← keep for backgrounds/borders */
+  --gold-text: #7a5c0c;         /* ← ADD: darker gold for text on light */
   --gold-light: #f3e5b4;
   --white: #ffffff;
   --background: #f8f9fa;
@@ -88,7 +89,7 @@ img { max-width: 100%; display: block; }
 }
 
 .main-nav a {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--muted);
   transition: color 0.2s;
@@ -140,7 +141,7 @@ img { max-width: 100%; display: block; }
 }
 
 .eyebrow {
-  color: var(--gold);
+  color: var(--gold-text);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 2px;
@@ -182,7 +183,7 @@ img { max-width: 100%; display: block; }
   color: var(--green);
   border-radius: 30px;
   padding: 6px 12px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
 }
 
@@ -373,8 +374,8 @@ h3 { color: var(--green); }
 .timeline-item h3 { font-size: 17px; }
 
 .timeline-meta {
-  color: var(--gold);
-  font-size: 12px;
+  color: var(--gold-text);
+  font-size: 13px;
   font-weight: 700;
   margin: 5px 0 10px;
 }
@@ -382,7 +383,7 @@ h3 { color: var(--green); }
 .timeline-item p,
 .timeline-item li {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .timeline-item ul {
@@ -420,13 +421,13 @@ h3 { color: var(--green); }
 
 .content-card p {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   margin: 9px 0;
 }
 
 .card-meta {
-  color: var(--gold);
-  font-size: 11px;
+  color: var(--gold-text);
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.5px;
 }
@@ -455,7 +456,7 @@ h3 { color: var(--green); }
   border-radius: 20px;
   background: var(--gold-light);
   color: var(--green);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   margin-top: 8px;
 }
@@ -543,7 +544,7 @@ h3 { color: var(--green); }
   display: inline-block;
   padding: 4px 11px;
   border-radius: 20px;
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.4px;
   text-transform: uppercase;
@@ -610,7 +611,7 @@ h3 { color: var(--green); }
   background: #11291d;
   color: #d2ddd5;
   padding: 22px 0;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .footer-content {
@@ -778,4 +779,131 @@ h3 { color: var(--green); }
 
 .evidence-link:hover {
   background: var(--gold);
+}
+/* ============================================================
+   LEADERSHIP SUMMARY BAND
+   ============================================================ */
+.leadership-summary {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+  margin-bottom: 40px;
+}
+
+.leadership-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  text-align: center;
+}
+
+.stat {
+  padding: 12px 8px;
+  border-right: 1px solid var(--border);
+}
+
+.stat:last-child { border-right: 0; }
+
+.stat strong {
+  display: block;
+  font-size: 30px;
+  color: var(--green);
+  font-family: "Playfair Display", serif;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.stat span {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.leadership-period {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+  color: var(--gold-text);
+  font-weight: 600;
+}
+
+/* ============================================================
+   WORKSHOP GROUPS (Organiser / Instructor)
+   ============================================================ */
+.workshop-group { margin-bottom: 55px; }
+.workshop-group:last-child { margin-bottom: 0; }
+
+.workshop-group-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  font-size: 20px;
+  color: var(--green);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.badge-organiser {
+  background: var(--gold);
+  color: var(--green);
+}
+
+.badge-instructor {
+  background: var(--green);
+  color: var(--gold);
+}
+
+.card-fact {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 6px 0 !important;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   NOSCRIPT SUMMARY (visible only when JS is off)
+   ============================================================ */
+.noscript-summary {
+  background: var(--background);
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.noscript-summary h2 {
+  color: var(--green);
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.noscript-summary h3 {
+  color: var(--green);
+  font-size: 18px;
+  margin: 24px 0 8px;
+}
+
+.noscript-summary p,
+.noscript-summary li {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.noscript-summary ul {
+  padding-left: 22px;
+  margin-bottom: 8px;
+}
+
+/* Responsive for stats */
+@media (max-width: 520px) {
+  .stat {
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 14px;
+  }
+  .stat:last-child { border-bottom: 0; }
 }
