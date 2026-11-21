@@ -256,15 +256,6 @@ window.portfolioData = {
           ]
     },
     {
-      title: "Mini Battle Bot & Robo Race — Champion",
-      event: "AKKUPI × RoboStorm 2025",
-      organiser: "AKKUPI Robotics & Code Club",
-      year: "2025",
-      category: "Champion",
-      description: "AKKUPI teams secured championship positions in Mini Battle Bot and Robo Race at the intra-institute event.",
-      evidence: ""
-    },
-    {
       title: "Robo Soccer — Champion & 2nd Runner-up",
       event: "Bangabandhu Innovation Fair 2024",
       organiser: "Premier University",
@@ -331,7 +322,67 @@ window.portfolioData = {
         ]
     }
   ],
-
+  /* ---------------- EVENTS ORGANISED ----------------
+     Technical events, competitions and workshops you organised.
+     Each entry supports an optional "evidence" field (string or array).
+  ------------------------------------------------- */
+  eventsOrganised: [
+    {
+      title: "AKKUPI × RoboStorm 2025",
+      role: "Lead Organiser",
+      event: "Intra-institute robotics competition",
+      year: "2025",
+      description:
+        "Conceived and led the institute's flagship robotics event featuring Mini Battle Bot, Robo Race and Robo Soccer categories. Coordinated venue, judging, and team registration for participating student teams.",
+      venue: "A K Khan UCEP Polytechnic Institute, Chattogram",
+      partners: ["AKKUPI Robotics & Code Club", "A K Khan UCEP Polytechnic Institute"],
+      evidence: []
+    },
+    {
+      title: "Digital Bangladesh Day 2021",
+      role: "Co-Organiser",
+      event: "Technical event — Premier University Department of EEE",
+      year: "2021",
+      description:
+        "Co-organised the university-level technical event alongside the Premier University Robotics Club team, coordinating logistics and participant engagement.",
+      venue: "Premier University, Chattogram",
+      partners: ["Premier University Robotics Club"],
+      evidence: []
+    },
+    {
+      title: "Chittagong Science Carnival 2.0",
+      role: "Co-Organiser",
+      event: "Regional science carnival",
+      year: "2022",
+      description:
+        "Supported event operations and robotics showcases at the regional science carnival hosted by the Chittagong University Scientific Society.",
+      venue: "University of Chittagong",
+      partners: ["Chittagong University Scientific Society"],
+      evidence: []
+    },
+    {
+      title: "Junior Science Carnival 2022",
+      role: "Co-Organiser & Robotics Session Lead",
+      event: "Youth science carnival",
+      year: "2022",
+      description:
+        "Co-organised the event and delivered a hands-on robotics session for school-level participants, introducing foundational electronics and robotics concepts.",
+      venue: "Chattogram",
+      partners: ["White Board Science Club"],
+      evidence: []
+    },
+    {
+      title: "Fundamentals & Core Concepts of Electronics",
+      role: "Workshop Instructor & Organiser",
+      event: "Premier University Robotics Club Series 2026",
+      year: "2026",
+      description:
+        "Planned and delivered the second workshop in the PURC Series 2026, covering electronics fundamentals for beginners.",
+      venue: "Hazari Lane Campus, Chattogram",
+      partners: ["Premier University Robotics Club"],
+      evidence: []
+    }
+  ],
   /* ---------------- PROJECTS ----------------
      Add verified projects here.
   ---------------------------------------------- */
