@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Professional engineering, research, teaching and robotics mentorship portfolio of Utchash Dev Nath.">
+  <meta name="description" content="Professional engineering, research, teaching and robotics mentorship portfolio of Utchash Dev Nath — Head of Electrical Technology Department, Chattogram.">
   <meta name="author" content="Utchash Dev Nath">
-  <meta name="keywords" content="engineering portfolio, research, robotics, IoT, embedded systems, Bangladesh, Chattogram, PhD applicant">
+  <meta name="keywords" content="Utchash Dev Nath, electrical engineer, embedded systems, IoT, robotics mentor, Bangladesh, Chattogram, research portfolio">
   <meta name="theme-color" content="#1a3b29">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Utchash Dev Nath | Engineering & Research Portfolio">
-  <meta property="og:description" content="Engineering • Education • Research portfolio from Chattogram, Bangladesh.">
+  <meta property="og:description" content="Electrical Engineer | Embedded Systems & IoT | Technical Educator. Based in Chattogram, Bangladesh.">
   <meta property="og:url" content="https://utchashdevnath.github.io/">
   <meta property="og:image" content="https://utchashdevnath.github.io/images/profile/profile.jpg">
 
@@ -23,6 +23,26 @@
 
   <link rel="icon" href="images/profile/profile.jpg" type="image/jpeg">
   <link rel="stylesheet" href="style.css">
+
+  <!-- STRUCTURED DATA (Search engines read this without JS) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Utchash Dev Nath",
+    "jobTitle": "Head of Electrical Technology Department",
+    "worksFor": { "@type": "Organization", "name": "A K Khan UCEP Polytechnic Institute" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Premier University" },
+    "url": "https://utchashdevnath.github.io/",
+    "email": "utchashdebnath@gmail.com",
+    "sameAs": [
+      "https://linkedin.com/in/utchash-dev-nath-9706831b2",
+      "https://github.com/Utchashdevnath",
+      "https://orcid.org/0009-0007-7617-5690"
+    ],
+    "knowsAbout": ["Embedded Systems", "Robotics", "IoT", "Edge-AI", "Frugal Innovation", "Technical Education"]
+  }
+  </script>
 </head>
 
 <body>
@@ -36,20 +56,19 @@
         <span class="brand-name">Utchash Dev Nath</span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle"
-        aria-label="Toggle navigation" aria-expanded="false">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
       <nav class="main-nav" id="mainNav">
         <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research &amp; Publications</a>
+        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#mentorship">Mentorship</a>
-        <a href="#competitions">Achievements</a>
-<a href="#events">Events</a>
-<a href="#projects">Projects</a>
-<a href="#design">Design</a>
-<a href="#research">Research</a>
+        <a href="#competitions">Student Achievements</a>
+        <a href="#events">Events</a>
         <a href="#workshops">Workshops</a>
         <a href="#contact" class="nav-contact">Contact</a>
       </nav>
@@ -57,78 +76,138 @@
     </div>
   </header>
 
+  <!-- ===================== NOSCRIPT SEO SUMMARY ===================== -->
+  <noscript>
+    <div class="noscript-summary">
+      <div class="container">
+        <h2>Utchash Dev Nath</h2>
+        <p><strong>Electrical Engineer | Embedded Systems &amp; IoT | Technical Educator</strong></p>
+        <p>Chattogram, Bangladesh</p>
+
+        <p>Head of the Electrical Technology Department at A K Khan UCEP Polytechnic Institute. Associate Member of the Institution of Engineers, Bangladesh (IEB, A29264). Holder of a Post Graduate Diploma in Project Management (EP Level 7).</p>
+
+        <h3>Education</h3>
+        <ul>
+          <li>BSc in Electrical &amp; Electronic Engineering — Premier University (2022), second in batch</li>
+          <li>Post Graduate Diploma in Project Management (EP Level 7) — ABP / EduPro UK</li>
+          <li>Associate Member, Institution of Engineers, Bangladesh (IEB A29264)</li>
+        </ul>
+
+        <h3>Research &amp; Publications</h3>
+        <p>Research focus: fuzzy logic-based MPPT for photovoltaic systems, embedded systems, edge-AI, and low-cost IoT for development contexts.</p>
+        <p>Recent publication: "Degradation-Aware Rule-Based Industrial EMS for PV-Battery Microgrids with Stateflow" — iCONEECT 2026.</p>
+
+        <h3>Student Achievements (Under My Mentorship)</h3>
+        <p>11 podium finishes across 9 competitive events (2023–2026) — mentored through the AKKUPI Robotics &amp; Code Club. These are student team results, not personal awards.</p>
+
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: utchashdebnath@gmail.com</li>
+          <li>LinkedIn: linkedin.com/in/utchash-dev-nath</li>
+          <li>GitHub: github.com/Utchashdevnath</li>
+          <li>ORCID: orcid.org/0009-0007-7617-5690</li>
+        </ul>
+        <p><em>Enable JavaScript to view the full interactive portfolio.</em></p>
+      </div>
+    </div>
+  </noscript>
+
   <main>
 
     <!-- ===================== HERO ===================== -->
     <section class="hero" id="home">
       <div class="container hero-grid">
-
         <div class="hero-content">
           <p class="eyebrow">ENGINEERING • EDUCATION • RESEARCH</p>
-
           <h1 id="heroName">Utchash Dev Nath</h1>
-
-          <h2 id="heroTitle">
-            Electrical Engineer | Technical Educator | Robotics Mentor
-          </h2>
-
+          <h2 id="heroTitle">Electrical Engineer | Embedded Systems &amp; IoT | Technical Educator</h2>
           <p id="heroIntro" class="hero-description"></p>
-
           <div class="hero-tags" id="heroTags"></div>
-
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary">Explore My Work</a>
-            <a href="documents/academic-cv.pdf"
-               class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-              Download Academic CV
-            </a>
+            <a href="documents/academic-cv.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Download Academic CV</a>
           </div>
         </div>
 
         <div class="hero-visual">
           <div class="profile-frame">
-            <img id="profileImage"
-              src="images/profile/profile.jpg"
-              alt="Portrait of Utchash Dev Nath"
+            <img id="profileImage" src="images/profile/profile.jpg" alt="Portrait of Utchash Dev Nath"
               onerror="this.style.display='none'; document.getElementById('profileFallback').style.display='flex';">
-
-            <div id="profileFallback" class="profile-fallback">
-              UDN
-            </div>
+            <div id="profileFallback" class="profile-fallback">UDN</div>
           </div>
-
           <div class="location-label">
             <span class="location-dot"></span>
             <span id="heroLocation">Chattogram, Bangladesh</span>
           </div>
         </div>
-
       </div>
     </section>
 
     <!-- ===================== ABOUT ===================== -->
     <section class="section" id="about">
       <div class="container">
-
         <div class="section-heading">
           <p class="eyebrow">INTRODUCTION</p>
           <h2>About Me</h2>
         </div>
-
         <div class="about-layout">
           <div class="about-text" id="aboutText"></div>
-
           <div class="info-card">
-            <h3>Academic Background</h3>
-            <div id="educationList"></div>
+            <h3>Areas of Interest</h3>
+            <div id="interestList" class="tag-list"></div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="skills-area">
-          <h3>Areas of Interest</h3>
-          <div id="interestList" class="tag-list"></div>
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section section-light" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">ACADEMIC BACKGROUND</p>
+          <h2>Education &amp; Qualifications</h2>
         </div>
+        <div id="educationList" class="card-grid"></div>
+      </div>
+    </section>
 
+    <!-- ===================== RESEARCH & PUBLICATIONS ===================== -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">RESEARCH DIRECTION</p>
+          <h2>Research &amp; Publications</h2>
+        </div>
+        <div id="researchList" class="card-grid"></div>
+        <div class="publication-area">
+          <h3>Publications</h3>
+          <div id="publicationList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section section-light" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">ENGINEERING PRACTICE</p>
+          <h2>Projects &amp; Prototypes</h2>
+        </div>
+        <div id="projectList" class="card-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== HARDWARE & DESIGN ===================== -->
+    <section class="section" id="design">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">HARDWARE &amp; DESIGN</p>
+          <h2>PCB &amp; 3D Design Work</h2>
+          <p class="section-description">
+            Selected PCB layouts and mechanical designs from my engineering projects and R&amp;D work.
+          </p>
+        </div>
+        <div id="designList" class="card-grid"></div>
       </div>
     </section>
 
@@ -143,97 +222,64 @@
       </div>
     </section>
 
-    <!-- ===================== MENTORSHIP ===================== -->
+    <!-- ===================== MENTORSHIP (with Leadership summary) ===================== -->
     <section class="section" id="mentorship">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Volunteering Activities</p>
-          <h2>Robotics & Technical Mentorship</h2>
+          <p class="eyebrow">LEADERSHIP &amp; MENTORSHIP</p>
+          <h2>Leadership &amp; Mentorship</h2>
+          <p class="section-description">
+            Roles that connect technical education, student development
+            and hands-on research culture in Chattogram.
+          </p>
         </div>
-       <div id="mentorshipContent" class="timeline"></div>
+
+        <div class="leadership-summary" id="leadershipSummary"></div>
+        <div id="mentorshipContent"></div>
       </div>
     </section>
 
-    <!-- ===================== COMPETITIONS ===================== -->
+    <!-- ===================== STUDENT ACHIEVEMENTS ===================== -->
     <section class="section section-light" id="competitions">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">STUDENT ACHIEVEMENTS</p>
-          <h2>Competition Archive</h2>
+          <h2>Student Achievements (Under My Mentorship)</h2>
+          <p class="section-description" id="achievementSummary">11 podium finishes across 9 competitive events (2023–2026).</p>
           <p class="section-description">
-            Selected achievements of student teams mentored through
-            the AKKUPI Robotics & Code Club.
+            Results achieved by student teams I have mentored through the
+            AKKUPI Robotics &amp; Code Club — not personal awards.
           </p>
         </div>
         <div id="competitionList" class="card-grid"></div>
       </div>
     </section>
+
     <!-- ===================== EVENTS ORGANISED ===================== -->
     <section class="section" id="events">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">LEADERSHIP & ORGANISING</p>
+          <p class="eyebrow">LEADERSHIP &amp; ORGANISING</p>
           <h2>Events Organised</h2>
           <p class="section-description">
-            Technical events, competitions and workshops I have organised or
-            co-organised through club leadership and volunteer roles.
+            Technical events, competitions and workshops I have organised or co-organised through club leadership and volunteer roles.
           </p>
         </div>
         <div id="eventList" class="card-grid"></div>
       </div>
     </section>
-    <!-- ===================== PROJECTS ===================== -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">ENGINEERING PRACTICE</p>
-          <h2>Projects & Prototypes</h2>
-        </div>
-        <div id="projectList" class="card-grid"></div>
-      </div>
-    </section>
-    <!-- ===================== HARDWARE & DESIGN ===================== -->
-    <section class="section section-light" id="design">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">HARDWARE & DESIGN</p>
-          <h2>PCB & 3D Design Work</h2>
-          <p class="section-description">
-            Selected PCB layouts and mechanical designs from my
-            engineering projects and R&D work.
-          </p>
-        </div>
-        <div id="designList" class="card-grid"></div>
-      </div>
-    </section>
-    <!-- ===================== RESEARCH ===================== -->
-    <section class="section section-light" id="research">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">RESEARCH DIRECTION</p>
-          <h2>Research Interests & Development</h2>
-        </div>
-        <div id="researchList" class="card-grid"></div>
-        <div class="publication-area">
-          <h3>Publications</h3>
-          <div id="publicationList"></div>
-        </div>
-      </div>
-    </section>
 
-        <!-- ===================== WORKSHOPS ===================== -->
-    <section class="section" id="workshops">
+    <!-- ===================== WORKSHOPS ===================== -->
+    <section class="section section-light" id="workshops">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">KNOWLEDGE SHARING</p>
-          <h2>Workshops & Training</h2>
+          <h2>Workshops &amp; Training</h2>
           <p class="section-description">
-            Technical workshops I have organised and delivered through
-            club leadership, academic roles and volunteer activities.
+            Technical workshops I have organised and delivered through club leadership, academic roles and volunteer activities.
           </p>
         </div>
 
-        <!-- Workshops as Organiser -->
         <div class="workshop-group">
           <h3 class="workshop-group-title">
             <span class="badge-type badge-organiser">Organiser</span>
@@ -242,7 +288,6 @@
           <div id="workshopOrganiserList" class="card-grid"></div>
         </div>
 
-        <!-- Workshops as Instructor -->
         <div class="workshop-group">
           <h3 class="workshop-group-title">
             <span class="badge-type badge-instructor">Instructor</span>
@@ -258,10 +303,9 @@
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">GET IN TOUCH</p>
-          <h2>Contact & Professional Links</h2>
+          <h2>Contact &amp; Professional Links</h2>
           <p class="section-description">
-            For academic collaboration, research opportunities,
-            technical discussions and professional enquiries.
+            For academic collaboration, research opportunities, technical discussions and professional enquiries.
           </p>
         </div>
         <div id="contactList" class="contact-grid"></div>
