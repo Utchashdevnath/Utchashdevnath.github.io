@@ -75,14 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("aboutText").innerHTML =
     (data.about || []).map(p => `<p>${escapeHTML(p)}</p>`).join("");
 
-  /* ---------- EDUCATION ---------- */
+  /* ---------- EDUCATION (card grid) ---------- */
   document.getElementById("educationList").innerHTML =
     (data.education || []).map(item => `
-      <div class="education-item">
-        <strong>${escapeHTML(item.degree)}</strong>
-        <span>${escapeHTML(item.institution)}</span>
-       <p>${item.year ? escapeHTML(item.year) + " • " : ""}${escapeHTML(item.detail)}</p>
-      </div>
+      <article class="content-card">
+        ${item.year ? `<div class="card-meta">${escapeHTML(item.year)}</div>` : ""}
+        <h3>${escapeHTML(item.degree)}</h3>
+        <p><strong>${escapeHTML(item.institution)}</strong></p>
+        ${item.detail ? `<p>${escapeHTML(item.detail)}</p>` : ""}
+      </article>
     `).join("");
 
   /* ---------- INTERESTS ---------- */
@@ -130,14 +131,40 @@ document.getElementById("experienceList").innerHTML =
     ` : ""}
     <div class="tag-list">${renderTags(mentor.focus || [])}</div>
   `).join("");
-
+  /* ---------- LEADERSHIP SUMMARY BAND ---------- */
+  const ls = data.leadershipSummary || {};
+  const lsEl = document.getElementById("leadershipSummary");
+  if (lsEl) {
+    const stat = (val, label) => `
+      <div class="stat">
+        <strong>${escapeHTML(String(val ?? "—"))}</strong>
+        <span>${escapeHTML(label)}</span>
+      </div>
+    `;
+    lsEl.innerHTML = `
+      <div class="leadership-stats">
+        ${stat(ls.studentsMentored, "Students mentored")}
+        ${stat(ls.eventsOrganised, "Events organised")}
+        ${stat(ls.workshopsDelivered, "Workshops delivered")}
+        ${stat(ls.podiumFinishes, "Podium finishes")}
+      </div>
+      ${ls.period
+        ? `<p class="leadership-period">${escapeHTML(ls.period)}</p>` : ""}
+    `;
+  }
     /* ---------- COMPETITIONS ---------- */
   const competitionList = document.getElementById("competitionList");
   const competitions = data.competitions || [];
 
   if (!competitions.length) {
     competitionList.innerHTML = renderEmpty("No entries available.");
-  } else {
+  } 
+    /* ---------- STUDENT ACHIEVEMENT SUMMARY ---------- */
+  const achSumEl = document.getElementById("achievementSummary");
+  if (achSumEl && data.studentAchievementSummary) {
+    achSumEl.textContent = data.studentAchievementSummary;
+  }
+  else {
     competitionList.innerHTML = competitions.map(item => `
       <article class="content-card">
         <div class="card-meta">
