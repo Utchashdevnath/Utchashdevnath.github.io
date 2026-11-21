@@ -481,7 +481,16 @@ h3 { color: var(--green); }
 
 .feature-card li { margin: 5px 0; }
 
-
+/* Distinct style for design type badges */
+#designList .card-meta {
+  display: inline-block;
+  background: var(--gold-light);
+  color: var(--green);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  margin-bottom: 8px;
+}
 
 /* ============================================================
    PUBLICATIONS
