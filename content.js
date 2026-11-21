@@ -23,11 +23,11 @@
 window.portfolioData = {
 
   /* ---------------- HERO ---------------- */
-  hero: {
+    hero: {
     name: "Utchash Dev Nath",
-    title: "Embedded Systems Architect & Robotics Researcher | Electrical Engineer | IoT & Robotics Mentor | PGD in Project Management",
+    title: "Electrical Engineer | Embedded Systems & IoT | Technical Educator",
     intro:
-      "A multidisciplinary engineer and academic leader with 4+ years of experience in Embedded Systems, Robotics and IoT. Currently serving as the Head of Department (Electrical) at a leading polytechnic institute, combining high-level administrative leadership with hands-on R&D. Proven track record in Frugal Innovation — designing high-tech, low-cost solutions for agricultural and social infrastructure in developing-world contexts. Associate Member of the Institution of Engineers, Bangladesh (IEB) and holder of a Postgraduate Diploma in Project Management.",
+      "Electrical and Electronic Engineering graduate and technical educator with 4+ years of experience in embedded systems, robotics and IoT. Currently Head of the Electrical Technology Department at A K Khan UCEP Polytechnic Institute, combining administrative leadership with hands-on R&D. Associate Member of the Institution of Engineers, Bangladesh (IEB, A29264) and holder of a Post Graduate Diploma in Project Management.",
     location: "Chattogram, Bangladesh",
     tags: [
       "Embedded Systems",
@@ -38,7 +38,24 @@ window.portfolioData = {
       "Applied Research"
     ]
   },
+  /* ---------------- LEADERSHIP SUMMARY ----------------
+     Numbers shown at the top of the Mentorship section.
+     Update these only when verified.
+  ------------------------------------------------------ */
+  leadershipSummary: {
+    studentsMentored: "50+",   // ← update with your real count
+    eventsOrganised: 4,
+    workshopsDelivered: 2,
+    podiumFinishes: 11,
+    period: "2023–2026"
+  },
 
+  /* ---------------- STUDENT ACHIEVEMENT SUMMARY ----------------
+     Short honest line shown above the competition cards.
+     Should be a factual, verifiable statement.
+  -------------------------------------------------------------- */
+  studentAchievementSummary:
+    "11 podium finishes across 9 competitive events (2023–2026), achieved by student teams under my mentorship.",
   /* ---------------- ABOUT ---------------- */
   about: [
     "I am an Electrical and Electronic Engineering graduate from Premier University, Bangladesh. I completed my undergraduate degree in 2022.",
@@ -523,9 +540,7 @@ window.portfolioData = {
        audience    (optional: e.g. "Undergraduate students")
        evidence    (optional: string or array of PDF/image paths)
   ------------------------------------------------- */
-  workshops: [
-
-    /* ---------- AS ORGANISER ---------- */
+   workshops: [
     {
       type: "Organiser",
       title: "Workshop Series: Electronics Fundamentals for Beginners",
@@ -533,13 +548,10 @@ window.portfolioData = {
       role: "Lead Organiser",
       date: "August 2026",
       venue: "Hazari Lane Campus, Chattogram",
-      description:
-        "Planned and coordinated the second instalment of the PURC Series 2026 — managed logistics, invitations, and participant communication. Technical delivery led by invited instructors.",
+      description: "Planned and coordinated the second instalment of the PURC Series 2026 — managed logistics, invitations and participant communication. Technical delivery led by invited instructors.",
       audience: "Undergraduate students new to electronics",
       evidence: []
     },
-
-    /* ---------- AS INSTRUCTOR ---------- */
     {
       type: "Instructor",
       title: "Fundamentals & Core Concepts of Electronics",
@@ -547,14 +559,54 @@ window.portfolioData = {
       role: "Workshop Instructor",
       date: "29 August 2026",
       venue: "Hazari Lane Campus, Chattogram",
-      description:
-        "Designed and delivered the technical content — covering basic electronics theory, breadboard prototyping, and hands-on circuit building for first-time learners.",
+      description: "Designed and delivered the technical content — covering basic electronics theory, breadboard prototyping and hands-on circuit building for first-time learners.",
       audience: "Undergraduate students",
       evidence: []
     }
-
   ],
-
+  /* ---------------- EVENTS ORGANISED ---------------- */
+  eventsOrganised: [
+    {
+      title: "AKKUPI × RoboStorm 2025",
+      role: "Lead Organiser",
+      event: "Intra-institute robotics competition",
+      year: "2025",
+      venue: "A K Khan UCEP Polytechnic Institute, Chattogram",
+      description: "Conceived and led the institute's flagship robotics event with Mini Battle Bot, Robo Race and Robo Soccer categories. Coordinated venue, judging and team registration.",
+      partners: ["AKKUPI Robotics & Code Club"],
+      evidence: []
+    },
+    {
+      title: "Digital Bangladesh Day 2021",
+      role: "Co-Organiser",
+      event: "Technical event — Department of EEE",
+      year: "2021",
+      venue: "Premier University, Chattogram",
+      description: "Co-organised the university-level technical event alongside the Premier University Robotics Club team, coordinating logistics and participant engagement.",
+      partners: ["Premier University Robotics Club"],
+      evidence: []
+    },
+    {
+      title: "Chittagong Science Carnival 2.0",
+      role: "Co-Organiser",
+      event: "Regional science carnival",
+      year: "2022",
+      venue: "University of Chittagong",
+      description: "Supported event operations and robotics showcases at the regional science carnival hosted by the Chittagong University Scientific Society.",
+      partners: ["Chittagong University Scientific Society"],
+      evidence: []
+    },
+    {
+      title: "Junior Science Carnival 2022",
+      role: "Co-Organiser & Robotics Session Lead",
+      event: "Youth science carnival",
+      year: "2022",
+      venue: "Chattogram",
+      description: "Co-organised the event and delivered a hands-on robotics session for school-level participants, introducing foundational electronics and robotics concepts.",
+      partners: ["White Board Science Club"],
+      evidence: []
+    }
+  ],
   /* ---------------- CONTACTS ---------------- */
   contacts: [
     {
