@@ -338,26 +338,26 @@ window.portfolioData = {
       partners: ["AKKUPI Robotics & Code Club", "A K Khan UCEP Polytechnic Institute"],
       evidence: []
     },
-    {
-      title: "Digital Bangladesh Day 2021",
-      role: "Co-Organiser",
-      event: "Technical event — Premier University Department of EEE",
-      year: "2021",
+        {
+      title: "AKKUPI × RoboStorm 2025",
+      role: "Lead Organiser",
+      event: "Intra-institute robotics competition",
+      year: "2025",
       description:
-        "Co-organised the university-level technical event alongside the Premier University Robotics Club team, coordinating logistics and participant engagement.",
-      venue: "Premier University, Chattogram",
-      partners: ["Premier University Robotics Club"],
+        "Conceived and led the institute's flagship robotics event featuring Mini Battle Bot, Robo Race and Robo Soccer categories. Coordinated venue, judging, and team registration for participating student teams.",
+      venue: "A K Khan UCEP Polytechnic Institute, Chattogram",
+      partners: ["AKKUPI Robotics & Code Club", "A K Khan UCEP Polytechnic Institute"],
       evidence: []
     },
-    {
-      title: "Chittagong Science Carnival 2.0",
-      role: "Co-Organiser",
-      event: "Regional science carnival",
-      year: "2022",
+        {
+      title: "AKKUPI × RoboStorm 2025",
+      role: "Lead Organiser",
+      event: "Intra-institute robotics competition",
+      year: "2025",
       description:
-        "Supported event operations and robotics showcases at the regional science carnival hosted by the Chittagong University Scientific Society.",
-      venue: "University of Chittagong",
-      partners: ["Chittagong University Scientific Society"],
+        "Conceived and led the institute's flagship robotics event featuring Mini Battle Bot, Robo Race and Robo Soccer categories. Coordinated venue, judging, and team registration for participating student teams.",
+      venue: "A K Khan UCEP Polytechnic Institute, Chattogram",
+      partners: ["AKKUPI Robotics & Code Club", "A K Khan UCEP Polytechnic Institute"],
       evidence: []
     },
     {
@@ -371,14 +371,14 @@ window.portfolioData = {
       partners: ["White Board Science Club"],
       evidence: []
     },
-    {
-      title: "Fundamentals & Core Concepts of Electronics",
-      role: "Workshop Instructor & Organiser",
-      event: "Premier University Robotics Club Series 2026",
-      year: "2026",
+   {
+      title: "Digital Bangladesh Day 2021",
+      role: "Co-Organiser",
+      event: "Technical event — Premier University Department of EEE",
+      year: "2021",
       description:
-        "Planned and delivered the second workshop in the PURC Series 2026, covering electronics fundamentals for beginners.",
-      venue: "Hazari Lane Campus, Chattogram",
+        "Co-organised the university-level technical event alongside the Premier University Robotics Club team, coordinating logistics and participant engagement.",
+      venue: "Premier University, Chattogram",
       partners: ["Premier University Robotics Club"],
       evidence: []
     }
