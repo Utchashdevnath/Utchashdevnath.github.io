@@ -463,20 +463,52 @@ window.portfolioData = {
     }
   ],
 
-  /* ---------------- WORKSHOPS ----------------
-     Each entry supports an optional "evidence" field
-     for a certificate or attendance proof.
-  ---------------------------------------------- */
+    /* ---------------- WORKSHOPS ----------------
+     Two categories:
+       type: "Organiser"  → you planned/coordinated the workshop
+       type: "Instructor" → you designed and delivered the content
+
+     Fields:
+       title       (required)
+       type        (required: "Organiser" or "Instructor")
+       organiser   (required: the body that hosted it)
+       role        (optional: e.g. "Lead Organiser", "Workshop Instructor")
+       date        (required)
+       venue       (optional)
+       description (required)
+       audience    (optional: e.g. "Undergraduate students")
+       evidence    (optional: string or array of PDF/image paths)
+  ------------------------------------------------- */
   workshops: [
+
+    /* ---------- AS ORGANISER ---------- */
     {
+      type: "Organiser",
+      title: "Workshop Series: Electronics Fundamentals for Beginners",
+      organiser: "Premier University Robotics Club",
+      role: "Lead Organiser",
+      date: "August 2026",
+      venue: "Hazari Lane Campus, Chattogram",
+      description:
+        "Planned and coordinated the second instalment of the PURC Series 2026 — managed logistics, invitations, and participant communication. Technical delivery led by invited instructors.",
+      audience: "Undergraduate students new to electronics",
+      evidence: []
+    },
+
+    /* ---------- AS INSTRUCTOR ---------- */
+    {
+      type: "Instructor",
       title: "Fundamentals & Core Concepts of Electronics",
       organiser: "Premier University Robotics Club",
       role: "Workshop Instructor",
       date: "29 August 2026",
+      venue: "Hazari Lane Campus, Chattogram",
       description:
-        "Delivered the second workshop in the Premier University Robotics Club Series 2026 at the Hazari Lane Campus.",
-      evidence: ""
+        "Designed and delivered the technical content — covering basic electronics theory, breadboard prototyping, and hands-on circuit building for first-time learners.",
+      audience: "Undergraduate students",
+      evidence: []
     }
+
   ],
 
   /* ---------------- CONTACTS ---------------- */
