@@ -1139,3 +1139,53 @@ h3 { color: var(--green); }
   margin: 6px 0 !important;
   line-height: 1.5;
 }
+
+/* ============================================================
+   PROJECT GALLERY — larger project photos (3 + See more)
+   ============================================================ */
+.project-gallery {
+  margin-top: 16px;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+.project-gallery-row,
+.project-gallery-more {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.project-gallery-more { margin-top: 8px; }
+.project-gallery-more.collapsed { display: none; }
+
+.project-photo {
+  display: block;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid var(--border);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.project-photo:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.project-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-gallery-toggle {
+  margin-top: 10px;
+}
+
+@media (max-width: 520px) {
+  .project-gallery-row,
+  .project-gallery-more {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
