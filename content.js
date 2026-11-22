@@ -80,13 +80,13 @@ window.portfolioData = {
     {
       degree: "BSc in Electrical & Electronic Engineering",
       institution: "Premier University, Bangladesh",
-      /*year: "2022",*/
+      year: "2022",
       detail: "Second position in batch"
     },
     {
       degree: "Post Graduate Diploma in Project Management (EP Level 7)",
       institution: "ABP / EduPro UK",
-     /* year: "Batch 62", */
+     year: "Batch 62",
      detail: "Core modules: Project Management Fundamentals, Planning & Execution, Resource & Stakeholder Management, Project Feasibility & Financing, Risk Management, Agile Methodologies, Performance Measurement & Control."
     }
   ],
