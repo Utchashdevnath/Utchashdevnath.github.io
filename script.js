@@ -283,6 +283,36 @@ document.addEventListener("DOMContentLoaded", () => {
       ? projects.map(item => {
           const image = safeURL(item.image);
           const link = safeURL(item.link);
+
+          /* Normalize gallery — single string or array */
+          const galleryItems = normalizeEvidence(item.gallery).map(safeURL).filter(Boolean);
+          const firstThree = galleryItems.slice(0, 3);
+          const rest = galleryItems.slice(3);
+
+          const galleryHTML = galleryItems.length ? `
+            <div class="project-gallery">
+              <div class="project-gallery-row">
+                ${firstThree.map((url, i) =>
+                  `<a href="${escapeHTML(url)}" target="_blank"
+                     rel="noopener noreferrer" class="project-photo"
+                     title="Open photo ${i + 1}">
+                    <img src="${escapeHTML(url)}" alt="${escapeHTML(item.title)} — photo ${i + 1}" loading="lazy">
+                  </a>`).join("")}
+              </div>
+              ${rest.length ? `
+                <div class="project-gallery-more collapsed">
+                  ${rest.map((url, i) =>
+                    `<a href="${escapeHTML(url)}" target="_blank"
+                       rel="noopener noreferrer" class="project-photo">
+                      <img src="${escapeHTML(url)}" alt="${escapeHTML(item.title)} — photo ${i + 4}" loading="lazy">
+                    </a>`).join("")}
+                </div>
+                <button type="button" class="evidence-toggle project-gallery-toggle"
+                  data-count="${rest.length}">+${rest.length} more photos</button>
+              ` : ""}
+            </div>
+          ` : "";
+
           return `
             <article class="content-card">
               ${image ? `<img class="card-image" src="${escapeHTML(image)}"
@@ -296,6 +326,7 @@ document.addEventListener("DOMContentLoaded", () => {
               ${item.status ? `<span class="status">${escapeHTML(item.status)}</span>` : ""}
               ${link ? `<br><a class="card-link" href="${escapeHTML(link)}"
                    target="_blank" rel="noopener noreferrer">Explore project</a>` : ""}
+              ${galleryHTML}
               ${renderEvidence(item.evidence)}
             </article>`;
         }).join("")
