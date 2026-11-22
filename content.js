@@ -425,8 +425,7 @@ window.portfolioData = {
       description: "Developed a dual-processor autonomous platform for soil mapping and boundary detection tailored for smallholder farmers.",
       technologies: ["Raspberry Pi", "STM32", "LoRa", "Sensors"],
       image: "images/Project/Agriculture Robot/IMG20260121164750.jpg",
-      link: "images/Project/Agriculture%20Robot/IMG-20260120-WA0004.jpg",
-      "images/Project/Agriculture%20Robot/IMG-20260119-WA0017.jpg"
+      link: ""
     },
     {
       title: "Smart Menstrual Hygiene Ecosystem",
