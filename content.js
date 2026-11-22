@@ -257,7 +257,6 @@ window.portfolioData = {
       evidence: 
         [
         "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/CUSC4.0 2.jpg",
-          "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/Innovation Fair runner up.jpeg",
           "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/c8527af9-a639-456c-856e-acbbad829999.jpg"
           ]
     },
@@ -424,8 +423,9 @@ window.portfolioData = {
       status: "Prototype Complete",
       description: "Developed a dual-processor autonomous platform for soil mapping and boundary detection tailored for smallholder farmers.",
       technologies: ["Raspberry Pi", "STM32", "LoRa", "Sensors"],
-      image: "images/projects/emar.jpg",
-      link: ""
+      image: "images/Project/Agriculture Robot/IMG20260121164750.jpg",
+      link: "images/Project/Agriculture%20Robot/IMG-20260120-WA0004.jpg",
+      "images/Project/Agriculture%20Robot/IMG-20260119-WA0017.jpg"
     },
     {
       title: "Smart Menstrual Hygiene Ecosystem",
