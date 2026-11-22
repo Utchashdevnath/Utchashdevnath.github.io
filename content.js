@@ -407,16 +407,35 @@ window.portfolioData = {
      Add verified projects here.
   ---------------------------------------------- */
   projects: [
-    {
-      title: "Smart Agriculture Sensor Node",
-      category: "IoT",
-      contribution: "Lead Researcher",
-      status: "Prototype Complete",
-      description: "NPK, pH and moisture sensing for precision farming, with LoRa backhaul and low-power operation.",
-      technologies: ["ESP32", "LoRa", "NPK Sensor", "pH Sensor"],
-      image: "images/projects/agri-sensor.jpg",
-      link: ""
-    },
+   {
+  title: "Smart Agriculture Sensor Node",
+  category: "IoT",
+  contribution: "Lead Researcher",
+  status: "Prototype Complete",
+  description: "NPK, pH and moisture sensing for precision farming, with LoRa backhaul and low-power operation.",
+  technologies: ["ESP32", "LoRa", "NPK Sensor", "pH Sensor"],
+
+  /* Single card thumbnail — any valid path works */
+  image: "images/projects/agri-sensor-main.jpg",
+
+  /* External link — single URL only (GitHub, video, datasheet) */
+  link: "https://github.com/Utchashdevnath/agri-sensor",
+
+  /* Multiple project photos — array of paths */
+  gallery: [
+    "images/projects/agri-sensor-1.jpg",
+    "images/projects/agri-sensor-2.jpg",
+    "images/projects/agri-sensor-3.jpg",
+    "images/projects/agri-sensor-4.jpg",
+    "images/projects/agri-sensor-5.jpg"
+  ],
+
+  /* Small proof thumbnails — PDFs, schematics, certificates */
+  evidence: [
+    "documents/projects/agri-sensor-schematic.pdf",
+    "documents/projects/agri-sensor-testing-report.pdf"
+  ]
+}
     {
       title: "EMAR — Edge-Enabled Modular Agricultural Robot",
       category: "Robotics",
