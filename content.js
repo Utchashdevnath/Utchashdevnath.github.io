@@ -257,6 +257,7 @@ window.portfolioData = {
       evidence: 
         [
         "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/CUSC4.0 2.jpg",
+          "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/CUSC4.0.jpeg",
           "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/c8527af9-a639-456c-856e-acbbad829999.jpg"
           ]
     },
