@@ -303,7 +303,7 @@ window.portfolioData = {
       description: "NPK, pH and moisture sensing for precision farming, with LoRa backhaul and low-power operation.",
       technologies: ["ESP32", "LoRa", "NPK Sensor", "pH Sensor"],
       image: "images/projects/agri-sensor-main.jpg",
-      link: "https://github.com/Utchashdevnath/agri-sensor",
+     /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
         "images/projects/agri-sensor-1.jpg",
         "images/projects/agri-sensor-2.jpg",
@@ -315,38 +315,50 @@ window.portfolioData = {
         "documents/projects/agri-sensor-schematic.pdf",
         "documents/projects/agri-sensor-testing-report.pdf"
       ]
-    },                                  /* ← ✅ COMMA ADDED */
-    {
+    }, 
+        {
       title: "EMAR — Edge-Enabled Modular Agricultural Robot",
       category: "Robotics",
       contribution: "Lead Researcher",
       status: "Prototype Complete",
       description: "Developed a dual-processor autonomous platform for soil mapping and boundary detection tailored for smallholder farmers.",
       technologies: ["Raspberry Pi", "STM32", "LoRa", "Sensors"],
-      image: "images/projects/agriculture-robot/IMG20260121164750.jpg",
-      link: ""
-    },
-    {
+      image: "images/projects/agri-sensor-main.jpg",
+     /* link: "https://github.com/Utchashdevnath/agri-sensor", */
+      gallery: [
+        "images/projects/agri-sensor-1.jpg",
+        "images/projects/agri-sensor-2.jpg",
+        "images/projects/agri-sensor-3.jpg",
+        "images/projects/agri-sensor-4.jpg",
+        "images/projects/agri-sensor-5.jpg"
+      ],
+      evidence: [
+        "documents/projects/agri-sensor-schematic.pdf",
+        "documents/projects/agri-sensor-testing-report.pdf"
+      ]
+    },  
+      {
       title: "Smart Menstrual Hygiene Ecosystem",
       category: "Humanitarian Tech",
       contribution: "Lead Inventor",
       status: "Prototype Complete",
       description: "Engineered a solar-powered, multi-network vending machine with biometric authentication (RFID/Fingerprint) for low-infrastructure environments.",
       technologies: ["ESP32", "Solar", "RFID", "Biometrics"],
-      image: "images/projects/menstrual-hygiene.jpg",
-      link: ""
-    },
-    {
-      title: "IoT-Enabled Smart Car Parking System",
-      category: "Smart City",
-      contribution: "Co-author & PCB Designer",
-      status: "Prototype Complete",
-      description: "Our system uses ESP32, Wi-Fi and IR sensors to provide real-time parking availability and seamless in-app payments. By integrating technology and user-centric design, we aim to reduce congestion and improve urban mobility — enabling real-time updates, fast payments and smarter resource use toward more sustainable cities.",
-      technologies: ["ESP32", "IR Sensors", "Servo Motor"],
-      image: "images/projects/smart-parking.jpg",
-      link: ""
-    }
-  ],
+      image: "images/projects/agri-sensor-main.jpg",
+     /* link: "https://github.com/Utchashdevnath/agri-sensor", */
+      gallery: [
+        "images/projects/agri-sensor-1.jpg",
+        "images/projects/agri-sensor-2.jpg",
+        "images/projects/agri-sensor-3.jpg",
+        "images/projects/agri-sensor-4.jpg",
+        "images/projects/agri-sensor-5.jpg"
+      ],
+      evidence: [
+        "documents/projects/agri-sensor-schematic.pdf",
+        "documents/projects/agri-sensor-testing-report.pdf"
+      ]
+    } 
+  ]
 
   /* ---------------- HARDWARE & DESIGN ---------------- */
   hardwareDesign: [
