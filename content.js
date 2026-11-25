@@ -323,19 +323,22 @@ window.portfolioData = {
       status: "Prototype Complete",
       description: "Developed a dual-processor autonomous platform for soil mapping and boundary detection tailored for smallholder farmers.",
       technologies: ["Raspberry Pi", "STM32", "LoRa", "Sensors"],
-      image: "images/projects/agri-sensor-main.jpg",
+      image: "images/Project/Agriculture Robot/IMG20260121164750.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
-        "images/projects/agri-sensor-1.jpg",
-        "images/projects/agri-sensor-2.jpg",
-        "images/projects/agri-sensor-3.jpg",
-        "images/projects/agri-sensor-4.jpg",
-        "images/projects/agri-sensor-5.jpg"
+        "images/Project/Agriculture Robot/IMG-20260120-WA0004.jpg",
+        "images/Project/Agriculture Robot/IMG-20260119-WA0017.jpg",
+        "images/Project/Agriculture Robot/IMG-20260118-WA0009.jpg",
+        "images/Project/Agriculture Robot/IMG-20251231-WA0018.jpg",
+        "images/Project/Agriculture Robot/IMG-20251231-WA0012.jpg",
+        "images/Project/Agriculture Robot/IMG-20251229-WA0006.jpg",
+        "images/Project/Agriculture Robot/IMG-20251218-WA0001.jpg",
+        "images/Project/Agriculture Robot/IMG-20251223-WA0006.jpg"
       ],
-      evidence: [
+      /*evidence: [
         "documents/projects/agri-sensor-schematic.pdf",
         "documents/projects/agri-sensor-testing-report.pdf"
-      ]
+      ] */
     },  
       {
       title: "Smart Menstrual Hygiene Ecosystem",
