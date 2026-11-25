@@ -9,21 +9,13 @@
   - Use straight quotes " and '.
   - End each entry with a comma.
   - Save as UTF-8.
-
-  CERTIFICATES / EVIDENCE:
-  Every competition, workshop and design entry supports an
-  optional "evidence" field — string or array.
-  Leave empty if not uploaded.
-
-  HARDWARE & DESIGN:
-  Add PCB / CAD work under hardwareDesign[].
   ============================================================
 */
 
 window.portfolioData = {
 
   /* ---------------- HERO ---------------- */
-    hero: {
+  hero: {
     name: "Utchash Dev Nath",
     title: "Electrical Engineer | Embedded Systems & IoT | Technical Educator",
     intro:
@@ -38,24 +30,20 @@ window.portfolioData = {
       "Applied Research"
     ]
   },
-  /* ---------------- LEADERSHIP SUMMARY ----------------
-     Numbers shown at the top of the Mentorship section.
-     Update these only when verified.
-  ------------------------------------------------------ */
+
+  /* ---------------- LEADERSHIP SUMMARY ---------------- */
   leadershipSummary: {
-    studentsMentored: "50+",   // ← update with your real count
+    studentsMentored: "50+",
     eventsOrganised: 4,
     workshopsDelivered: 2,
     podiumFinishes: 11,
     period: "2023–2026"
   },
 
-  /* ---------------- STUDENT ACHIEVEMENT SUMMARY ----------------
-     Short honest line shown above the competition cards.
-     Should be a factual, verifiable statement.
-  -------------------------------------------------------------- */
+  /* ---------------- STUDENT ACHIEVEMENT SUMMARY ---------------- */
   studentAchievementSummary:
     "11 podium finishes across 9 competitive events (2023–2026), achieved by student teams under my mentorship.",
+
   /* ---------------- ABOUT ---------------- */
   about: [
     "I am an Electrical and Electronic Engineering graduate from Premier University, Bangladesh. I completed my undergraduate degree in 2022.",
@@ -86,8 +74,8 @@ window.portfolioData = {
     {
       degree: "Post Graduate Diploma in Project Management (EP Level 7)",
       institution: "ABP / EduPro UK",
-     year: "Batch 62",
-     detail: "Core modules: Project Management Fundamentals, Planning & Execution, Resource & Stakeholder Management, Project Feasibility & Financing, Risk Management, Agile Methodologies, Performance Measurement & Control."
+      year: "Batch 62",
+      detail: "Core modules: Project Management Fundamentals, Planning & Execution, Resource & Stakeholder Management, Project Feasibility & Financing, Risk Management, Agile Methodologies, Performance Measurement & Control."
     }
   ],
 
@@ -109,129 +97,94 @@ window.portfolioData = {
     {
       role: "Instructor & Head, Electrical Technology Department",
       organisation: "A K Khan UCEP Polytechnic Institute, UCEP Bangladesh",
-      period: "April 2023 – Present",
-      /*description:
-        "Responsible for technical education, departmental coordination and student development within the Electrical Technology Department.",
-      responsibilities: [
-        "Deliver technical instruction and prepare learning materials for Electrical Technology students.",
-        "Coordinate departmental academic activities, assessments and examinations.",
-        "Support student progress, practical learning and technical skill development.",
-        "Contribute to institutional planning and student admission activities."
-      ]*/
+      period: "April 2023 – Present"
     },
-      {
+    {
       role: "Research & Development Engineer",
       organisation: "Robotry Bangladesh",
-      period: "July 2023 – December 2025",
-     /* description:
-        "",
-      responsibilities: [
-        "Developed main control board of robotics kit for beginners.",
-        "Create 3D part designs and operate 3D printers for efficient prototyping."
-      ] */
+      period: "July 2023 – December 2025"
     },
-        {
-      role: "Executive Engineer(Part-Time)",
+    {
+      role: "Executive Engineer (Part-Time)",
       organisation: "Insights Automata",
-      period: "December 2022 – March 2023",
-     /* description:
-        "",
-      responsibilities: [
-        "Designed and assembled the PCB for IoT base Energy saving System.",
-        "Develop and test various IoT base products PCB."
-      ] */
+      period: "December 2022 – March 2023"
     },
-       {
-      role: "Guest Instructor- Department of Electrical Technology",
+    {
+      role: "Guest Instructor — Department of Electrical Technology",
       organisation: "A K Khan UCEP Private Polytechnic Institute",
-      period: "October 2022 – March 2023",
-     /* description:
-        "",
-      responsibilities: [
-        "Delivered lectures & workshops on assigned topics."
-      ] */
+      period: "October 2022 – March 2023"
     },
-         {
-      role: "Trainee Engineer - Automation Department",
+    {
+      role: "Trainee Engineer — Automation Department",
       organisation: "Ulterior Engineering",
-      period: "July 2021 – September 2021",
-     /* description:
-        "",
-      responsibilities: [
-        "Provided administrative staff support in Industrial Controlling and Automation.",
-        "Worked with S7-1200 PLC, VFD, and HMI."
-      ] */
+      period: "July 2021 – September 2021"
     }
   ],
 
   /* ---------------- MENTORSHIP ---------------- */
- mentorship: [
-  {
-    title: "Mentor & Technical Lead — AKKUPI Robotics & Code Club (ARCC)",
-    period: "April 2023 – Present",
-    organisation: "A K Khan UCEP Polytechnic Institute",
-    description:
-      "ARCC is a student-led robotics and coding club that experienced a period of inactivity before I joined AKKUPI. Since April 2023, I have contributed to reactivating the club, rebuilding its technical activities, and creating opportunities for students to explore robotics, coding, and practical engineering.",
-    contributions: [
-      "Provide technical guidance for student-led robotics and electronics projects.",
-      "Mentor students in robotics, programming, embedded systems, and automation.",
-      "Support competition preparation, troubleshooting, and prototype development.",
-      "Encourage interdisciplinary collaboration and practical problem-solving.",
-      "Support technical workshops and student learning activities."
-    ],
-    focus: [
-      "Robo Soccer",
-      "Mini Battle Bot",
-      "Robotics",
-      "Electronics",
-      "Programming",
-      "Embedded Systems",
-      "Automation"
-    ]
-  },
-  {
-    title: "President",
-    period: "October 2021 – November 2022",
-    organisation: "Premier University Robotics Club (PURC)",
-    description:
-      "Led the club's executive committee, overseeing strategic planning, event management, and the technical development of members. PURC has given me the confidence and courage to believe in myself. Most of my achievements till now are due to this club, and I am eternally grateful to this organization.",
-    contributions: [
-      "Directed the club's vision and managed the executive team to achieve organizational goals.",
-      "Organized large-scale robotics events, workshops, and competitions.",
-      "Mentored junior members in robot design and programming fundamentals."
-    ],
-    focus: [
-      "Student Leadership",
-      "Event Management",
-      "Robotics",
-      "Strategic Planning"
-    ]
-  },
-  {
-    title: "Organizing Secretary",
-    period: "2020 – 2021",
-    organisation: "Premier University Robotics Club (PURC)",
-    description:
-      "Focused on logistics, event coordination, and member engagement to ensure the smooth operation of club activities.",
-    contributions: [
-      "Successfully coordinated logistics for club events and technical workshops.",
-      "Managed communication between members and the executive body.",
-      "Played a key role in expanding club membership and participation."
-    ],
-    focus: [
-      "Event Management",
-      "Logistics",
-      "Member Engagement",
-      "Team Coordination"
-    ]
-  }
-],
+  mentorship: [
+    {
+      title: "Mentor & Technical Lead — AKKUPI Robotics & Code Club (ARCC)",
+      period: "April 2023 – Present",
+      organisation: "A K Khan UCEP Polytechnic Institute",
+      description:
+        "ARCC is a student-led robotics and coding club that experienced a period of inactivity before I joined AKKUPI. Since April 2023, I have contributed to reactivating the club, rebuilding its technical activities, and creating opportunities for students to explore robotics, coding, and practical engineering.",
+      contributions: [
+        "Provide technical guidance for student-led robotics and electronics projects.",
+        "Mentor students in robotics, programming, embedded systems, and automation.",
+        "Support competition preparation, troubleshooting, and prototype development.",
+        "Encourage interdisciplinary collaboration and practical problem-solving.",
+        "Support technical workshops and student learning activities."
+      ],
+      focus: [
+        "Robo Soccer",
+        "Mini Battle Bot",
+        "Robotics",
+        "Electronics",
+        "Programming",
+        "Embedded Systems",
+        "Automation"
+      ]
+    },
+    {
+      title: "President",
+      period: "October 2021 – November 2022",
+      organisation: "Premier University Robotics Club (PURC)",
+      description:
+        "Led the club's executive committee, overseeing strategic planning, event management, and the technical development of members. PURC has given me the confidence and courage to believe in myself. Most of my achievements till now are due to this club, and I am eternally grateful to this organization.",
+      contributions: [
+        "Directed the club's vision and managed the executive team to achieve organizational goals.",
+        "Organized large-scale robotics events, workshops, and competitions.",
+        "Mentored junior members in robot design and programming fundamentals."
+      ],
+      focus: [
+        "Student Leadership",
+        "Event Management",
+        "Robotics",
+        "Strategic Planning"
+      ]
+    },
+    {
+      title: "Organizing Secretary",
+      period: "2020 – 2021",
+      organisation: "Premier University Robotics Club (PURC)",
+      description:
+        "Focused on logistics, event coordination, and member engagement to ensure the smooth operation of club activities.",
+      contributions: [
+        "Successfully coordinated logistics for club events and technical workshops.",
+        "Managed communication between members and the executive body.",
+        "Played a key role in expanding club membership and participation."
+      ],
+      focus: [
+        "Event Management",
+        "Logistics",
+        "Member Engagement",
+        "Team Coordination"
+      ]
+    }
+  ],
 
-  /* ---------------- COMPETITIONS ----------------
-     Each entry supports an optional "evidence" field.
-     Paste PDF or image path (e.g. "documents/certificates/...pdf").
-     Leave "" if no evidence uploaded.
-  ------------------------------------------------- */
+  /* ---------------- COMPETITIONS (Student Achievements) ---------------- */
   competitions: [
     {
       title: "Robo Soccer — Champion",
@@ -240,12 +193,11 @@ window.portfolioData = {
       year: "2025",
       category: "Champion",
       description: "AKKUPI student team secured the Robo Soccer championship.",
-      evidence: 
-        [
+      evidence: [
         "images/Students Achievement/EEE Fest 2.0- Robo Soccer — Champion/Robo-Soccer-Competition-2025-Southern-University.jpg",
-          "images/Students Achievement/EEE Fest 2.0- Robo Soccer — Champion/eee-fest-1.jpg",
-          "images/Students Achievement/EEE Fest 2.0- Robo Soccer — Champion/eee-fest-2.jpg"
-          ]
+        "images/Students Achievement/EEE Fest 2.0- Robo Soccer — Champion/eee-fest-1.jpg",
+        "images/Students Achievement/EEE Fest 2.0- Robo Soccer — Champion/eee-fest-2.jpg"
+      ]
     },
     {
       title: "Robo Soccer — Runner-up",
@@ -254,12 +206,11 @@ window.portfolioData = {
       year: "2025",
       category: "Runner-up",
       description: "AKKUPI student team secured the runner-up position in Robo Soccer.",
-      evidence: 
-        [
+      evidence: [
         "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/CUSC4.0 2.jpg",
-          "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/CUSC4.0.jpeg",
-          "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/c8527af9-a639-456c-856e-acbbad829999.jpg"
-          ]
+        "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/CUSC4.0.jpeg",
+        "images/Students Achievement/CU Science Carnival 4.0-Robo Soccer — Runner-up/c8527af9-a639-456c-856e-acbbad829999.jpg"
+      ]
     },
     {
       title: "Mini Soccer — 2nd Runner-up",
@@ -268,12 +219,11 @@ window.portfolioData = {
       year: "2025",
       category: "Runner-up",
       description: "AKKUPI student team achieved 2nd Runner-up in the Mini Soccer category.",
-      evidence: 
-         [
+      evidence: [
         "images/Students Achievement/National Robotics Championship-Mini Soccer — 2nd Runner-up/20250207_185342.jpg",
-          "images/Students Achievement/National Robotics Championship-Mini Soccer — 2nd Runner-up/NRC 2.jpg",
-          "images/Students Achievement/National Robotics Championship-Mini Soccer — 2nd Runner-up/NRC-2nd-Runner-Up-Mini-Soccer-Bot.jpg"
-          ]
+        "images/Students Achievement/National Robotics Championship-Mini Soccer — 2nd Runner-up/NRC 2.jpg",
+        "images/Students Achievement/National Robotics Championship-Mini Soccer — 2nd Runner-up/NRC-2nd-Runner-Up-Mini-Soccer-Bot.jpg"
+      ]
     },
     {
       title: "Robo Soccer — Champion & 2nd Runner-up",
@@ -282,12 +232,12 @@ window.portfolioData = {
       year: "2024",
       category: "Champion",
       description: "AKKUPI student teams achieved Champion and 2nd Runner-up positions.",
-      evidence:  [
+      evidence: [
         "images/Students Achievement/Bangabandhu Innovation Fair-Robo Soccer — Champion & 2nd Runner-up/1793980866670.jpg",
         "images/Students Achievement/Bangabandhu Innovation Fair-Robo Soccer — Champion & 2nd Runner-up/1793980865749.jpg",
-          "images/Students Achievement/Bangabandhu Innovation Fair-Robo Soccer — Champion & 2nd Runner-up/Innovation Fair runner up.jpeg",
-          "images/Students Achievement/Bangabandhu Innovation Fair-Robo Soccer — Champion & 2nd Runner-up/PUC-Innovation-Fair-Champion.jpg"
-          ]
+        "images/Students Achievement/Bangabandhu Innovation Fair-Robo Soccer — Champion & 2nd Runner-up/Innovation Fair runner up.jpeg",
+        "images/Students Achievement/Bangabandhu Innovation Fair-Robo Soccer — Champion & 2nd Runner-up/PUC-Innovation-Fair-Champion.jpg"
+      ]
     },
     {
       title: "Robo Soccer — Runner-up",
@@ -300,7 +250,7 @@ window.portfolioData = {
         "images/Students Achievement/Cumilla University IT Fest-Robo Soccer — Runner-up/Comilla-University-IT-Fest-2024-1st-Runner-Up.jpg",
         "images/Students Achievement/Cumilla University IT Fest-Robo Soccer — Runner-up/IMG-20241115-WA0004.jpg",
         "images/Students Achievement/Cumilla University IT Fest-Robo Soccer — Runner-up/IMG_20241115_192941.jpg"
-        ]
+      ]
     },
     {
       title: "Robo Soccer — Champion & 2nd Runner-up",
@@ -314,7 +264,7 @@ window.portfolioData = {
         "images/Students Achievement/EEE DAY 3.0-Robo Soccer-Champion & 2nd Runner up/EEE DAY 3.0 Champion.jpeg",
         "images/Students Achievement/EEE DAY 3.0-Robo Soccer-Champion & 2nd Runner up/eee day 3.0 SUB 3rd position.jpg",
         "images/Students Achievement/EEE DAY 3.0-Robo Soccer-Champion & 2nd Runner up/eeeday3.0.jpg"
-        ]
+      ]
     },
     {
       title: "Robo Soccer — Runner-up",
@@ -327,7 +277,7 @@ window.portfolioData = {
         "images/Students Achievement/Innovesta 2026-Robo Soccer — Runner-up/IMG_0554.JPG.jpeg",
         "images/Students Achievement/Innovesta 2026-Robo Soccer — Runner-up/IMG_0572.JPEG",
         "images/Students Achievement/Innovesta 2026-Robo Soccer — Runner-up/IMG_0573.JPEG"
-        ]
+      ]
     },
     {
       title: "GoalBot — Champion & 2nd Runner-up",
@@ -339,103 +289,33 @@ window.portfolioData = {
       evidence: [
         "images/Students Achievement/iCONCLAVE 2026-GoalBot — Champion & 2nd Runner-up/825267123_1808473271281996_3136177983571731614_n.jpg",
         "images/Students Achievement/iCONCLAVE 2026-GoalBot — Champion & 2nd Runner-up/825267710_1808473294615327_6493307651401466220_n.jpg"
-        ]
+      ]
     }
   ],
-  /* ---------------- EVENTS ORGANISED ----------------
-     Technical events, competitions and workshops you organised.
-     Each entry supports an optional "evidence" field (string or array).
-  ------------------------------------------------- */
-  eventsOrganised: [
-    {
-      title: "AKKUPI × RoboStorm 2025",
-      role: "Lead Organiser",
-      event: "Intra-institute robotics competition",
-      year: "2025",
-      description:
-        "Conceived and led the institute's flagship robotics event featuring Mini Battle Bot, Robo Race and Robo Soccer categories. Coordinated venue, judging, and team registration for participating student teams.",
-      venue: "A K Khan UCEP Polytechnic Institute, Chattogram",
-      partners: ["AKKUPI Robotics & Code Club", "A K Khan UCEP Polytechnic Institute"],
-      evidence: []
-    },
-        {
-      title: "AKKUPI × RoboStorm 2025",
-      role: "Lead Organiser",
-      event: "Intra-institute robotics competition",
-      year: "2025",
-      description:
-        "Conceived and led the institute's flagship robotics event featuring Mini Battle Bot, Robo Race and Robo Soccer categories. Coordinated venue, judging, and team registration for participating student teams.",
-      venue: "A K Khan UCEP Polytechnic Institute, Chattogram",
-      partners: ["AKKUPI Robotics & Code Club", "A K Khan UCEP Polytechnic Institute"],
-      evidence: []
-    },
-        {
-      title: "AKKUPI × RoboStorm 2025",
-      role: "Lead Organiser",
-      event: "Intra-institute robotics competition",
-      year: "2025",
-      description:
-        "Conceived and led the institute's flagship robotics event featuring Mini Battle Bot, Robo Race and Robo Soccer categories. Coordinated venue, judging, and team registration for participating student teams.",
-      venue: "A K Khan UCEP Polytechnic Institute, Chattogram",
-      partners: ["AKKUPI Robotics & Code Club", "A K Khan UCEP Polytechnic Institute"],
-      evidence: []
-    },
-    {
-      title: "Junior Science Carnival 2022",
-      role: "Co-Organiser & Robotics Session Lead",
-      event: "Youth science carnival",
-      year: "2022",
-      description:
-        "Co-organised the event and delivered a hands-on robotics session for school-level participants, introducing foundational electronics and robotics concepts.",
-      venue: "Chattogram",
-      partners: ["White Board Science Club"],
-      evidence: []
-    },
-   {
-      title: "Digital Bangladesh Day 2021",
-      role: "Co-Organiser",
-      event: "Technical event — Premier University Department of EEE",
-      year: "2021",
-      description:
-        "Co-organised the university-level technical event alongside the Premier University Robotics Club team, coordinating logistics and participant engagement.",
-      venue: "Premier University, Chattogram",
-      partners: ["Premier University Robotics Club"],
-      evidence: []
-    }
-  ],
-  /* ---------------- PROJECTS ----------------
-     Add verified projects here.
-  ---------------------------------------------- */
+
+  /* ---------------- PROJECTS ---------------- */
   projects: [
-   {
-  title: "Smart Agriculture Sensor Node",
-  category: "IoT",
-  contribution: "Lead Researcher",
-  status: "Prototype Complete",
-  description: "NPK, pH and moisture sensing for precision farming, with LoRa backhaul and low-power operation.",
-  technologies: ["ESP32", "LoRa", "NPK Sensor", "pH Sensor"],
-
-  /* Single card thumbnail — any valid path works */
-  image: "images/projects/agri-sensor-main.jpg",
-
-  /* External link — single URL only (GitHub, video, datasheet) */
-  link: "https://github.com/Utchashdevnath/agri-sensor",
-
-  /* Multiple project photos — array of paths */
-  gallery: [
-    "images/projects/agri-sensor-1.jpg",
-    "images/projects/agri-sensor-2.jpg",
-    "images/projects/agri-sensor-3.jpg",
-    "images/projects/agri-sensor-4.jpg",
-    "images/projects/agri-sensor-5.jpg"
-  ],
-
-  /* Small proof thumbnails — PDFs, schematics, certificates */
-  evidence: [
-    "documents/projects/agri-sensor-schematic.pdf",
-    "documents/projects/agri-sensor-testing-report.pdf"
-  ]
-}
+    {
+      title: "Smart Agriculture Sensor Node",
+      category: "IoT",
+      contribution: "Lead Researcher",
+      status: "Prototype Complete",
+      description: "NPK, pH and moisture sensing for precision farming, with LoRa backhaul and low-power operation.",
+      technologies: ["ESP32", "LoRa", "NPK Sensor", "pH Sensor"],
+      image: "images/projects/agri-sensor-main.jpg",
+      link: "https://github.com/Utchashdevnath/agri-sensor",
+      gallery: [
+        "images/projects/agri-sensor-1.jpg",
+        "images/projects/agri-sensor-2.jpg",
+        "images/projects/agri-sensor-3.jpg",
+        "images/projects/agri-sensor-4.jpg",
+        "images/projects/agri-sensor-5.jpg"
+      ],
+      evidence: [
+        "documents/projects/agri-sensor-schematic.pdf",
+        "documents/projects/agri-sensor-testing-report.pdf"
+      ]
+    },                                  /* ← ✅ COMMA ADDED */
     {
       title: "EMAR — Edge-Enabled Modular Agricultural Robot",
       category: "Robotics",
@@ -443,7 +323,7 @@ window.portfolioData = {
       status: "Prototype Complete",
       description: "Developed a dual-processor autonomous platform for soil mapping and boundary detection tailored for smallholder farmers.",
       technologies: ["Raspberry Pi", "STM32", "LoRa", "Sensors"],
-      image: "images/Project/Agriculture Robot/IMG20260121164750.jpg",
+      image: "images/projects/agriculture-robot/IMG20260121164750.jpg",
       link: ""
     },
     {
@@ -467,20 +347,8 @@ window.portfolioData = {
       link: ""
     }
   ],
-  /* ---------------- HARDWARE & DESIGN ----------------
-     PCB layouts, mechanical designs and 3D printed work.
 
-     Fields:
-       title       (required)
-       type        (required: "PCB Design", "3D CAD Design", "Enclosure", etc.)
-       role        (optional: what you did)
-       description (required: 1–2 sentences)
-       tools       (optional: array of tool names)
-       outcome     (optional: short result — shows as a pill)
-       image       (optional: card thumbnail)
-       link        (optional: repo, datasheet, gallery)
-       evidence    (optional: array of PDF/image paths)
-  ------------------------------------------------- */
+  /* ---------------- HARDWARE & DESIGN ---------------- */
   hardwareDesign: [
     {
       title: "Main Control Board — Beginner Robotics Kit",
@@ -509,7 +377,7 @@ window.portfolioData = {
       evidence: []
     }
   ],
-  
+
   /* ---------------- RESEARCH ---------------- */
   research: [
     {
@@ -525,10 +393,8 @@ window.portfolioData = {
       ]
     }
   ],
-  /* ---------------- PERSONAL ACHIEVEMENTS ----------------
-     Awards and milestones earned by you personally,
-     distinct from student team results.
-  -------------------------------------------------------- */
+
+  /* ---------------- PERSONAL ACHIEVEMENTS ---------------- */
   personalAchievements: [
     {
       title: "Champion — Line Following Robot Competition",
@@ -550,12 +416,95 @@ window.portfolioData = {
     }
   ],
 
-  /* ---------------- TRAINING & CERTIFICATIONS ----------------
-     Curated list: only courses directly supporting embedded
-     systems, IoT, PCB design, industrial automation, or research.
-     Order matters — most valuable first.
-     Full list lives in the academic CV.
-  ------------------------------------------------------------ */
+  /* ---------------- PUBLICATIONS ---------------- */
+  publications: [
+    {
+      title: "Degradation-Aware Rule-Based Industrial EMS for PV-Battery Microgrids with Stateflow",
+      authors: "Utchash Dev Nath, Swarup Paul, Jubaer Hasan Abdullah",
+      venue: "iCONEECT 2026",
+      year: "2026",
+      link: "https://iconeect2026.puc.ac.bd/"
+    },
+    {
+      title: "IoT-Enabled Smart Car Parking Management: Revolutionizing Urban Traffic Flow",
+      authors: "Mohammed Saifuddin Munna, Adri Roy, MD. Mehedi Hasan, Utchash Dev Nath",
+      venue: "International Journal of Research Publication and Reviews",
+      year: "2024",
+      link: "https://doi.org/10.55248/gengpi.5.0624.1447"
+    }
+  ],
+
+  /* ---------------- WORKSHOPS ---------------- */
+  workshops: [
+    {
+      type: "Organiser",
+      title: "Workshop Series: Electronics Fundamentals for Beginners",
+      organiser: "Premier University Robotics Club",
+      role: "Lead Organiser",
+      date: "August 2026",
+      venue: "Hazari Lane Campus, Chattogram",
+      description: "Planned and coordinated the second instalment of the PURC Series 2026 — managed logistics, invitations and participant communication. Technical delivery led by invited instructors.",
+      audience: "Undergraduate students new to electronics",
+      evidence: []
+    },
+    {
+      type: "Instructor",
+      title: "Fundamentals & Core Concepts of Electronics",
+      organiser: "Premier University Robotics Club",
+      role: "Workshop Instructor",
+      date: "29 August 2026",
+      venue: "Hazari Lane Campus, Chattogram",
+      description: "Designed and delivered the technical content — covering basic electronics theory, breadboard prototyping and hands-on circuit building for first-time learners.",
+      audience: "Undergraduate students",
+      evidence: []
+    }
+  ],
+
+  /* ---------------- EVENTS ORGANISED (clean, deduplicated) ---------------- */
+  eventsOrganised: [
+    {
+      title: "AKKUPI × RoboStorm 2025",
+      role: "Lead Organiser",
+      event: "Intra-institute robotics competition",
+      year: "2025",
+      venue: "A K Khan UCEP Polytechnic Institute, Chattogram",
+      description: "Conceived and led the institute's flagship robotics event with Mini Battle Bot, Robo Race and Robo Soccer categories. Coordinated venue, judging and team registration.",
+      partners: ["AKKUPI Robotics & Code Club"],
+      evidence: []
+    },
+    {
+      title: "Digital Bangladesh Day 2021",
+      role: "Co-Organiser",
+      event: "Technical event — Department of EEE",
+      year: "2021",
+      venue: "Premier University, Chattogram",
+      description: "Co-organised the university-level technical event alongside the Premier University Robotics Club team, coordinating logistics and participant engagement.",
+      partners: ["Premier University Robotics Club"],
+      evidence: []
+    },
+    {
+      title: "Chittagong Science Carnival 2.0",
+      role: "Co-Organiser",
+      event: "Regional science carnival",
+      year: "2022",
+      venue: "University of Chittagong",
+      description: "Supported event operations and robotics showcases at the regional science carnival hosted by the Chittagong University Scientific Society.",
+      partners: ["Chittagong University Scientific Society"],
+      evidence: []
+    },
+    {
+      title: "Junior Science Carnival 2022",
+      role: "Co-Organiser & Robotics Session Lead",
+      event: "Youth science carnival",
+      year: "2022",
+      venue: "Chattogram",
+      description: "Co-organised the event and delivered a hands-on robotics session for school-level participants, introducing foundational electronics and robotics concepts.",
+      partners: ["White Board Science Club"],
+      evidence: []
+    }
+  ],
+
+  /* ---------------- TRAINING & CERTIFICATIONS ---------------- */
   certifications: [
     {
       title: "Building Arduino Robots and Devices",
@@ -614,107 +563,7 @@ window.portfolioData = {
       link: ""
     }
   ],
-  /* ---------------- PUBLICATIONS ---------------- */
-  publications: [
-    {
-      title: "Degradation-Aware Rule-Based Industrial EMS for PV-Battery Microgrids with Stateflow",
-      authors: "Utchash Dev Nath, Swarup Paul, Jubaer Hasan Abdullah",
-      venue: "iCONEECT 2026",
-      year: "2026",
-      link: "https://iconeect2026.puc.ac.bd/"
-    },
-    {
-      title: "IoT-Enabled Smart Car Parking Management: Revolutionizing Urban Traffic Flow",
-      authors: "Mohammed Saifuddin Munna, Adri Roy, MD. Mehedi Hasan, Utchash Dev Nath",
-      venue: "International Journal of Research Publication and Reviews",
-      year: "2024",
-      link: "https://doi.org/10.55248/gengpi.5.0624.1447"
-    }
-  ],
 
-    /* ---------------- WORKSHOPS ----------------
-     Two categories:
-       type: "Organiser"  → you planned/coordinated the workshop
-       type: "Instructor" → you designed and delivered the content
-
-     Fields:
-       title       (required)
-       type        (required: "Organiser" or "Instructor")
-       organiser   (required: the body that hosted it)
-       role        (optional: e.g. "Lead Organiser", "Workshop Instructor")
-       date        (required)
-       venue       (optional)
-       description (required)
-       audience    (optional: e.g. "Undergraduate students")
-       evidence    (optional: string or array of PDF/image paths)
-  ------------------------------------------------- */
-   workshops: [
-    {
-      type: "Organiser",
-      title: "Workshop Series: Electronics Fundamentals for Beginners",
-      organiser: "Premier University Robotics Club",
-      role: "Lead Organiser",
-      date: "August 2026",
-      venue: "Hazari Lane Campus, Chattogram",
-      description: "Planned and coordinated the second instalment of the PURC Series 2026 — managed logistics, invitations and participant communication. Technical delivery led by invited instructors.",
-      audience: "Undergraduate students new to electronics",
-      evidence: []
-    },
-    {
-      type: "Instructor",
-      title: "Fundamentals & Core Concepts of Electronics",
-      organiser: "Premier University Robotics Club",
-      role: "Workshop Instructor",
-      date: "29 August 2026",
-      venue: "Hazari Lane Campus, Chattogram",
-      description: "Designed and delivered the technical content — covering basic electronics theory, breadboard prototyping and hands-on circuit building for first-time learners.",
-      audience: "Undergraduate students",
-      evidence: []
-    }
-  ],
-  /* ---------------- EVENTS ORGANISED ---------------- */
-  eventsOrganised: [
-    {
-      title: "AKKUPI × RoboStorm 2025",
-      role: "Lead Organiser",
-      event: "Intra-institute robotics competition",
-      year: "2025",
-      venue: "A K Khan UCEP Polytechnic Institute, Chattogram",
-      description: "Conceived and led the institute's flagship robotics event with Mini Battle Bot, Robo Race and Robo Soccer categories. Coordinated venue, judging and team registration.",
-      partners: ["AKKUPI Robotics & Code Club"],
-      evidence: []
-    },
-    {
-      title: "Digital Bangladesh Day 2021",
-      role: "Co-Organiser",
-      event: "Technical event — Department of EEE",
-      year: "2021",
-      venue: "Premier University, Chattogram",
-      description: "Co-organised the university-level technical event alongside the Premier University Robotics Club team, coordinating logistics and participant engagement.",
-      partners: ["Premier University Robotics Club"],
-      evidence: []
-    },
-    {
-      title: "Chittagong Science Carnival 2.0",
-      role: "Co-Organiser",
-      event: "Regional science carnival",
-      year: "2022",
-      venue: "University of Chittagong",
-      description: "Supported event operations and robotics showcases at the regional science carnival hosted by the Chittagong University Scientific Society.",
-      partners: ["Chittagong University Scientific Society"],
-      evidence: []
-    },
-    {
-      title: "Junior Science Carnival 2022",
-      role: "Co-Organiser & Robotics Session Lead",
-      event: "Youth science carnival",
-      year: "2022",
-      venue: "Chattogram",
-      description: "Co-organised the event and delivered a hands-on robotics session for school-level participants, introducing foundational electronics and robotics concepts.",
-      partners: ["White Board Science Club"],
-      evidence: []
-    }
-  ],
   /* ---------------- CONTACTS ---------------- */
   contacts: [
     {
