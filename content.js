@@ -358,7 +358,7 @@ window.portfolioData = {
         "documents/projects/agri-sensor-testing-report.pdf"
       ]
     } 
-  ]
+  ],
 
   /* ---------------- HARDWARE & DESIGN ---------------- */
   hardwareDesign: [
