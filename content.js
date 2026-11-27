@@ -369,7 +369,7 @@ window.portfolioData = {
       category: "Robotics",
       contribution: "Lead Researcher",
       status: "Prototype Complete",
-      description: "This project is an intuitive, wireless Hand Gesture-Controlled Vacuum Cleaner Robot designed to make floor cleaning effortless and accessible. Built on a lightweight 4-wheel-drive acrylic chassis, the robot translates simple hand tilts and movements into real-time directional commands, allowing users to steer and clean hard-to-reach areas without relying on complex joysticks or mobile apps. The system is divided into two main units that communicate wirelessly over a 2.4 GHz radio frequency. The Wearable Transmitter (Hand Glove): A compact transmitter unit worn on the user's hand reads tilt angles (forward, backward, left, and right) using a motion sensor (such as an MPU6050 accelerometer/gyroscope) and sends corresponding control signals wirelessly via an NRF24L01 transceiver. The Vacuum Robot Receiver: Onboard the robot, a second NRF24L01 module receives the directional commands and passes them to an Arduino Nano. The microcontroller processes the signals and drives an L298N Dual H-Bridge motor driver to control the speed and rotation of four TT DC gear motors, enabling smooth multi-directional movement while the integrated vacuum mechanism collects dust and debris. ",
+      description: "This project is an intuitive, wireless Hand Gesture-Controlled Vacuum Cleaner Robot designed to make floor cleaning effortless and accessible. Built on a lightweight 4-wheel-drive acrylic chassis, the robot translates simple hand tilts and movements into real-time directional commands, allowing users to steer and clean hard-to-reach areas without relying on complex joysticks or mobile apps. The system is divided into two main units that communicate wirelessly over a 2.4 GHz radio frequency. • The Wearable Transmitter (Hand Glove): A compact transmitter unit worn on the user's hand reads tilt angles (forward, backward, left, and right) using a motion sensor (such as an MPU6050 accelerometer/gyroscope) and sends corresponding control signals wirelessly via an NRF24L01 transceiver. • The Vacuum Robot Receiver: Onboard the robot, a second NRF24L01 module receives the directional commands and passes them to an Arduino Nano. The microcontroller processes the signals and drives an L298N Dual H-Bridge motor driver to control the speed and rotation of four TT DC gear motors, enabling smooth multi-directional movement while the integrated vacuum mechanism collects dust and debris. ",
       technologies: ["Arduino Nano", "L298N Dual H-Bridge Motor Driver", "NRF24L01 2.4 GHz RF Transceiver Module"],
       image: "images/Project/Gesture Control Vaccume Cleaner/IMG20221220022209.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
@@ -380,7 +380,7 @@ window.portfolioData = {
     },
          {
       title: "IoT-Based Smart Greenhouse Monitoring & Control System",
-      category: "Robotics",
+      category: "Internet of Things (IoT)",
       contribution: "Lead Researcher",
       status: "Prototype Complete",
       description: "Designed and built a functional Internet of Things (IoT) greenhouse prototype that automates environmental monitoring and resource management. The system continuously tracks microclimate variables to optimize plant growth while minimizing water and energy waste. • Real-Time Environmental Sensing: Integrated temperature, humidity, and soil moisture sensors to capture live conditions inside a custom-built acrylic enclosure. • Automated Actuation: Programmed a central microcontroller to trigger a water pump, cooling fan, and grow lights via a multi-channel relay switching circuit based on sensor thresholds. • Cloud & Remote Access: Connected the system to an internet cloud server via a Wi-Fi module, allowing users to view live telemetry data (temperature, humidity, soil moisture) and toggle relays remotely through a web interface, alongside a local LCD readout.",
@@ -392,16 +392,29 @@ window.portfolioData = {
       ],
     },
          {
-      title: "IoT-Based Smart Greenhouse Monitoring & Control System",
+      title: "Solar-Powered IoT Agricultural Monitoring & Weather Prediction System",
       category: "Robotics",
-      contribution: "Lead Researcher",
+      contribution: "Hardware Researcher",
       status: "Prototype Complete",
-      description: "Designed and built a functional Internet of Things (IoT) greenhouse prototype that automates environmental monitoring and resource management. The system continuously tracks microclimate variables to optimize plant growth while minimizing water and energy waste. • Real-Time Environmental Sensing: Integrated temperature, humidity, and soil moisture sensors to capture live conditions inside a custom-built acrylic enclosure. • Automated Actuation: Programmed a central microcontroller to trigger a water pump, cooling fan, and grow lights via a multi-channel relay switching circuit based on sensor thresholds. • Cloud & Remote Access: Connected the system to an internet cloud server via a Wi-Fi module, allowing users to view live telemetry data (temperature, humidity, soil moisture) and toggle relays remotely through a web interface, alongside a local LCD readout.",
-      technologies: ["ESP32", "C++", "Soil Moisture Sensor", "DHT22"],
-      image: "images/Project/IoT Based Green House/IMG20240520182226.jpg",
+      description: "Designed and built a self-sustaining, solar-powered Internet of Things (IoT) system for real-time agricultural environment monitoring and predictive weather analytics. The project combines green energy with automated data logging and 14-day weather forecasting to help protect crops and optimize farming decisions. • Multi-Sensor Environmental Tracking: Built around an Arduino Nano microcontroller integrated with a DHT11 (temperature & humidity), MQ-135 (air quality), soil moisture, pH, and rain sensor to capture comprehensive field conditions. • Solar-Powered Operation: Integrated solar panels to generate renewable power, enabling the entire monitoring unit to run off-grid with low maintenance. • Real-Time Dashboard & Data Logging: Connected via a Wi-Fi module to a custom web dashboard that displays live sensor cards, logs historical readings every 30 seconds, and provides local feedback via an LCD display. • 14-Day Predictive Analytics: Incorporated a weather forecasting module that analyzes environmental parameters to predict climate conditions for the next two weeks.",
+      technologies: ["Arduino Nano", "Python", "MQ-135", "DHT22", "pH Sensor"],
+      image: "images/Project/IoT based Green Agricultural Environment Monitoring/IMG20240520181232.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
-        "images/Project/IoT Based Green House/IMG-20240520-WA0038.jpg"
+        "images/Project/IoT based Green Agricultural Environment Monitoring/IMG-20240520-WA0042.jpg"
+      ],
+    },
+             {
+      title: "Solar-Powered IoT Agricultural Monitoring & Weather Prediction System",
+      category: "Robotics",
+      contribution: "Hardware Researcher",
+      status: "Prototype Complete",
+      description: "Designed and built a self-sustaining, solar-powered Internet of Things (IoT) system for real-time agricultural environment monitoring and predictive weather analytics. The project combines green energy with automated data logging and 14-day weather forecasting to help protect crops and optimize farming decisions. • Multi-Sensor Environmental Tracking: Built around an Arduino Nano microcontroller integrated with a DHT11 (temperature & humidity), MQ-135 (air quality), soil moisture, pH, and rain sensor to capture comprehensive field conditions. • Solar-Powered Operation: Integrated solar panels to generate renewable power, enabling the entire monitoring unit to run off-grid with low maintenance. • Real-Time Dashboard & Data Logging: Connected via a Wi-Fi module to a custom web dashboard that displays live sensor cards, logs historical readings every 30 seconds, and provides local feedback via an LCD display. • 14-Day Predictive Analytics: Incorporated a weather forecasting module that analyzes environmental parameters to predict climate conditions for the next two weeks.",
+      technologies: ["Arduino Nano", "Python", "MQ-135", "DHT22", "pH Sensor"],
+      image: "images/Project/IoT based Green Agricultural Environment Monitoring/IMG20240520181232.jpg",
+     /* link: "https://github.com/Utchashdevnath/agri-sensor", */
+      gallery: [
+        "images/Project/IoT based Green Agricultural Environment Monitoring/IMG-20240520-WA0042.jpg"
       ],
     },
   ],
