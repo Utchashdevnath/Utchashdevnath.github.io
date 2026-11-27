@@ -347,24 +347,60 @@ window.portfolioData = {
       status: "Prototype Complete",
       description: "Engineered a solar-powered, multi-network vending machine with biometric authentication (RFID/Fingerprint) for low-infrastructure environments.",
       technologies: ["ESP32", "Solar", "RFID", "Biometrics"],
-      image: "images/projects/agri-sensor-main.jpg",
+      image: "images/Project/Vending Machine/IMG20250514151255.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
-        "images/projects/agri-sensor-1.jpg",
-        "images/projects/agri-sensor-2.jpg",
-        "images/projects/agri-sensor-3.jpg",
-        "images/projects/agri-sensor-4.jpg",
-        "images/projects/agri-sensor-5.jpg"
+        "images/Project/Vending Machine/IMG-20250820-WA0009.jpg",
+        "images/Project/Vending Machine/IMG-20250102-WA0014.jpg",
+        "images/Project/Vending Machine/IMG-20250102-WA0013.jpg",
+        "images/Project/Vending Machine/IMG-20250102-WA0012.jpg",
+        "images/Project/Vending Machine/IMG-20250102-WA0011.jpg",
+        "images/Project/Vending Machine/IMG-20250830-WA0006.jpg",
+        "images/Project/Vending Machine/IMG-20250902-WA0009.jpg",
+        "images/Project/Vending Machine/IMG-20250916-WA0008.jpg",
+        "images/Project/Vending Machine/IMG-20260415-WA0046.jpg",
+        "images/Project/Vending Machine/IMG-20250916-WA0011.jpg",
+        "images/Project/Vending Machine/IMG_20250424_203342.jpg"
       ],
-      evidence: [
+      /*evidence: [
         "documents/projects/agri-sensor-schematic.pdf",
         "documents/projects/agri-sensor-testing-report.pdf"
-      ]
+      ] */
     } 
   ],
 
   /* ---------------- HARDWARE & DESIGN ---------------- */
   hardwareDesign: [
+     {
+      title: "Disposal Unit",
+      type: "PCB Design",
+      role: "Schematic design and PCB layout",
+      description:
+        "Designed the primary control board that powers an entry-level robotics kit — integrating motor drivers, sensor headers, and a microcontroller with an onboard regulator for stable power delivery.",
+      tools: ["Altium Designer", "3D printing"],
+      outcome: "Fabricated and tested; deployed in beginner robotics kits.",
+      image: "images/Project/Vending Machine/IMG-20250901-WA0013.jpg",
+      link: "",
+      /* evidence: [
+        "documents/design/control-board-schematic.pdf"
+      ] */
+    },
+         {
+      title: "Smart Vending Machine",
+      type: "PCB Design",
+      role: "Schematic design and PCB layout",
+      description:
+        "Designed the primary control board that powers an entry-level robotics kit — integrating motor drivers, sensor headers, and a microcontroller with an onboard regulator for stable power delivery.",
+      tools: ["Altium Designer", "3D printing"],
+      outcome: "Fabricated and tested; deployed in beginner robotics kits.",
+      image: "images/Project/Vending Machine/IMG-20250820-WA0017.jpg",
+      link: "",
+       evidence: [
+        "images/Project/Vending Machine/IMG-20250820-WA0016.jpg",
+         "images/Project/Vending Machine/IMG-20250820-WA0015.jpg",
+         "images/Project/Vending Machine/IMG-20250820-WA0014.jpg"
+      ] 
+    },
     {
       title: "Main Control Board — Beginner Robotics Kit",
       type: "PCB Design",
