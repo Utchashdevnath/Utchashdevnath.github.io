@@ -365,17 +365,16 @@ window.portfolioData = {
       ],
     },
           {
-      title: "Hand Gesture-Controlled Vacuum Cleaner Robot",
-      category: "Robotics",
+      title: "IoT-Based Smart Garbage Monitoring & Data Analysis System",
+      category: "Internet of Things (IoT)",
       contribution: "Lead Researcher",
       status: "Prototype Complete",
-      description: "This project is an intuitive, wireless Hand Gesture-Controlled Vacuum Cleaner Robot designed to make floor cleaning effortless and accessible. Built on a lightweight 4-wheel-drive acrylic chassis, the robot translates simple hand tilts and movements into real-time directional commands, allowing users to steer and clean hard-to-reach areas without relying on complex joysticks or mobile apps. The system is divided into two main units that communicate wirelessly over a 2.4 GHz radio frequency. • The Wearable Transmitter (Hand Glove): A compact transmitter unit worn on the user's hand reads tilt angles (forward, backward, left, and right) using a motion sensor (such as an MPU6050 accelerometer/gyroscope) and sends corresponding control signals wirelessly via an NRF24L01 transceiver. • The Vacuum Robot Receiver: Onboard the robot, a second NRF24L01 module receives the directional commands and passes them to an Arduino Nano. The microcontroller processes the signals and drives an L298N Dual H-Bridge motor driver to control the speed and rotation of four TT DC gear motors, enabling smooth multi-directional movement while the integrated vacuum mechanism collects dust and debris. ",
-      technologies: ["Arduino Nano", "L298N Dual H-Bridge Motor Driver", "NRF24L01 2.4 GHz RF Transceiver Module"],
-      image: "images/Project/Gesture Control Vaccume Cleaner/IMG20221220022209.jpg",
+      description: "Designed and implemented a multi-bin Internet of Things (IoT) waste management system capable of tracking bin capacity and odor levels in real time. The solution combines embedded hardware alerts with cloud-based data logging to streamline waste collection and improve urban sanitation. • Multi-Bin Sensing Hardware: Built around an Arduino Nano interfaced with ultrasonic sensors (to measure fill levels) and gas/smell sensors (to detect odor intensity as a percentage) across three prototype waste bins. • Local Alerts & Status Feedback: Integrated an LCD display for live on-site metrics alongside a buzzer and LED indicators that automatically trigger when a bin reaches its maximum fill threshold. • Cloud Dashboard & Data Analytics: Transmitted real-time sensor readings via a Wi-Fi module to a custom web dashboard featuring live status cards and historical data tables for trend analysis and collection optimization.",
+      technologies: ["Arduino Nano", "MQ-135", "Ultrasonic Sensor"],
+      image: "images/Project/Smart Dustbin/IMG20240520181617.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
-        "images/Project/Gesture Control Vaccume Cleaner/IMG20221220022123.jpg",
-        "images/Project/Gesture Control Vaccume Cleaner/IMG20221220022053.jpg"
+        "images/Project/Smart Dustbin/IMG-20240520-WA0039.jpg"
       ],
     },
          {
