@@ -1189,3 +1189,315 @@ h3 { color: var(--green); }
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* ============================================================
+   FILTER BUTTONS (used by Design section)
+   ============================================================ */
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 28px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--green);
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.filter-btn:hover { border-color: var(--gold); }
+
+.filter-btn.active {
+  background: var(--green);
+  color: var(--white);
+  border-color: var(--green);
+}
+
+/* ============================================================
+   BRANDING & GRAPHIC DESIGN SECTION
+   ============================================================ */
+.design-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 32px;
+  padding: 22px;
+  background: var(--background);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--gold);
+}
+
+.design-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.design-meta-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold-text);
+}
+
+.design-meta-value {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* Design grid */
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.design-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.design-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(26, 59, 41, 0.13);
+}
+
+.design-thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  padding: 0;
+  border: 0;
+  background: var(--light);
+  cursor: zoom-in;
+  overflow: hidden;
+  font: inherit;
+  color: inherit;
+}
+
+.design-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.design-card:hover .design-thumb img {
+  transform: scale(1.04);
+}
+
+.design-thumb-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gold-light);
+  color: var(--green);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.design-applied-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--green);
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 4px 9px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.design-zoom {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(26, 59, 41, 0.85);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.design-card:hover .design-zoom { opacity: 1; }
+
+.design-body { padding: 16px 18px 18px; }
+
+.design-body h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: var(--green);
+  line-height: 1.35;
+}
+
+.design-body p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ============================================================
+   LIGHTBOX
+   ============================================================ */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 25, 15, 0.94);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 5vh 4vw;
+}
+
+.lightbox.visible { display: flex; }
+
+.lightbox-figure {
+  max-width: min(1100px, 92vw);
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin: 0;
+}
+
+.lightbox-figure img {
+  max-width: 100%;
+  max-height: 72vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+
+.lightbox-figure figcaption {
+  text-align: center;
+  color: #e6eee9;
+  max-width: 720px;
+}
+
+.lightbox-figure h3 {
+  color: var(--gold);
+  font-size: 17px;
+  margin-bottom: 4px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.lightbox-figure p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #cdd9d2;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--gold);
+  border: 1px solid rgba(213, 165, 30, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+  z-index: 2001;
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(213, 165, 30, 0.25);
+  transform: scale(1.08);
+}
+
+.lightbox-close {
+  top: 20px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  width: 48px;
+  height: 48px;
+  font-size: 32px;
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  transform: translateY(-50%) scale(1.08);
+}
+
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+
+/* ============================================================
+   RESPONSIVE — Design section
+   ============================================================ */
+@media (max-width: 900px) {
+  .design-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 520px) {
+  .design-grid { grid-template-columns: 1fr; }
+  .lightbox { padding: 3vh 3vw; }
+  .lightbox-prev,
+  .lightbox-next {
+    width: 40px; height: 40px; font-size: 26px;
+  }
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
+  .lightbox-close {
+    width: 38px; height: 38px; top: 10px; right: 10px;
+  }
+  .lightbox-figure img { max-height: 60vh; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .design-card,
+  .design-thumb img,
+  .lightbox-close,
+  .lightbox-prev,
+  .lightbox-next {
+    transition: none;
+  }
+}
