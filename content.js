@@ -638,11 +638,10 @@ window.portfolioData = {
       link: ""
     }
   ],
-  /* ---------------- BRANDING & GRAPHIC DESIGN ----------------
-     Complementary creative portfolio.
-     Replace each "image" with your real design file path.
-     Use "applied" only if you have a real-world photo of the
-     design in use (banner on a wall, poster at an event, etc.).
+   /* ---------------- BRANDING & GRAPHIC DESIGN ----------------
+     Organised as folders. Each category has its own cover image,
+     description, and items array. Clicking a folder opens the
+     designs inside it. Nothing is shown all at once.
   ---------------------------------------------------------- */
   graphicDesign: {
     intro:
@@ -656,83 +655,98 @@ window.portfolioData = {
     ],
 
     categories: [
-      { id: "all",           label: "All" },
-      { id: "institutional", label: "Institutional Branding" },
-      { id: "event",         label: "Event Branding & Promotion" },
-      { id: "logo",          label: "Logo & Visual Identity" },
-      { id: "technical",     label: "Technical & Educational Communication" }
-    ],
-
-    items: [
-      /* ---- INSTITUTIONAL BRANDING ---- */
+      /* ---------- FOLDER 1: INSTITUTIONAL BRANDING ---------- */
       {
-        title: "Institutional Backdrop",
-        category: "institutional",
-        caption: "Institutional backdrop designed for A K Khan UCEP Polytechnic Institute events and ceremonies.",
-        image: "images/design/branding/institutional-backdrop.jpg",
-        applied: ""
-      },
-      {
-        title: "Institutional Promotional Banner",
-        category: "institutional",
-        caption: "Promotional banner artwork supporting institutional visual communication.",
-        image: "images/design/branding/promotional-banner.jpg",
-        applied: ""
+        id: "institutional",
+        label: "Institutional Branding",
+        description: "Backdrops, banners and institutional visual communication assets.",
+        cover: "images/design/branding/cover-institutional.jpg",
+        items: [
+          {
+            title: "Institutional Backdrop",
+            caption: "Institutional backdrop designed for A K Khan UCEP Polytechnic Institute events and ceremonies.",
+            image: "images/design/branding/institutional-backdrop.jpg",
+            applied: ""
+          },
+          {
+            title: "Institutional Promotional Banner",
+            caption: "Promotional banner artwork supporting institutional visual communication.",
+            image: "images/design/branding/promotional-banner.jpg",
+            applied: ""
+          }
+        ]
       },
 
-      /* ---- EVENT BRANDING & PROMOTION ---- */
+      /* ---------- FOLDER 2: EVENT BRANDING & PROMOTION ---------- */
       {
-        title: "Clash of Department — Intra-Department IQ Competition",
-        category: "event",
-        caption: "Event identity and promotional poster for the intra-department IQ competition.",
-        image: "images/design/branding/clash-of-department.jpg",
-        applied: ""
-      },
-      {
-        title: "Event Promotional Display",
-        category: "event",
-        caption: "Display creative used to promote an institutional event.",
-        image: "images/design/branding/event-promo-display.jpg",
-        applied: ""
-      },
-      {
-        title: "Workshop & Seminar Poster",
-        category: "event",
-        caption: "Promotional graphic for an institutional workshop or seminar.",
-        image: "images/design/branding/workshop-poster.jpg",
-        applied: ""
-      },
-
-      /* ---- LOGO & VISUAL IDENTITY ---- */
-      {
-        title: "AKKUPI Robotics & Code Club (ARCC) Logo",
-        category: "logo",
-        caption: "Logo mark designed for the AKKUPI Robotics & Code Club.",
-        image: "images/design/branding/arcc-logo.jpg",
-        applied: ""
-      },
-      {
-        title: "ARCC Visual Identity Iterations",
-        category: "logo",
-        caption: "Iteration studies and visual identity concepts explored during logo development.",
-        image: "images/design/branding/arcc-iterations.jpg",
-        applied: ""
+        id: "event",
+        label: "Event Branding & Promotion",
+        description: "Event identities, promotional posters and display graphics for institutional events.",
+        cover: "images/design/branding/cover-event.jpg",
+        items: [
+          {
+            title: "Clash of Department — Intra-Department IQ Competition",
+            caption: "Event identity and promotional poster for the intra-department IQ competition.",
+            image: "images/design/branding/clash-of-department.jpg",
+            applied: ""
+          },
+          {
+            title: "Event Promotional Display",
+            caption: "Display creative used to promote an institutional event.",
+            image: "images/design/branding/event-promo-display.jpg",
+            applied: ""
+          },
+          {
+            title: "Workshop & Seminar Poster",
+            caption: "Promotional graphic for an institutional workshop or seminar.",
+            image: "images/design/branding/workshop-poster.jpg",
+            applied: ""
+          }
+        ]
       },
 
-      /* ---- TECHNICAL & EDUCATIONAL COMMUNICATION ---- */
+      /* ---------- FOLDER 3: LOGO & VISUAL IDENTITY ---------- */
       {
-        title: "Engineering Workshop Poster",
-        category: "technical",
-        caption: "Technical workshop poster — combining engineering content with clear visual communication.",
-        image: "images/design/branding/engineering-workshop-poster.jpg",
-        applied: ""
+        id: "logo",
+        label: "Logo & Visual Identity",
+        description: "Logo marks and visual identity concepts developed for student-led technical clubs.",
+        cover: "images/design/branding/cover-logo.jpg",
+        items: [
+          {
+            title: "AKKUPI Robotics & Code Club (ARCC) Logo",
+            caption: "Logo mark designed for the AKKUPI Robotics & Code Club.",
+            image: "images/design/branding/arcc-logo.jpg",
+            applied: ""
+          },
+          {
+            title: "ARCC Visual Identity Iterations",
+            caption: "Iteration studies and visual identity concepts explored during logo development.",
+            image: "images/design/branding/arcc-iterations.jpg",
+            applied: ""
+          }
+        ]
       },
+
+      /* ---------- FOLDER 4: TECHNICAL & EDUCATIONAL COMMUNICATION ---------- */
       {
-        title: "Technology Event Announcement",
-        category: "technical",
-        caption: "Announcement graphic for a technology-focused institutional event.",
-        image: "images/design/branding/technology-announcement.jpg",
-        applied: ""
+        id: "technical",
+        label: "Technical & Educational Communication",
+        description: "Technical posters and educational announcements — engineering content made visually clear.",
+        cover: "images/design/branding/cover-technical.jpg",
+        items: [
+          {
+            title: "Engineering Workshop Poster",
+            caption: "Technical workshop poster — combining engineering content with clear visual communication.",
+            image: "images/design/branding/engineering-workshop-poster.jpg",
+            applied: ""
+          },
+          {
+            title: "Technology Event Announcement",
+            caption: "Announcement graphic for a technology-focused institutional event.",
+            image: "images/design/branding/technology-announcement.jpg",
+            applied: ""
+          }
+        ]
       }
     ]
   },
