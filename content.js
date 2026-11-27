@@ -228,7 +228,7 @@ window.portfolioData = {
       organiser: "Cumilla University",
       year: "2024",
       category: "Runner-up",
-      description: "ARCC student Sadekul Islam achieved the Robo Soccer Runner-up position.",
+      description: "AKKUPI student team achieved Runner-up position.",
       evidence: [
         "images/Students Achievement/Cumilla University IT Fest-Robo Soccer — Runner-up/Comilla-University-IT-Fest-2024-1st-Runner-Up.jpg",
         "images/Students Achievement/Cumilla University IT Fest-Robo Soccer — Runner-up/IMG-20241115-WA0004.jpg",
@@ -351,23 +351,17 @@ window.portfolioData = {
       ] */
     },
       {
-      title: "EMAR — Edge-Enabled Modular Agricultural Robot",
+      title: "Hand Gesture-Controlled Vacuum Cleaner Robot",
       category: "Robotics",
       contribution: "Lead Researcher",
       status: "Prototype Complete",
-      description: "Developed a dual-processor autonomous platform for soil mapping and boundary detection tailored for smallholder farmers. EMAR (Edge-enabled Modular Agricultural Robot) is a modular, soil-sensing agricultural rover. It carries interchangeable sensor modules in a backplane (Intelligent Backplane / HAT) mounted on a Raspberry Pi 5. Modules communicate over a dual-channel CAN bus. The system performs in-situ soil measurement (N, P, K, pH, moisture), fuses the data with RTK-GPS position, and runs edge AI to produce field-level decisions.",
-      technologies: ["Raspberry Pi", "STM32", "LoRa", "Sensors"],
-      image: "images/Project/Agriculture Robot/IMG20260121164750.jpg",
+      description: "This project is an intuitive, wireless Hand Gesture-Controlled Vacuum Cleaner Robot designed to make floor cleaning effortless and accessible. Built on a lightweight 4-wheel-drive acrylic chassis, the robot translates simple hand tilts and movements into real-time directional commands, allowing users to steer and clean hard-to-reach areas without relying on complex joysticks or mobile apps. The system is divided into two main units that communicate wirelessly over a 2.4 GHz radio frequency. The Wearable Transmitter (Hand Glove): A compact transmitter unit worn on the user's hand reads tilt angles (forward, backward, left, and right) using a motion sensor (such as an MPU6050 accelerometer/gyroscope) and sends corresponding control signals wirelessly via an NRF24L01 transceiver. The Vacuum Robot Receiver: Onboard the robot, a second NRF24L01 module receives the directional commands and passes them to an Arduino Nano. The microcontroller processes the signals and drives an L298N Dual H-Bridge motor driver to control the speed and rotation of four TT DC gear motors, enabling smooth multi-directional movement while the integrated vacuum mechanism collects dust and debris. ",
+      technologies: ["Arduino Nano", "L298N Dual H-Bridge Motor Driver", "NRF24L01 2.4 GHz RF Transceiver Module"],
+      image: "images/Project/Gesture Control Vaccume Cleaner/IMG20221220022209.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
-        "images/Project/Agriculture Robot/IMG-20260120-WA0004.jpg",
-        "images/Project/Agriculture Robot/IMG-20260119-WA0017.jpg",
-        "images/Project/Agriculture Robot/IMG-20260118-WA0009.jpg",
-        "images/Project/Agriculture Robot/IMG-20251231-WA0018.jpg",
-        "images/Project/Agriculture Robot/IMG-20251231-WA0012.jpg",
-        "images/Project/Agriculture Robot/IMG-20251229-WA0006.jpg",
-        "images/Project/Agriculture Robot/IMG-20251218-WA0001.jpg",
-        "images/Project/Agriculture Robot/IMG-20251223-WA0006.jpg"
+        "images/Project/Gesture Control Vaccume Cleaner/IMG20221220022123.jpg",
+        "images/Project/Gesture Control Vaccume Cleaner/IMG20221220022053.jpg"
       ],
       /*evidence: [
         "documents/projects/agri-sensor-schematic.pdf",
