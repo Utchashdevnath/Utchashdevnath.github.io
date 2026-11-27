@@ -74,15 +74,33 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   };
 
-  /* Global toggle handler (works for all sections) */
+  /* ---------- Global toggle handler ----------
+     Handles BOTH evidence galleries (.evidence-gallery)
+     and project photo galleries (.project-gallery).
+  ---------------------------------------------- */
   document.addEventListener("click", (e) => {
     const btn = e.target.closest(".evidence-toggle");
     if (!btn) return;
-    const gallery = btn.closest(".evidence-gallery");
-    if (!gallery) return;
-    const more = gallery.querySelector(".evidence-more");
+
+    // Find whichever wrapper the button lives inside
+    const wrapper =
+      btn.closest(".evidence-gallery") ||
+      btn.closest(".project-gallery");
+    if (!wrapper) return;
+
+    // Find the collapsed container — either kind
+    const more =
+      wrapper.querySelector(".evidence-more") ||
+      wrapper.querySelector(".project-gallery-more");
+    if (!more) return;
+
+    // Remember original label on first click, so we can restore it
+    if (!btn.dataset.label) {
+      btn.dataset.label = btn.textContent.trim();
+    }
+
     const collapsed = more.classList.toggle("collapsed");
-    btn.textContent = collapsed ? `+${btn.dataset.count} more` : "Show less";
+    btn.textContent = collapsed ? btn.dataset.label : "Show less";
   });
 
   /* ---------- HERO ---------- */
