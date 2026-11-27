@@ -370,11 +370,13 @@ window.portfolioData = {
       contribution: "Lead Researcher",
       status: "Prototype Complete",
       description: "Designed and implemented a multi-bin Internet of Things (IoT) waste management system capable of tracking bin capacity and odor levels in real time. The solution combines embedded hardware alerts with cloud-based data logging to streamline waste collection and improve urban sanitation. • Multi-Bin Sensing Hardware: Built around an Arduino Nano interfaced with ultrasonic sensors (to measure fill levels) and gas/smell sensors (to detect odor intensity as a percentage) across three prototype waste bins. • Local Alerts & Status Feedback: Integrated an LCD display for live on-site metrics alongside a buzzer and LED indicators that automatically trigger when a bin reaches its maximum fill threshold. • Cloud Dashboard & Data Analytics: Transmitted real-time sensor readings via a Wi-Fi module to a custom web dashboard featuring live status cards and historical data tables for trend analysis and collection optimization.",
-      technologies: ["Arduino Nano", "MQ-135", "Ultrasonic Sensor"],
+      technologies: ["Arduino Nano", "MQ-135", "Ultrasonic Sensor", "LCD Dispaly"],
       image: "images/Project/Smart Dustbin/IMG20240520181617.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
-        "images/Project/Smart Dustbin/IMG-20240520-WA0039.jpg"
+        "images/Project/Smart Dustbin/IMG-20240520-WA0039.jpg",
+        "images/Project/Smart Dustbin/Block Diagram.JPG",
+        "images/Project/Smart Dustbin/Flow Chart.JPG"
       ],
     },
          {
@@ -387,7 +389,8 @@ window.portfolioData = {
       image: "images/Project/IoT Based Green House/IMG20240520182226.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
-        "images/Project/IoT Based Green House/IMG-20240520-WA0038.jpg"
+        "images/Project/IoT Based Green House/IMG-20240520-WA0038.jpg",
+        "images/Project/IoT Based Green House/Block Diagram.JPG"
       ],
     },
          {
@@ -396,11 +399,13 @@ window.portfolioData = {
       contribution: "Hardware Researcher",
       status: "Prototype Complete",
       description: "Designed and built a self-sustaining, solar-powered Internet of Things (IoT) system for real-time agricultural environment monitoring and predictive weather analytics. The project combines green energy with automated data logging and 14-day weather forecasting to help protect crops and optimize farming decisions. • Multi-Sensor Environmental Tracking: Built around an Arduino Nano microcontroller integrated with a DHT11 (temperature & humidity), MQ-135 (air quality), soil moisture, pH, and rain sensor to capture comprehensive field conditions. • Solar-Powered Operation: Integrated solar panels to generate renewable power, enabling the entire monitoring unit to run off-grid with low maintenance. • Real-Time Dashboard & Data Logging: Connected via a Wi-Fi module to a custom web dashboard that displays live sensor cards, logs historical readings every 30 seconds, and provides local feedback via an LCD display. • 14-Day Predictive Analytics: Incorporated a weather forecasting module that analyzes environmental parameters to predict climate conditions for the next two weeks.",
-      technologies: ["Arduino Nano", "Python", "MQ-135", "DHT22", "pH Sensor"],
+      technologies: ["Arduino Nano", "Python", "MQ-135", "DHT11", "pH Sensor"],
       image: "images/Project/IoT based Green Agricultural Environment Monitoring/IMG20240520181232.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
-        "images/Project/IoT based Green Agricultural Environment Monitoring/IMG-20240520-WA0042.jpg"
+        "images/Project/IoT based Green Agricultural Environment Monitoring/IMG-20240520-WA0042.jpg",
+        "images/Project/IoT based Green Agricultural Environment Monitoring/Block Diagram.JPG",
+        "images/Project/IoT based Green Agricultural Environment Monitoring/Flow Chart.JPG"
       ],
     },
              {
@@ -409,7 +414,7 @@ window.portfolioData = {
       contribution: "Hardware Researcher",
       status: "Prototype Complete",
       description: "Designed and built a self-sustaining, solar-powered Internet of Things (IoT) system for real-time agricultural environment monitoring and predictive weather analytics. The project combines green energy with automated data logging and 14-day weather forecasting to help protect crops and optimize farming decisions. • Multi-Sensor Environmental Tracking: Built around an Arduino Nano microcontroller integrated with a DHT11 (temperature & humidity), MQ-135 (air quality), soil moisture, pH, and rain sensor to capture comprehensive field conditions. • Solar-Powered Operation: Integrated solar panels to generate renewable power, enabling the entire monitoring unit to run off-grid with low maintenance. • Real-Time Dashboard & Data Logging: Connected via a Wi-Fi module to a custom web dashboard that displays live sensor cards, logs historical readings every 30 seconds, and provides local feedback via an LCD display. • 14-Day Predictive Analytics: Incorporated a weather forecasting module that analyzes environmental parameters to predict climate conditions for the next two weeks.",
-      technologies: ["Arduino Nano", "Python", "MQ-135", "DHT22", "pH Sensor"],
+      technologies: ["Arduino Nano", "Python", "MQ-135", "DHT11", "pH Sensor", "KNN Method"],
       image: "images/Project/IoT based Green Agricultural Environment Monitoring/IMG20240520181232.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
