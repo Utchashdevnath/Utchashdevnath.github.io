@@ -311,17 +311,17 @@ window.portfolioData = {
         "images/projects/agri-sensor-4.jpg",
         "images/projects/agri-sensor-5.jpg"
       ],
-      evidence: [
+      /* evidence: [
         "documents/projects/agri-sensor-schematic.pdf",
         "documents/projects/agri-sensor-testing-report.pdf"
-      ]
+      ] */
     }, 
         {
       title: "EMAR — Edge-Enabled Modular Agricultural Robot",
       category: "Robotics",
       contribution: "Lead Researcher",
       status: "Prototype Complete",
-      description: "Developed a dual-processor autonomous platform for soil mapping and boundary detection tailored for smallholder farmers.",
+      description: "Developed a dual-processor autonomous platform for soil mapping and boundary detection tailored for smallholder farmers. EMAR (Edge-enabled Modular Agricultural Robot) is a modular, soil-sensing agricultural rover. It carries interchangeable sensor modules in a backplane (Intelligent Backplane / HAT) mounted on a Raspberry Pi 5. Modules communicate over a dual-channel CAN bus. The system performs in-situ soil measurement (N, P, K, pH, moisture), fuses the data with RTK-GPS position, and runs edge AI to produce field-level decisions.",
       technologies: ["Raspberry Pi", "STM32", "LoRa", "Sensors"],
       image: "images/Project/Agriculture Robot/IMG20260121164750.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
@@ -341,11 +341,11 @@ window.portfolioData = {
       ] */
     },  
       {
-      title: "Smart Menstrual Hygiene Ecosystem",
+      title: "Solar-Powered Smart Vending Machine",
       category: "Humanitarian Tech",
       contribution: "Lead Inventor",
       status: "Prototype Complete",
-      description: "Engineered a solar-powered, multi-network vending machine with biometric authentication (RFID/Fingerprint) for low-infrastructure environments.",
+      description: "Designed and developed three versions of a solar-powered smart vending machine with multi-network connectivity and dual authentication (RFID and fingerprint recognition), alongside a dedicated disposal unit. The system was designed to support accessible, secure, and sustainable automated vending in low-infrastructure environments.",
       technologies: ["ESP32", "Solar", "RFID", "Biometrics"],
       image: "images/Project/Vending Machine/IMG20250514151255.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
