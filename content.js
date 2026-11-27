@@ -638,6 +638,104 @@ window.portfolioData = {
       link: ""
     }
   ],
+  /* ---------------- BRANDING & GRAPHIC DESIGN ----------------
+     Complementary creative portfolio.
+     Replace each "image" with your real design file path.
+     Use "applied" only if you have a real-world photo of the
+     design in use (banner on a wall, poster at an event, etc.).
+  ---------------------------------------------------------- */
+  graphicDesign: {
+    intro:
+      "Beyond my engineering and teaching career, I have a strong interest in graphic design and visual communication. During my involvement in branding and marketing activities at A K Khan UCEP Polytechnic Institute, I designed institutional promotional materials, event posters, social media creatives, and branding assets using Canva. These experiences allowed me to combine creativity, visual storytelling, and technical communication in practical institutional settings.",
+
+    meta: [
+      { label: "Design Tool",  value: "Canva" },
+      { label: "Organisation", value: "A K Khan UCEP Polytechnic Institute, UCEP Bangladesh" },
+      { label: "Areas",        value: "Graphic Design, Institutional Branding, Event Promotion, Visual Communication" },
+      { label: "Role",         value: "Branding & Marketing Coordination and Graphic Design" }
+    ],
+
+    categories: [
+      { id: "all",           label: "All" },
+      { id: "institutional", label: "Institutional Branding" },
+      { id: "event",         label: "Event Branding & Promotion" },
+      { id: "logo",          label: "Logo & Visual Identity" },
+      { id: "technical",     label: "Technical & Educational Communication" }
+    ],
+
+    items: [
+      /* ---- INSTITUTIONAL BRANDING ---- */
+      {
+        title: "Institutional Backdrop",
+        category: "institutional",
+        caption: "Institutional backdrop designed for A K Khan UCEP Polytechnic Institute events and ceremonies.",
+        image: "images/design/branding/institutional-backdrop.jpg",
+        applied: ""
+      },
+      {
+        title: "Institutional Promotional Banner",
+        category: "institutional",
+        caption: "Promotional banner artwork supporting institutional visual communication.",
+        image: "images/design/branding/promotional-banner.jpg",
+        applied: ""
+      },
+
+      /* ---- EVENT BRANDING & PROMOTION ---- */
+      {
+        title: "Clash of Department — Intra-Department IQ Competition",
+        category: "event",
+        caption: "Event identity and promotional poster for the intra-department IQ competition.",
+        image: "images/design/branding/clash-of-department.jpg",
+        applied: ""
+      },
+      {
+        title: "Event Promotional Display",
+        category: "event",
+        caption: "Display creative used to promote an institutional event.",
+        image: "images/design/branding/event-promo-display.jpg",
+        applied: ""
+      },
+      {
+        title: "Workshop & Seminar Poster",
+        category: "event",
+        caption: "Promotional graphic for an institutional workshop or seminar.",
+        image: "images/design/branding/workshop-poster.jpg",
+        applied: ""
+      },
+
+      /* ---- LOGO & VISUAL IDENTITY ---- */
+      {
+        title: "AKKUPI Robotics & Code Club (ARCC) Logo",
+        category: "logo",
+        caption: "Logo mark designed for the AKKUPI Robotics & Code Club.",
+        image: "images/design/branding/arcc-logo.jpg",
+        applied: ""
+      },
+      {
+        title: "ARCC Visual Identity Iterations",
+        category: "logo",
+        caption: "Iteration studies and visual identity concepts explored during logo development.",
+        image: "images/design/branding/arcc-iterations.jpg",
+        applied: ""
+      },
+
+      /* ---- TECHNICAL & EDUCATIONAL COMMUNICATION ---- */
+      {
+        title: "Engineering Workshop Poster",
+        category: "technical",
+        caption: "Technical workshop poster — combining engineering content with clear visual communication.",
+        image: "images/design/branding/engineering-workshop-poster.jpg",
+        applied: ""
+      },
+      {
+        title: "Technology Event Announcement",
+        category: "technical",
+        caption: "Announcement graphic for a technology-focused institutional event.",
+        image: "images/design/branding/technology-announcement.jpg",
+        applied: ""
+      }
+    ]
+  },
 
   /* ---------------- CONTACTS ---------------- */
   contacts: [
