@@ -376,7 +376,9 @@ window.portfolioData = {
       gallery: [
         "images/Project/Smart Dustbin/IMG-20240520-WA0039.jpg",
         "images/Project/Smart Dustbin/Block Diagram.JPG",
-        "images/Project/Smart Dustbin/Flow Chart.JPG"
+        "images/Project/Smart Dustbin/Flow Chart.JPG",
+        "images/Project/Smart Dustbin/Output1.JPG",
+        "images/Project/Smart Dustbin/Output2.JPG"
       ],
     },
          {
@@ -390,7 +392,8 @@ window.portfolioData = {
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
         "images/Project/IoT Based Green House/IMG-20240520-WA0038.jpg",
-        "images/Project/IoT Based Green House/Block Diagram.JPG"
+        "images/Project/IoT Based Green House/Block Diagram.JPG",
+        "images/Project/IoT Based Green House/Output.JPG"
       ],
     },
          {
@@ -399,13 +402,16 @@ window.portfolioData = {
       contribution: "Hardware Researcher",
       status: "Prototype Complete",
       description: "Designed and built a self-sustaining, solar-powered Internet of Things (IoT) system for real-time agricultural environment monitoring and predictive weather analytics. The project combines green energy with automated data logging and 14-day weather forecasting to help protect crops and optimize farming decisions. • Multi-Sensor Environmental Tracking: Built around an Arduino Nano microcontroller integrated with a DHT11 (temperature & humidity), MQ-135 (air quality), soil moisture, pH, and rain sensor to capture comprehensive field conditions. • Solar-Powered Operation: Integrated solar panels to generate renewable power, enabling the entire monitoring unit to run off-grid with low maintenance. • Real-Time Dashboard & Data Logging: Connected via a Wi-Fi module to a custom web dashboard that displays live sensor cards, logs historical readings every 30 seconds, and provides local feedback via an LCD display. • 14-Day Predictive Analytics: Incorporated a weather forecasting module that analyzes environmental parameters to predict climate conditions for the next two weeks.",
-      technologies: ["Arduino Nano", "Python", "MQ-135", "DHT11", "pH Sensor"],
+      technologies: ["Arduino Nano", "Python", "MQ-135", "DHT11", "pH Sensor", "KNN Method"],
       image: "images/Project/IoT based Green Agricultural Environment Monitoring/IMG20240520181232.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
         "images/Project/IoT based Green Agricultural Environment Monitoring/IMG-20240520-WA0042.jpg",
         "images/Project/IoT based Green Agricultural Environment Monitoring/Block Diagram.JPG",
-        "images/Project/IoT based Green Agricultural Environment Monitoring/Flow Chart.JPG"
+        "images/Project/IoT based Green Agricultural Environment Monitoring/Flow Chart.JPG",
+        "images/Project/IoT based Green Agricultural Environment Monitoring/Output1.JPG",
+        "images/Project/IoT based Green Agricultural Environment Monitoring/Output2.JPG",
+        "images/Project/IoT based Green Agricultural Environment Monitoring/Capture3.JPG"
       ],
     },
              {
@@ -414,7 +420,7 @@ window.portfolioData = {
       contribution: "Hardware Researcher",
       status: "Prototype Complete",
       description: "Designed and built a self-sustaining, solar-powered Internet of Things (IoT) system for real-time agricultural environment monitoring and predictive weather analytics. The project combines green energy with automated data logging and 14-day weather forecasting to help protect crops and optimize farming decisions. • Multi-Sensor Environmental Tracking: Built around an Arduino Nano microcontroller integrated with a DHT11 (temperature & humidity), MQ-135 (air quality), soil moisture, pH, and rain sensor to capture comprehensive field conditions. • Solar-Powered Operation: Integrated solar panels to generate renewable power, enabling the entire monitoring unit to run off-grid with low maintenance. • Real-Time Dashboard & Data Logging: Connected via a Wi-Fi module to a custom web dashboard that displays live sensor cards, logs historical readings every 30 seconds, and provides local feedback via an LCD display. • 14-Day Predictive Analytics: Incorporated a weather forecasting module that analyzes environmental parameters to predict climate conditions for the next two weeks.",
-      technologies: ["Arduino Nano", "Python", "MQ-135", "DHT11", "pH Sensor", "KNN Method"],
+      technologies: ["Arduino Nano", "Python", "MQ-135", "DHT11", "pH Sensor", ],
       image: "images/Project/IoT based Green Agricultural Environment Monitoring/IMG20240520181232.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
