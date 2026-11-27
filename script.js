@@ -432,6 +432,189 @@ document.addEventListener("DOMContentLoaded", () => {
         }).join("")
       : renderEmpty("Certifications will be added here.");
   }
+  /* ---------- BRANDING & GRAPHIC DESIGN ---------- */
+  const designData = data.graphicDesign;
+  const designGrid = document.getElementById("designGrid");
+  const designFilters = document.getElementById("designFilters");
+  const designIntroEl = document.getElementById("graphicDesignIntro");
+  const designMetaEl = document.getElementById("graphicDesignMeta");
+
+  if (designData && designGrid) {
+    /* Intro + meta */
+    if (designIntroEl) designIntroEl.textContent = designData.intro || "";
+
+    if (designMetaEl) {
+      designMetaEl.innerHTML = (designData.meta || []).map(m => `
+        <div class="design-meta-item">
+          <span class="design-meta-label">${escapeHTML(m.label)}</span>
+          <span class="design-meta-value">${escapeHTML(m.value)}</span>
+        </div>
+      `).join("");
+    }
+
+    /* Filter buttons */
+    const categories = designData.categories || [{ id: "all", label: "All" }];
+    designFilters.innerHTML = categories.map((c, i) => `
+      <button type="button" class="filter-btn${i === 0 ? " active" : ""}"
+        data-category="${escapeHTML(c.id)}"
+        role="tab" aria-selected="${i === 0}">
+        ${escapeHTML(c.label)}
+      </button>
+    `).join("");
+
+    /* Card renderer */
+    const buildDesignCard = (item) => {
+      const image = safeURL(item.image);
+      const applied = safeURL(item.applied);
+      return `
+        <article class="design-card" data-category="${escapeHTML(item.category)}">
+          <button type="button" class="design-thumb"
+            aria-label="Preview: ${escapeHTML(item.title)}"
+            data-image="${escapeHTML(image)}"
+            data-applied="${escapeHTML(applied)}"
+            data-title="${escapeHTML(item.title)}"
+            data-caption="${escapeHTML(item.caption || "")}">
+            ${image
+              ? `<img src="${escapeHTML(image)}" alt="${escapeHTML(item.title)}"
+                   loading="lazy">`
+              : `<div class="design-thumb-fallback">Design</div>`}
+            ${applied ? `<span class="design-applied-badge">In use</span>` : ""}
+            <span class="design-zoom" aria-hidden="true">⤢</span>
+          </button>
+          <div class="design-body">
+            <h3>${escapeHTML(item.title)}</h3>
+            <p>${escapeHTML(item.caption || "")}</p>
+          </div>
+        </article>
+      `;
+    };
+
+    const allDesigns = designData.items || [];
+
+    const renderDesigns = (category = "all") => {
+      const list = category === "all"
+        ? allDesigns
+        : allDesigns.filter(i => i.category === category);
+
+      designGrid.innerHTML = list.length
+        ? list.map(buildDesignCard).join("")
+        : renderEmpty("No designs in this category yet.");
+    };
+
+    renderDesigns();
+
+    /* Filter click */
+    designFilters.addEventListener("click", (e) => {
+      const btn = e.target.closest(".filter-btn");
+      if (!btn) return;
+      designFilters.querySelectorAll(".filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.setAttribute("aria-selected", "false");
+      });
+      btn.classList.add("active");
+      btn.setAttribute("aria-selected", "true");
+      renderDesigns(btn.dataset.category);
+    });
+
+    /* ---------- LIGHTBOX ---------- */
+    const lightbox = document.getElementById("lightbox");
+    const lbImage = document.getElementById("lightboxImage");
+    const lbTitle = document.getElementById("lightboxTitle");
+    const lbCaption = document.getElementById("lightboxCaption");
+    const lbClose = lightbox.querySelector(".lightbox-close");
+    const lbPrev = lightbox.querySelector(".lightbox-prev");
+    const lbNext = lightbox.querySelector(".lightbox-next");
+
+    let lbItems = [];
+    let lbIndex = 0;
+    let lbReturnFocus = null;
+
+    const renderLightbox = () => {
+      const item = lbItems[lbIndex];
+      if (!item) return;
+
+      const primary = item.applied || item.image;
+      lbImage.src = primary;
+      lbImage.alt = item.title + (item.applied ? " — in use" : "");
+
+      lbTitle.textContent = item.title;
+      lbCaption.textContent = item.caption || "";
+
+      if (item.applied && item.image) {
+        lbCaption.textContent +=
+          "  (Showing real-world application — original design available on request.)";
+      }
+
+      const hasMany = lbItems.length > 1;
+      lbPrev.style.display = hasMany ? "flex" : "none";
+      lbNext.style.display = hasMany ? "flex" : "none";
+    };
+
+    const openLightbox = (index) => {
+      lbIndex = index;
+      lbReturnFocus = document.activeElement;
+      lightbox.classList.add("visible");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      renderLightbox();
+      lbClose.focus();
+    };
+
+    const closeLightbox = () => {
+      lightbox.classList.remove("visible");
+      lightbox.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      lbImage.src = "";
+      if (lbReturnFocus) lbReturnFocus.focus();
+    };
+
+    const stepLightbox = (dir) => {
+      lbIndex = (lbIndex + dir + lbItems.length) % lbItems.length;
+      renderLightbox();
+    };
+
+    designGrid.addEventListener("click", (e) => {
+      const thumb = e.target.closest(".design-thumb");
+      if (!thumb) return;
+      const cards = [...designGrid.querySelectorAll(".design-thumb")];
+      const currentIdx = cards.indexOf(thumb);
+      if (currentIdx < 0) return;
+
+      lbItems = cards.map(c => ({
+        image: c.dataset.image,
+        applied: c.dataset.applied,
+        title: c.dataset.title,
+        caption: c.dataset.caption
+      }));
+      openLightbox(currentIdx);
+    });
+
+    lbClose.addEventListener("click", closeLightbox);
+    lbPrev.addEventListener("click", () => stepLightbox(-1));
+    lbNext.addEventListener("click", () => stepLightbox(1));
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (!lightbox.classList.contains("visible")) return;
+      if (e.key === "Escape") { closeLightbox(); return; }
+      if (e.key === "ArrowLeft")  stepLightbox(-1);
+      if (e.key === "ArrowRight") stepLightbox(1);
+      if (e.key === "Tab") {
+        const focusables = [lbClose, lbPrev, lbNext].filter(el => el.offsetParent !== null);
+        if (!focusables.length) return;
+        const first = focusables[0];
+        const last  = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault(); last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault(); first.focus();
+        }
+      }
+    });
+  }
 
   /* ---------- CONTACT ---------- */
   document.getElementById("contactList").innerHTML =
