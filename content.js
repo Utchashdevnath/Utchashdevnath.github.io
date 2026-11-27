@@ -415,17 +415,23 @@ window.portfolioData = {
       ],
     },
              {
-      title: "Solar-Powered IoT Agricultural Monitoring & Weather Prediction System",
-      category: "Robotics",
-      contribution: "Hardware Researcher",
+      title: "IoT Based Smart Street Light",
+      category: "Internet of Things (IoT)",
+      contribution: "Lead Researcher",
       status: "Prototype Complete",
       description: "Designed and built a self-sustaining, solar-powered Internet of Things (IoT) system for real-time agricultural environment monitoring and predictive weather analytics. The project combines green energy with automated data logging and 14-day weather forecasting to help protect crops and optimize farming decisions. • Multi-Sensor Environmental Tracking: Built around an Arduino Nano microcontroller integrated with a DHT11 (temperature & humidity), MQ-135 (air quality), soil moisture, pH, and rain sensor to capture comprehensive field conditions. • Solar-Powered Operation: Integrated solar panels to generate renewable power, enabling the entire monitoring unit to run off-grid with low maintenance. • Real-Time Dashboard & Data Logging: Connected via a Wi-Fi module to a custom web dashboard that displays live sensor cards, logs historical readings every 30 seconds, and provides local feedback via an LCD display. • 14-Day Predictive Analytics: Incorporated a weather forecasting module that analyzes environmental parameters to predict climate conditions for the next two weeks.",
       technologies: ["Arduino Nano", "Python", "MQ-135", "DHT11", "pH Sensor", ],
-      image: "images/Project/IoT based Green Agricultural Environment Monitoring/IMG20240520181232.jpg",
+      image: "images/Project/Street Light/IMG-20241229-WA0007.jpg",
      /* link: "https://github.com/Utchashdevnath/agri-sensor", */
       gallery: [
-        "images/Project/IoT based Green Agricultural Environment Monitoring/IMG-20240520-WA0042.jpg"
-      ],
+        "images/Project/Street Light/Block Diagram.JPG",
+        "images/Project/Street Light/Flow Chart.JPG",
+         "images/Project/Street Light/IMG-20241229-WA0010.jpg",
+         "images/Project/Street Light/IMG-20241229-WA0011.jpg",
+         "images/Project/Street Light/IMG20250813161728.jpg",
+         "images/Project/Street Light/Schematic.JPG",
+         "images/Project/Street Light/Schematic2.JPG"
+],
     },
   ],
 
