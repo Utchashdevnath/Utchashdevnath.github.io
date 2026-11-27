@@ -22,18 +22,12 @@ window.portfolioData = {
       "Electrical and Electronic Engineering graduate and technical educator with 4+ years of experience in embedded systems, robotics and IoT. Currently Head of the Electrical Technology Department at A K Khan UCEP Polytechnic Institute, combining administrative leadership with hands-on R&D. Associate Member of the Institution of Engineers, Bangladesh (IEB, A29264) and holder of a Post Graduate Diploma in Project Management.",
     location: "Chattogram, Bangladesh",
     tags: [
-      "Embedded Systems",
-      "Robotics",
-      "IoT",
-      "Edge-AI",
-      "Frugal Innovation",
-      "Applied Research"
+      "Embedded Systems", "Robotics", "IoT", "Edge-AI",  "Frugal Innovation", "Applied Research"
     ]
   },
-
   /* ---------------- LEADERSHIP SUMMARY ---------------- */
   leadershipSummary: {
-    studentsMentored: "50+",
+    studentsMentored: "30+",
     eventsOrganised: 4,
     workshopsDelivered: 2,
     podiumFinishes: 11,
@@ -43,26 +37,19 @@ window.portfolioData = {
   /* ---------------- STUDENT ACHIEVEMENT SUMMARY ---------------- */
   studentAchievementSummary:
     "11 podium finishes across 9 competitive events (2023–2026), achieved by student teams under my mentorship.",
-
   /* ---------------- ABOUT ---------------- */
   about: [
     "I am an Electrical and Electronic Engineering graduate from Premier University, Bangladesh. I completed my undergraduate degree in 2022.",
-
     "My professional work combines technical education, departmental leadership and student mentorship. I am particularly interested in connecting engineering fundamentals with practical, affordable and research-oriented projects.",
 
     "Core Technical Competencies:",
 
     "• Hardware Design: Expert in Altium Designer for multi-layer PCB architecture; proficient in 3D prototyping and mechanical chassis design.",
-
     "• Systems Architecture: Advanced implementation of dual-processor systems (STM32 + Raspberry Pi); experience with LoRa, MQTT and cloud telemetry.",
-
     "• Industrial Automation: Specialist in PLC programming and industrial-grade project implementation.",
-
     "• Embedded Programming: Proficient in C++, Python and control algorithms for autonomous navigation.",
-
     "• Project Management: PGD-certified with a focus on R&D lifecycles and laboratory optimization."
   ],
-
   /* ---------------- EDUCATION ---------------- */
   education: [
     {
@@ -78,7 +65,6 @@ window.portfolioData = {
       detail: "Core modules: Project Management Fundamentals, Planning & Execution, Resource & Stakeholder Management, Project Feasibility & Financing, Risk Management, Agile Methodologies, Performance Measurement & Control."
     }
   ],
-
   /* ---------------- INTERESTS ---------------- */
   interests: [
     "Embedded Systems",
@@ -91,7 +77,6 @@ window.portfolioData = {
     "Intelligent Control",
     "Renewable Energy"
   ],
-
   /* ---------------- EXPERIENCE ---------------- */
   experience: [
     {
