@@ -366,7 +366,31 @@ window.portfolioData = {
         "documents/projects/agri-sensor-schematic.pdf",
         "documents/projects/agri-sensor-testing-report.pdf"
       ] */
-    } 
+    },
+      {
+      title: "EMAR — Edge-Enabled Modular Agricultural Robot",
+      category: "Robotics",
+      contribution: "Lead Researcher",
+      status: "Prototype Complete",
+      description: "Developed a dual-processor autonomous platform for soil mapping and boundary detection tailored for smallholder farmers. EMAR (Edge-enabled Modular Agricultural Robot) is a modular, soil-sensing agricultural rover. It carries interchangeable sensor modules in a backplane (Intelligent Backplane / HAT) mounted on a Raspberry Pi 5. Modules communicate over a dual-channel CAN bus. The system performs in-situ soil measurement (N, P, K, pH, moisture), fuses the data with RTK-GPS position, and runs edge AI to produce field-level decisions.",
+      technologies: ["Raspberry Pi", "STM32", "LoRa", "Sensors"],
+      image: "images/Project/Agriculture Robot/IMG20260121164750.jpg",
+     /* link: "https://github.com/Utchashdevnath/agri-sensor", */
+      gallery: [
+        "images/Project/Agriculture Robot/IMG-20260120-WA0004.jpg",
+        "images/Project/Agriculture Robot/IMG-20260119-WA0017.jpg",
+        "images/Project/Agriculture Robot/IMG-20260118-WA0009.jpg",
+        "images/Project/Agriculture Robot/IMG-20251231-WA0018.jpg",
+        "images/Project/Agriculture Robot/IMG-20251231-WA0012.jpg",
+        "images/Project/Agriculture Robot/IMG-20251229-WA0006.jpg",
+        "images/Project/Agriculture Robot/IMG-20251218-WA0001.jpg",
+        "images/Project/Agriculture Robot/IMG-20251223-WA0006.jpg"
+      ],
+      /*evidence: [
+        "documents/projects/agri-sensor-schematic.pdf",
+        "documents/projects/agri-sensor-testing-report.pdf"
+      ] */
+    },
   ],
 
   /* ---------------- HARDWARE & DESIGN ---------------- */
