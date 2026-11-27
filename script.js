@@ -432,14 +432,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }).join("")
       : renderEmpty("Certifications will be added here.");
   }
-  /* ---------- BRANDING & GRAPHIC DESIGN ---------- */
+    /* ---------- BRANDING & GRAPHIC DESIGN (folder drill-down) ---------- */
   const designData = data.graphicDesign;
+  const designCategoriesEl = document.getElementById("designCategories");
+  const designCategoryView = document.getElementById("designCategoryView");
   const designGrid = document.getElementById("designGrid");
-  const designFilters = document.getElementById("designFilters");
+  const designBack = document.getElementById("designBack");
+  const designCatTitle = document.getElementById("designCategoryTitle");
+  const designCatDesc = document.getElementById("designCategoryDesc");
   const designIntroEl = document.getElementById("graphicDesignIntro");
   const designMetaEl = document.getElementById("graphicDesignMeta");
 
-  if (designData && designGrid) {
+  if (designData && designCategoriesEl) {
     /* Intro + meta */
     if (designIntroEl) designIntroEl.textContent = designData.intro || "";
 
@@ -452,22 +456,47 @@ document.addEventListener("DOMContentLoaded", () => {
       `).join("");
     }
 
-    /* Filter buttons */
-    const categories = designData.categories || [{ id: "all", label: "All" }];
-    designFilters.innerHTML = categories.map((c, i) => `
-      <button type="button" class="filter-btn${i === 0 ? " active" : ""}"
-        data-category="${escapeHTML(c.id)}"
-        role="tab" aria-selected="${i === 0}">
-        ${escapeHTML(c.label)}
-      </button>
-    `).join("");
+    /* ---------- LEVEL 1: Category folders ---------- */
+    const renderCategoryFolders = () => {
+      const categories = designData.categories || [];
+      if (!categories.length) {
+        designCategoriesEl.innerHTML = renderEmpty("Design categories will be added here.");
+        return;
+      }
 
-    /* Card renderer */
+      designCategoriesEl.innerHTML = categories.map(cat => {
+        const cover = safeURL(cat.cover);
+        const firstImage = (cat.items || []).map(i => safeURL(i.image)).filter(Boolean)[0] || "";
+        const displayCover = cover || firstImage;
+        const count = (cat.items || []).length;
+
+        return `
+          <button type="button" class="design-folder" data-cat-id="${escapeHTML(cat.id)}"
+                  aria-label="Open folder: ${escapeHTML(cat.label)}">
+            <div class="design-folder-cover">
+              ${displayCover
+                ? `<img src="${escapeHTML(displayCover)}" alt="${escapeHTML(cat.label)}" loading="lazy">`
+                : `<div class="design-folder-fallback">${escapeHTML(cat.label)}</div>`}
+              <span class="design-folder-count">
+                ${count} ${count === 1 ? "design" : "designs"}
+              </span>
+            </div>
+            <div class="design-folder-body">
+              <h3>${escapeHTML(cat.label)}</h3>
+              <p>${escapeHTML(cat.description || "")}</p>
+              <span class="design-folder-cta">Open folder →</span>
+            </div>
+          </button>
+        `;
+      }).join("");
+    };
+
+    /* ---------- LEVEL 2: Designs inside a category ---------- */
     const buildDesignCard = (item) => {
       const image = safeURL(item.image);
       const applied = safeURL(item.applied);
       return `
-        <article class="design-card" data-category="${escapeHTML(item.category)}">
+        <article class="design-card">
           <button type="button" class="design-thumb"
             aria-label="Preview: ${escapeHTML(item.title)}"
             data-image="${escapeHTML(image)}"
@@ -475,8 +504,7 @@ document.addEventListener("DOMContentLoaded", () => {
             data-title="${escapeHTML(item.title)}"
             data-caption="${escapeHTML(item.caption || "")}">
             ${image
-              ? `<img src="${escapeHTML(image)}" alt="${escapeHTML(item.title)}"
-                   loading="lazy">`
+              ? `<img src="${escapeHTML(image)}" alt="${escapeHTML(item.title)}" loading="lazy">`
               : `<div class="design-thumb-fallback">Design</div>`}
             ${applied ? `<span class="design-applied-badge">In use</span>` : ""}
             <span class="design-zoom" aria-hidden="true">⤢</span>
@@ -489,32 +517,53 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
     };
 
-    const allDesigns = designData.items || [];
+    const openCategory = (catId) => {
+      const cat = (designData.categories || []).find(c => c.id === catId);
+      if (!cat) return;
 
-    const renderDesigns = (category = "all") => {
-      const list = category === "all"
-        ? allDesigns
-        : allDesigns.filter(i => i.category === category);
+      designCatTitle.textContent = cat.label;
+      designCatDesc.textContent = cat.description || "";
 
-      designGrid.innerHTML = list.length
-        ? list.map(buildDesignCard).join("")
-        : renderEmpty("No designs in this category yet.");
+      const items = cat.items || [];
+      designGrid.innerHTML = items.length
+        ? items.map(buildDesignCard).join("")
+        : renderEmpty("No designs in this folder yet.");
+
+      designCategoriesEl.classList.add("hidden");
+      designCategoryView.classList.remove("hidden");
+
+      /* Smooth scroll to top of the view */
+      designCategoryView.scrollIntoView({ behavior: "smooth", block: "start" });
     };
 
-    renderDesigns();
+    const closeCategory = () => {
+      designCategoryView.classList.add("hidden");
+      designCategoriesEl.classList.remove("hidden");
+      designCategoriesEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
 
-    /* Filter click */
-    designFilters.addEventListener("click", (e) => {
-      const btn = e.target.closest(".filter-btn");
+    renderCategoryFolders();
+
+    /* Folder click */
+    designCategoriesEl.addEventListener("click", (e) => {
+      const btn = e.target.closest(".design-folder");
       if (!btn) return;
-      designFilters.querySelectorAll(".filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.setAttribute("aria-selected", "false");
-      });
-      btn.classList.add("active");
-      btn.setAttribute("aria-selected", "true");
-      renderDesigns(btn.dataset.category);
+      openCategory(btn.dataset.catId);
     });
+
+    /* Back button */
+    designBack.addEventListener("click", closeCategory);
+
+    /* Clicking "Design" in nav always returns to folder view */
+    const designNavLink = document.querySelector('a[href="#graphic-design"]');
+    if (designNavLink) {
+      designNavLink.addEventListener("click", () => {
+        if (!designCategoryView.classList.contains("hidden")) {
+          designCategoryView.classList.add("hidden");
+          designCategoriesEl.classList.remove("hidden");
+        }
+      });
+    }
 
     /* ---------- LIGHTBOX ---------- */
     const lightbox = document.getElementById("lightbox");
@@ -536,7 +585,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const primary = item.applied || item.image;
       lbImage.src = primary;
       lbImage.alt = item.title + (item.applied ? " — in use" : "");
-
       lbTitle.textContent = item.title;
       lbCaption.textContent = item.caption || "";
 
