@@ -85,7 +85,7 @@ window.portfolioData = {
       period: "April 2023 – Present"
     },
     {
-      role: "Research & Development Engineer",
+      role: "Research & Development Engineer (Part-Time)",
       organisation: "Robotry Bangladesh",
       period: "July 2023 – December 2025"
     },
@@ -105,7 +105,6 @@ window.portfolioData = {
       period: "July 2021 – September 2021"
     }
   ],
-
   /* ---------------- MENTORSHIP ---------------- */
   mentorship: [
     {
@@ -126,7 +125,7 @@ window.portfolioData = {
         "Mini Battle Bot",
         "Robotics",
         "Electronics",
-        "Programming",
+        "Product Design",
         "Embedded Systems",
         "Automation"
       ]
@@ -136,7 +135,7 @@ window.portfolioData = {
       period: "October 2021 – November 2022",
       organisation: "Premier University Robotics Club (PURC)",
       description:
-        "Led the club's executive committee, overseeing strategic planning, event management, and the technical development of members. PURC has given me the confidence and courage to believe in myself. Most of my achievements till now are due to this club, and I am eternally grateful to this organization.",
+        "Led the club's executive committee, overseeing strategic planning, event management, and the technical development of members.",
       contributions: [
         "Directed the club's vision and managed the executive team to achieve organizational goals.",
         "Organized large-scale robotics events, workshops, and competitions.",
@@ -151,7 +150,7 @@ window.portfolioData = {
     },
     {
       title: "Organizing Secretary",
-      period: "2020 – 2021",
+      period: "September 2020 – October 2021",
       organisation: "Premier University Robotics Club (PURC)",
       description:
         "Focused on logistics, event coordination, and member engagement to ensure the smooth operation of club activities.",
@@ -168,7 +167,6 @@ window.portfolioData = {
       ]
     }
   ],
-
   /* ---------------- COMPETITIONS (Student Achievements) ---------------- */
   competitions: [
     {
