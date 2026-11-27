@@ -329,7 +329,7 @@
         <div id="certificationList" class="cert-list"></div>
       </div>
     </section>
-        <!-- ===================== BRANDING & GRAPHIC DESIGN ===================== -->
+           <!-- ===================== BRANDING & GRAPHIC DESIGN ===================== -->
     <section class="section" id="graphic-design">
       <div class="container">
         <div class="section-heading">
@@ -340,8 +340,22 @@
 
         <div class="design-meta" id="graphicDesignMeta"></div>
 
-        <div class="filter-buttons" id="designFilters" role="tablist" aria-label="Filter designs by category"></div>
-        <div class="design-grid" id="designGrid"></div>
+        <!-- LEVEL 1: Category folders -->
+        <div id="designCategories" class="design-categories"></div>
+
+        <!-- LEVEL 2: Designs inside the opened folder -->
+        <div id="designCategoryView" class="design-category-view hidden">
+          <button type="button" class="design-back" id="designBack">
+            ← All Categories
+          </button>
+
+          <div class="design-category-header">
+            <h3 id="designCategoryTitle"></h3>
+            <p id="designCategoryDesc"></p>
+          </div>
+
+          <div id="designGrid" class="design-grid"></div>
+        </div>
       </div>
     </section>
 
@@ -359,7 +373,6 @@
         </figcaption>
       </figure>
     </div>
-
     <!-- ===================== CONTACT ===================== -->
     <section class="section contact-section" id="contact">
       <div class="container">
