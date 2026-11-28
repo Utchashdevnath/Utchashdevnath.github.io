@@ -452,13 +452,13 @@ window.portfolioData = {
   /* ---------------- HARDWARE & DESIGN ---------------- */
   hardwareDesign: [
      {
-      title: "Disposal Unit",
-      type: "PCB Design",
-      role: "Schematic design and PCB layout",
+      title: "3D CAD Model: Sanitary Pad Disposal & Incineration Unit",
+      type: "CAD / 3D Modeling",
+     /* role: "CAD Designer", */
       description:
-        "Designed the primary control board that powers an entry-level robotics kit — integrating motor drivers, sensor headers, and a microcontroller with an onboard regulator for stable power delivery.",
-      tools: ["Altium Designer", "3D printing"],
-      outcome: "Fabricated and tested; deployed in beginner robotics kits.",
+        "A custom 3D CAD concept model created in SketchUp for a cylindrical waste disposal unit. The structural layout features a main vertical containment chamber, an upper exhaust chimney stack for ventilation, an internal circular mounting ring for grate or burner assembly, and an integrated side-mounted intake/collection tray with dimensional clearances mapped for fabrication.",
+      tools: ["SketchUp", "3D Modeling", "Product Design", "Mechanical Prototyping"],
+     /* outcome: "Fabricated and tested; deployed in beginner robotics kits.", */
       image: "images/Project/Vending Machine/IMG-20250901-WA0013.jpg",
       link: "",
       /* evidence: [
@@ -466,13 +466,13 @@ window.portfolioData = {
       ] */
     },
          {
-      title: "Smart Vending Machine",
-      type: "PCB Design",
-      role: "Schematic design and PCB layout",
+      title: "Solar-Powered Smart Vending Machine",
+      type: "CAD / 3D Modeling",
+     /* role: "3D CAD & Product Designer", */
       description:
-        "Designed the primary control board that powers an entry-level robotics kit — integrating motor drivers, sensor headers, and a microcontroller with an onboard regulator for stable power delivery.",
-      tools: ["Altium Designer", "3D printing"],
-      outcome: "Fabricated and tested; deployed in beginner robotics kits.",
+        "A 3D CAD concept and structural layout created in SketchUp for a compact, low-cost smart sanitary pad vending machine (24\" x 8\" x 6\"). The dual-column enclosure integrates twin spiral coil dispensing mechanisms, a bottom collection chute, and a front user-interface panel housing a 16x2 LCD display, 4x4 matrix keypad, and biometric fingerprint sensor for secure, automated access.",
+      tools: ["SketchUp", "3D Modeling", "Product Design", "Embedded Hardware Layout", "Mechatronics"],
+     /* outcome: "Fabricated and tested; deployed in beginner robotics kits.", */
       image: "images/Project/Vending Machine/IMG-20250820-WA0017.jpg",
       link: "",
        evidence: [
