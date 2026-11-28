@@ -278,7 +278,7 @@ window.portfolioData = {
 
   /* ---------------- PROJECTS ---------------- */
   projects: [
-    {
+   /* {
       title: "Smart Agriculture Sensor Node",
       category: "IoT",
       contribution: "Lead Researcher",
@@ -286,7 +286,7 @@ window.portfolioData = {
       description: "NPK, pH and moisture sensing for precision farming, with LoRa backhaul and low-power operation.",
       technologies: ["ESP32", "LoRa", "NPK Sensor", "pH Sensor"],
       image: "images/projects/agri-sensor-main.jpg",
-     /* link: "https://github.com/Utchashdevnath/agri-sensor", */
+     link: "https://github.com/Utchashdevnath/agri-sensor", 
       gallery: [
         "images/projects/agri-sensor-1.jpg",
         "images/projects/agri-sensor-2.jpg",
@@ -294,11 +294,11 @@ window.portfolioData = {
         "images/projects/agri-sensor-4.jpg",
         "images/projects/agri-sensor-5.jpg"
       ],
-      /* evidence: [
+       evidence: [
         "documents/projects/agri-sensor-schematic.pdf",
         "documents/projects/agri-sensor-testing-report.pdf"
-      ] */
-    }, 
+      ] 
+    }, */
         {
       title: "EMAR — Edge-Enabled Modular Agricultural Robot",
       category: "Robotics",
@@ -433,6 +433,20 @@ window.portfolioData = {
          "images/Project/Street Light/Schematic2.JPG"
 ],
     },
+       {
+      title: "Remotely Operated Underwater Vehicle",
+      category: "Robotics",
+      contribution: "Research Assistant",
+      status: "Prototype Complete",
+      description: "Custom-built, fully hardwired underwater submarine (ROV) connected via a multi-core umbilical cable to a surface control box with an integrated monitor. Engineered for reliable underwater maneuvering and real-time wired control without wireless signal degradation.",
+      technologies: ["ESP32", "Wired Telemetry", "DC Motors", "Embedded Systems", "Live Video Feed"],
+      image: "images/Project/Under Water Robot/IMG20221016195159.jpg",
+    /* link: "https://github.com/Utchashdevnath/agri-sensor", */
+      gallery: [
+        "images/Project/Under Water Robot/IMG20221016195213.jpg",
+        "images/Project/Under Water Robot/IMG20221019205241.jpg"
+      ],
+    }, 
   ],
 
   /* ---------------- HARDWARE & DESIGN ---------------- */
